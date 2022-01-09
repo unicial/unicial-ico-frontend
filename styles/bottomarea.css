@@ -1,0 +1,11 @@
+.bottomarea {
+  background-color: #12232f;
+  color: #8fa5a2;
+}
+
+.c-bottomarea-text {
+  padding: 12px 15px 12px 15px;
+  font-size: 13px;
+  display: block;
+  text-align: center;
+}

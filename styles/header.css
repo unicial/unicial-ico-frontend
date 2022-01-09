@@ -1,0 +1,183 @@
+.header {
+  background: transparent;
+  position: absolute;
+  width: 100%;
+}
+
+.c-nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.c-nav-header .navbar-brand {
+  width: 210px;
+}
+
+.header .nav-item {
+  padding-left: 50px;
+}
+
+.header .navbar {
+  padding: 10px 0px;
+  line-height: 50px;
+}
+
+.header .nav-link {
+  color: white !important;
+  font-weight: 600 !important;
+}
+
+.header .nav-link:hover {
+  color: #18d685 !important;
+}
+
+.c-logo-large {
+  padding: 40px 0px;
+}
+
+.c-logo-small {
+  padding: 7px 0px;
+}
+
+.c-toggler {
+  height: 30px;
+  width: 36px;
+  cursor: pointer;
+}
+
+.menu-line-1 {
+  display: block;
+  background-color: white;
+  height: 4px;
+  width: 100%;
+}
+.menu-line-2 {
+  display: block;
+  background-color: white;
+  margin-top: 7px;
+  height: 4px;
+  width: 100%;
+}
+.menu-line-3 {
+  display: block;
+  background-color: white;
+  margin-top: 7px;
+  height: 4px;
+  width: 100%;
+}
+
+.c-navbar-res {
+  width: 95%;
+  margin: -1em 1em;
+}
+.c-navbar-res .nav-item {
+  background: #12232f;
+  border-bottom: 1px solid #343d45;
+  cursor: pointer;
+}
+.c-navbar-res a {
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 22px;
+  color: white;
+  padding: 16px 30px;
+}
+
+.c-scroll-top {
+  opacity: 0.5;
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  z-index: 1000;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.c-scroll-top-disable {
+  display: none;
+}
+
+.c-scroll-top-icon {
+  font-size: 16px;
+  font-weight: normal;
+  display: inline-block;
+  vertical-align: top;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  background-color: #06060f;
+  color: #99a9b5;
+  cursor: pointer;
+}
+
+.c-modal {
+  margin: 50px 20px 0px 20px;
+  float: left;
+  height: fit-content;
+}
+
+@media (min-width: 1212px) {
+  .header.sticky {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 91;
+  }
+
+  .header.sticky .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 10px 15px;
+    width: 100%;
+    background: #fffffff2;
+    box-shadow: 0px 6px 13px 0px rgb(0 0 0 / 6%);
+    opacity: 0;
+    -webkit-animation: fadeInDown 0.95s ease-in-out 0s 1 normal none running;
+    animation: fadeInDown 0.95s ease-in-out 0s 1 normal none running;
+    -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%);
+  }
+  .c-toggler {
+    display: none;
+  }
+
+  .header.sticky .nav-link {
+    color: #12232f !important;
+    font-weight: 600 !important;
+  }
+
+  .header.sticky .nav-link:hover {
+    color: #18d685 !important;
+  }
+}
+
+@media (max-width: 1212px) {
+  .c-navbar-nav {
+    display: none;
+  }
+  .c-toggler {
+    display: inline-block !important;
+  }
+  .c-logo-large {
+    padding: 20px 0px 40px 0px;
+  }
+}
+
+@media (max-width: 800px) {
+  .c-navbar-nav {
+    display: none;
+  }
+  .c-toggler {
+    display: inline-block !important;
+  }
+  .c-logo-large {
+    padding: 40px 0px;
+  }
+}

@@ -1,0 +1,85 @@
+.option-container {
+  background-image: url("../public/static/images/ico_bg_image_14.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px 0;
+}
+
+.card-container {
+  padding: 50px 30px 30px 30px;
+  text-align: center;
+}
+
+.card-container a {
+  text-decoration: none;
+}
+
+.option-img {
+  margin-bottom: 30px;
+  width: 64px;
+  height: 64px;
+}
+
+.title {
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: 200;
+  line-height: 30px;
+  color: #ffffff;
+}
+
+.content {
+  margin-bottom: 16px;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 40px;
+  color: #ffffff;
+}
+
+.card-link {
+  height: 50px;
+  width: fit-content;
+  padding: 0 35px;
+  font-size: 16px;
+  margin: 30px auto;
+  line-height: 48px;
+  color: #0acc95;
+  background-color: transparent;
+  border-radius: 25px;
+  border: 1px solid #0acc95;
+  font-weight: 700;
+  transition: all 0.3s;
+}
+
+.card-link:hover {
+  background-color: #0acc95;
+  color: #12222f;
+}
+
+/* New Option */
+.animation-wrapper-3 {
+  width: 100%;
+  height: 1000px;
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+  z-index: 1;
+}
+.animation-wrapper-3 canvas {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 1;
+  z-index: 1;
+}
+
+.vc_custom_1523527829407 {
+  margin-bottom: 0px !important;
+  background-image: url(https://codex-themes.com/themes/cryption/wp-content/uploads/sites/9/2018/03/ico_bg_image_14.jpg) !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+}

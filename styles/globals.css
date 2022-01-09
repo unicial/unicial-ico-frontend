@@ -1,0 +1,56 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif !important;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.c-container {
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  padding-left: 21px !important;
+  padding-right: 21px !important;
+}
+
+@media (min-width: 1212px) {
+  .c-container {
+    width: 1212px !important;
+    max-width: 1212px !important;
+  }
+}
+
+.title-h3 {
+  margin-bottom: 7px;
+  color: #191f25;
+  line-height: 40px;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.title-h1 {
+  margin-bottom: 18px;
+  color: #191f25;
+  font-size: 50px;
+  line-height: 69px;
+  font-weight: 200;
+}
+
+.styled-subtitle {
+  line-height: 36px;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.c-column {
+  padding: 0 21px !important;
+}

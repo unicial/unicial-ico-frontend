@@ -1,0 +1,21 @@
+.our-sub-title {
+  text-align: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.our-card-content {
+  margin-bottom: 16px;
+  max-width: 250px;
+  font-size: 15px;
+  line-height: 27px;
+  font-weight: normal;
+}
+
+@media (min-width: 990px) {
+  .our-background {
+    background-image: url("../public/static/images/ourTokens.png");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
