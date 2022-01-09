@@ -60,7 +60,7 @@ const FAQs = () => {
   const [activeFaqItem, setActiveFaqItem] = useState(0);
 
   return (
-    <div className="faq-background">
+    <div className="faq-background" id="FAQ">
       <div className="c-container">
         <Row>
           <Col sm="12" md="8" lg="6">

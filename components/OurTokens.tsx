@@ -3,7 +3,7 @@ import { Row, Col, Container } from "reactstrap";
 
 const OurTokens = () => {
   return (
-    <div className="c-container">
+    <div className="c-container" id="Our Tokens">
       <div style={{ marginTop: "140px" }} />
       <h3 className="title-h3" style={{ textAlign: "center" }}>
         Our Tokens

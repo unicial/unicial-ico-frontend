@@ -13,7 +13,7 @@ const Toparea = () => {
   const interval: time = useRef(0);
   const calculateTimeLeft = () => {
     let year = new Date().getFullYear();
-    let difference = +new Date("2021-12-30") - +new Date();
+    let difference = +new Date("2022-12-30") - +new Date();
     let timeLeft = {};
 
     if (difference > 0) {
@@ -47,7 +47,7 @@ const Toparea = () => {
     }, 20);
   }, []);
   return (
-    <div className="first-content">
+    <div className="first-content" id="About Cryption">
       <div className="c-container">
         <Row>
           <Col lg={6}>

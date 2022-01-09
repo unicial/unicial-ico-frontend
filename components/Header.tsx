@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef, forwardRef } from "react";
 import { Navbar, NavbarBrand, Nav, NavItem, NavLink } from "reactstrap";
+import {scroller} from 'react-scroll'
 
 interface Props {
   sticky: boolean;
@@ -71,7 +72,13 @@ const Header = () => {
     handleResize();
     handleScroll();
   }, []);
-
+const scrollToSection = (id: string) => {
+    scroller.scrollTo(id, {
+      duration: 300,
+      delay: 0,
+      smooth: "easeInOutQuart",
+    });
+  };
   return (
     <div className={`header${sticky ? " sticky" : ""}`}>
       <Navbar light expand="md">
@@ -106,22 +113,19 @@ const Header = () => {
           </div>
           <Nav className="c-navbar-nav" navbar>
             <NavItem>
-              <NavLink href="/">About Cryption</NavLink>
+              <NavLink onClick={()=>scrollToSection("About Cryption")}>About Cryption</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="#feature">Our Tokens</NavLink>
+              <NavLink onClick={()=>scrollToSection("Our Tokens")}>Our Tokens</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="#service">Crowdsale</NavLink>
+              <NavLink onClick={()=>scrollToSection("crowdsale")}>Crowdsale</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="#about">Roadmap</NavLink>
+              <NavLink onClick={()=>scrollToSection("Roadmap")}>Roadmap</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="#about">FAQ</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink href="#about">News</NavLink>
+              <NavLink onClick={()=>scrollToSection("FAQ")}>FAQ</NavLink>
             </NavItem>
           </Nav>
         </div>

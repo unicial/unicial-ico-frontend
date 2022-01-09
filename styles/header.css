@@ -118,6 +118,10 @@
   height: fit-content;
 }
 
+.c-navbar-nav a {
+  cursor: pointer;
+}
+
 @media (min-width: 1212px) {
   .header.sticky {
     position: absolute;
