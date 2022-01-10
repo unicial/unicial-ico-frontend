@@ -1,7 +1,26 @@
 import React from "react";
 import { Row, Col } from "reactstrap";
+import { Doughnut } from "react-chartjs-2";
+import {Chart, ArcElement} from 'chart.js'
 
 const Distribution = () => {
+  Chart.register(ArcElement)
+  const dataDoughnut = {
+    labels: ["Red", "Green", "Yellow", "Grey", "Dark Grey"],
+    datasets: [
+      {
+        data: [300, 50, 100, 40, 120],
+        backgroundColor: ["#00e290", "#46BFBD", "#FDB45C", "#949FB1", "#4D5360"],
+        hoverBackgroundColor: [
+          "#00e290",
+          "#5AD3D1",
+          "#FFC870",
+          "#A8B3C5",
+          "#616774"
+        ]
+      }
+    ]
+  }
   return (
     <div
       id="crowdsale"
@@ -110,12 +129,9 @@ const Distribution = () => {
             >
               <div className="wpb_wrapper">
                 <div className="vc_chart-with-legend">
-                  <canvas
-                    className="vc_round-chart-canvas"
-                    width="187"
-                    height="187"
-                    style={{ width: "281px", height: "281px" }}
-                  ></canvas>
+                  <div className="c-chart-container">
+                    <Doughnut data = {dataDoughnut} options={{responsive: true}}/>
+                  </div>
                 </div>
                 <ul className="vc_chart-legend">
                   <li>
@@ -172,12 +188,9 @@ const Distribution = () => {
             >
               <div className="wpb_wrapper">
                 <div className="vc_chart-with-legend">
-                  <canvas
-                    className="vc_round-chart-canvas"
-                    width="187"
-                    height="187"
-                    style={{ width: "281px", height: "281px" }}
-                  ></canvas>
+                  <div className="c-chart-container">
+                    <Doughnut data = {dataDoughnut} options={{responsive: true}}/>
+                  </div>
                 </div>
                 <ul className="vc_chart-legend">
                   <li>

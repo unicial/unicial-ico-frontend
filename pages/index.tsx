@@ -15,7 +15,6 @@ import Distribution from "../components/Distribution";
 import { getUserDetails } from "../api";
 
 const Home = (props: any) => {
-  console.log(props);
   return (
     <div>
       <Head>

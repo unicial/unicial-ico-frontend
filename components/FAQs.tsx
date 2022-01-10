@@ -91,7 +91,7 @@ const FAQs = () => {
               ></div>
               <div className="accordion" id="accordionExample">
                 {faqs.map((faq, key) => (
-                  <div className="accordion-item">
+                  <div className="accordion-item" key={key}>
                     <h2 className="accordion-header" id={`heading${key}`}>
                       <button
                         className={clsx("accordion-button", {

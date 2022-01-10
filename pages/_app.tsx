@@ -14,6 +14,7 @@ import "../styles/codex-themes1.css";
 import "../styles/roadmap.css";
 import "../styles/short-codes-custom.css";
 import "../styles/faq.css";
+import "../styles/distribution.css";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return <Component {...pageProps} />;
