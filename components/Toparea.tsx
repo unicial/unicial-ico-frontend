@@ -8,7 +8,7 @@ const Toparea = () => {
           <div className="toparea-info">
             <span className="top-item top-item-first">
               <i className="fal fa-map-marker-alt" />
-              19th Ave New York, NY 95822, USA
+              140 paya lebar road, Singapore
             </span>
             <span className="top-item">
               <i className="fas fa-headphones"></i>
@@ -16,13 +16,13 @@ const Toparea = () => {
             </span>
             <span className="top-item">
               <i className="far fa-envelope"></i>
-              <a className="link-item" href="mailto:info@cryption.network">
-                info@cryption.network
+              <a className="link-item" href="mailto:tsimafei@zilionixx.com">
+                tsimafei@zilionixx.com
               </a>
             </span>
           </div>
           <div className="toparea-social">
-            <a className="link-item ps-3" href="#">
+            {/* <a className="link-item ps-3" href="#">
               <i className="fab fa-twitter"></i>
             </a>
             <a className="link-item ps-3" href="#">
@@ -39,11 +39,14 @@ const Toparea = () => {
             </a>
             <a className="link-item ps-3" href="#">
               <i className="fab fa-youtube"></i>
-            </a>
-            <a className="link-item ps-3" href="#">
+            </a> */}
+            <a className="link-item ps-3" href="https://t.me/zilionixx">
               <i className="fab fa-telegram-plane"></i>
             </a>
-            <a className="link-item ps-3" href="#">
+            <a className="link-item ps-3" href="https://discord.gg/6Yf7n8Qw">
+              <i className="fab fa-discord"></i>
+            </a>
+            {/* <a className="link-item ps-3" href="#">
               <i className="fab fa-medium-m"></i>
             </a>
             <a className="link-item ps-3" href="#">
@@ -51,7 +54,7 @@ const Toparea = () => {
             </a>
             <a className="link-item ps-3" href="#">
               <i className="fab fa-slack-hash"></i>
-            </a>
+            </a> */}
           </div>
         </div>
       </div>
