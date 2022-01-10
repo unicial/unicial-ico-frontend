@@ -27,10 +27,10 @@ const Option = () => {
                 src="/static/images/exchange.png"
                 alt="exchange-icon"
               />
-              <p className="title">1CRN token price</p>
-              <p className="content">0.00014 BTC</p>
+              <p className="title">1 ZNX price</p>
+              <p className="content">1.18 USDT</p>
               <a href="/">
-                <p className="card-link">Buy toknes -25% OFF</p>
+                <p className="card-link">Buy ZNX -25% OFF</p>
               </a>
             </div>
           </Col>
@@ -43,8 +43,8 @@ const Option = () => {
               />
               <p className="title">ICO Participants</p>
               <p className="content">370,000+</p>
-              <a href="/">
-                <p className="card-link">Join Cryption Telegram</p>
+              <a href="https://t.me/zilionixx">
+                <p className="card-link">Join ZNX Telegram</p>
               </a>
             </div>
           </Col>

@@ -1,42 +1,50 @@
 import React from "react";
 import { Row, Col } from "reactstrap";
 import { Doughnut } from "react-chartjs-2";
-import {Chart, ArcElement, Pie} from 'chart.js'
+import { Chart, ArcElement, Pie } from "chart.js";
 
 const Distribution = () => {
-  Chart.register(ArcElement)
+  Chart.register(ArcElement);
   const dataDoughnut = {
     labels: ["Red", "Green", "Yellow", "Grey", "Dark Grey"],
     datasets: [
       {
         data: [300, 50, 100, 40, 120],
-        backgroundColor: ["#00e290", "#46BFBD", "#FDB45C", "#949FB1", "#4D5360"],
+        backgroundColor: [
+          "#00e290",
+          "#46BFBD",
+          "#FDB45C",
+          "#949FB1",
+          "#4D5360",
+        ],
         hoverBackgroundColor: [
           "#00e290",
           "#5AD3D1",
           "#FFC870",
           "#A8B3C5",
-          "#616774"
-        ]
-      }
-    ]
-  }
-   const plugins = [{
-     beforeDraw: function(chart) {
-      var width = chart.width,
+          "#616774",
+        ],
+      },
+    ],
+  };
+  const plugins = [
+    {
+      beforeDraw: function (chart) {
+        var width = chart.width,
           height = chart.height,
           ctx = chart.ctx;
-          ctx.restore();
-          var fontSize = (height / 160).toFixed(2);
-          ctx.font = fontSize + "em sans-serif";
-          ctx.textBaseline = "top";
-          var text = "Foo-bar",
+        ctx.restore();
+        var fontSize = (height / 160).toFixed(2);
+        ctx.font = fontSize + "em sans-serif";
+        ctx.textBaseline = "top";
+        var text = "Foo-bar",
           textX = Math.round((width - ctx.measureText(text).width) / 2),
           textY = height / 2;
-          ctx.fillText(text, textX, textY);
-          ctx.save();
-     } 
-   }]
+        ctx.fillText(text, textX, textY);
+        ctx.save();
+      },
+    },
+  ];
   return (
     <div
       id="crowdsale"
@@ -51,10 +59,8 @@ const Distribution = () => {
             <div className="wpb_text_column wpb_content_element  wpb_animate_when_almost_visible wpb_fadeIn fadeIn wpb_start_animation animated">
               <div className="wpb_wrapper">
                 <p>
-                  Lorem ipsum dolor sit ametcon sectetur adipisicing elit, sed
-                  doiusmod tempor incidi labore et dolore magna aliqua. Ut enim
-                  ad mini veniam, quis nostrud exercitation ullamco laboris nisi
-                  ut aliquip ex ea commodo consequat.
+                  We would like to proceed with the Zilionxx Crowdsale as
+                  follows:
                 </p>
               </div>
             </div>
@@ -68,8 +74,8 @@ const Distribution = () => {
                 <p>
                   <strong>
                     <span style={{ color: "#121822" }}>
-                      In order to make CRN token distribution process more
-                      efficient, the CRN price will now be linked to BTC:
+                      In order to make ZNX distribution process more efficient,
+                      the ZNX price will now be linked to USDT:
                     </span>{" "}
                   </strong>
                 </p>
@@ -83,7 +89,7 @@ const Distribution = () => {
             <div className="wpb_text_column wpb_content_element  wpb_animate_when_almost_visible wpb_fadeIn fadeIn wpb_start_animation animated">
               <div className="wpb_wrapper">
                 <div className="title-h3" style={{ textAlign: "left" }}>
-                  <span style={{ color: "#121822" }}>1 CRN = 0.00014 BTC</span>
+                  <span style={{ color: "#121822" }}>1 ZNX = 1.18 USDT</span>
                 </div>
               </div>
             </div>
@@ -110,7 +116,7 @@ const Distribution = () => {
                 href=""
                 target="_self"
               >
-                BUY TOKENS -25% OFF
+                BUY ZNX -25% OFF
               </a>
             </div>
             <div className="clearboth"></div>
@@ -146,21 +152,23 @@ const Distribution = () => {
               <div className="wpb_wrapper">
                 <div className="vc_chart-with-legend">
                   <div className="c-chart-container">
-                    <Doughnut data = {dataDoughnut} options={{
-                      width:"400",
-                      height:"400",
-                      responsive: true,
-                      maintainAspectRatio: true,
-                      title:{
-                        display:true,
-                        text:'Average Rainfall per month',
-                        fontSize:20
-                      },
-                      legend:{
-                        display:true,
-                        position:'right'
-                      } 
-                    }}
+                    <Doughnut
+                      data={dataDoughnut}
+                      options={{
+                        width: "400",
+                        height: "400",
+                        responsive: true,
+                        maintainAspectRatio: true,
+                        title: {
+                          display: true,
+                          text: "Average Rainfall per month",
+                          fontSize: 20,
+                        },
+                        legend: {
+                          display: true,
+                          position: "right",
+                        },
+                      }}
                     />
                   </div>
                 </div>
@@ -220,7 +228,10 @@ const Distribution = () => {
               <div className="wpb_wrapper">
                 <div className="vc_chart-with-legend">
                   <div className="c-chart-container">
-                    <Doughnut data = {dataDoughnut} options={{responsive: true}}/>
+                    <Doughnut
+                      data={dataDoughnut}
+                      options={{ responsive: true }}
+                    />
                   </div>
                 </div>
                 <ul className="vc_chart-legend">

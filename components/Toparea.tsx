@@ -12,7 +12,7 @@ const Toparea = () => {
             </span>
             <span className="top-item">
               <i className="fas fa-headphones"></i>
-              +1 916-85-2235
+              +65 6702 3011
             </span>
             <span className="top-item">
               <i className="far fa-envelope"></i>

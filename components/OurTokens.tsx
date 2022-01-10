@@ -6,17 +6,16 @@ const OurTokens = () => {
     <div className="c-container" id="Our Tokens">
       <div style={{ marginTop: "140px" }} />
       <h3 className="title-h3" style={{ textAlign: "center" }}>
-        Our Tokens
+        Our Zilionixx Coin(ZNX)
       </h3>
       <h1 className="title-h1" style={{ textAlign: "center" }}>
-        What is Cryption Coin
+        What is Zilionixx Coin
       </h1>
       <div style={{ marginTop: "60px" }} />
       <div style={{ marginBottom: "16px" }}>
         <div className="our-sub-title">
           <span className="styled-subtitle" style={{ color: "#191f25" }}>
-            Cryption Coin is a token, based on the Ethereum blockchain
-            technology. It is the core asset of the new Cryption Marketplace.
+            ZNX is a coin, native token on Zilionixx blockchain technology.
           </span>
         </div>
       </div>
@@ -24,24 +23,23 @@ const OurTokens = () => {
       <Row className="our-background">
         <Col className="c-column" xs="12" md="6" lg="4">
           <h3 className="title-h3" style={{ marginBottom: "23px" }}>
-            Without blockchain fluctuations
+            Zilionixx Protocol
           </h3>
           <div className="our-card-content">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua enim ad
-            minim veniam.
+            Zilionixx is being developed as the next-generation blockchain that
+            ensures safer and faster transaction processing speed by completing
+            a consensus algorithm based on the NONCEchain layer that combines
+            hashchain and DAG.
           </div>
           <div style={{ marginTop: "100px" }} />
 
           <h3 className="title-h3" style={{ marginBottom: "23px" }}>
-            No transaction
-            <br />
-            fees
+            Unicial & Meditech
           </h3>
           <div className="our-card-content">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua enim ad
-            minim veniam.
+            We have built a virtual world in Zilionixx and are developing
+            services that guarantee various social activities, such as medical
+            volunteering and holding concerts.
           </div>
         </Col>
 
@@ -53,26 +51,23 @@ const OurTokens = () => {
           style={{ textAlign: "right" }}
         >
           <h3 className="title-h3" style={{ marginBottom: "23px" }}>
-            Protects
-            <br />
-            the identity
+            AI Smart Contract
           </h3>
           <div className="our-card-content" style={{ marginLeft: "auto" }}>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua enim ad
-            minim veniam.
+            By introducing AI into smart contracts, we are developing smart
+            contract VMs that will be more useful in Unicial and other dApps by
+            realizing the combination of Zilioxx blockchain data and AI.
           </div>
           <div style={{ marginTop: "100px" }} />
 
           <h3 className="title-h3" style={{ marginBottom: "23px" }}>
-            Instant
-            <br />
-            Operations
+            Interact with <br />
+            Game
           </h3>
           <div className="our-card-content" style={{ marginLeft: "auto" }}>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua enim ad
-            minim veniam.
+            We are trying to develop an SDK that can be used easily by game
+            developers by improving transaction processing speed on blockchain
+            so that Zilionixx can be used in games.
           </div>
         </Col>
       </Row>

@@ -47,19 +47,20 @@ const Toparea = () => {
     }, 20);
   }, []);
   return (
-    <div className="first-content" id="About Cryption">
+    <div className="first-content" id="About ZNX">
       <div className="c-container">
         <Row>
           <Col lg={6}>
-            <div className="c-large-text">Trading platform of the future!</div>
+            <div className="c-large-text">Zilionixx Layer1 Blockchain!</div>
             <div className="c-medium-text my-5">
               A new smart block chain based marketplace for trading digital
-              goods & assets according to users interests.
+              goods & assets according to users interests including metaverse
+              and medical tech.
             </div>
-            <a className="c-buytoken-btn">BUY TOKENS -25% OFF</a>
+            <a className="c-buytoken-btn">BUY ZNX -25% OFF</a>
           </Col>
           <Col lg={5} className="offset-lg-1">
-            <div className="c-medium-text">Token sale ends in:</div>
+            <div className="c-medium-text">ZNX sale ends in:</div>
             <div className="c-countdown mt-4">
               <div className="c-countdown-items">
                 <div className="c-time-item c-time-days">

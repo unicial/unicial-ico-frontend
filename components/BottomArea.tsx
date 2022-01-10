@@ -5,7 +5,7 @@ const Bottomarea = () => {
     <div className="bottomarea">
       <div className="c-container">
         <span className="c-bottomarea-text">
-          © 2021 ICOnyx. Made by Crocoblock.
+          © 2022 Zilionixx. Made by WinWin.
         </span>
       </div>
     </div>

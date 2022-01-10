@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef, forwardRef } from "react";
 import { Navbar, NavbarBrand, Nav, NavItem, NavLink } from "reactstrap";
-import {scroller} from 'react-scroll'
+import { scroller } from "react-scroll";
 
 interface Props {
   sticky: boolean;
@@ -72,7 +72,7 @@ const Header = () => {
     handleResize();
     handleScroll();
   }, []);
-const scrollToSection = (id: string) => {
+  const scrollToSection = (id: string) => {
     scroller.scrollTo(id, {
       duration: 300,
       delay: 0,
@@ -113,19 +113,27 @@ const scrollToSection = (id: string) => {
           </div>
           <Nav className="c-navbar-nav" navbar>
             <NavItem>
-              <NavLink onClick={()=>scrollToSection("About Cryption")}>About Cryption</NavLink>
+              <NavLink onClick={() => scrollToSection("About ZNX")}>
+                About ZNX
+              </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink onClick={()=>scrollToSection("Our Tokens")}>Our Tokens</NavLink>
+              <NavLink onClick={() => scrollToSection("Our Tokens")}>
+                Our ZNX
+              </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink onClick={()=>scrollToSection("crowdsale")}>Crowdsale</NavLink>
+              <NavLink onClick={() => scrollToSection("crowdsale")}>
+                Crowdsale
+              </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink onClick={()=>scrollToSection("Roadmap")}>Roadmap</NavLink>
+              <NavLink onClick={() => scrollToSection("Roadmap")}>
+                Roadmap
+              </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink onClick={()=>scrollToSection("FAQ")}>FAQ</NavLink>
+              <NavLink onClick={() => scrollToSection("FAQ")}>FAQ</NavLink>
             </NavItem>
           </Nav>
         </div>
@@ -133,10 +141,10 @@ const scrollToSection = (id: string) => {
       {isOpen && (
         <Nav className="c-navbar-res" navbar forwardref={ref}>
           <NavItem>
-            <NavLink href="/">About Cryption</NavLink>
+            <NavLink href="/">About ZNX</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="#feature">Our Tokens</NavLink>
+            <NavLink href="#feature">Our ZNX</NavLink>
           </NavItem>
           <NavItem>
             <NavLink href="#service">Crowdsale</NavLink>

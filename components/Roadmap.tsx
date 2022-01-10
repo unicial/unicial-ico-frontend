@@ -22,7 +22,7 @@ const Option = () => {
             <div className="wpb_wrapper">
               <div className="title-h1" style={{ textAlign: "center" }}>
                 <span className="light" style={{ color: "#ffffff" }}>
-                  Our Strategy and Project Plan
+                  Our Plan of Zilionixx
                 </span>
               </div>
             </div>
@@ -93,15 +93,15 @@ const Option = () => {
                               className="quickfinder-item-title"
                               style={{ color: "#00e290" }}
                             >
-                              Dec 2016
+                              Aug 2021
                             </div>
                             <div
                               className="quickfinder-item-text"
                               style={{ color: "#ffffff" }}
                             >
-                              Lorem Ipsum. Proin gravida nibh vel velit auctor
-                              aliquet. Aenean sollicitudin, lorem quis bibendum
-                              auctor.
+                              Launch testnet of Zilionixx.
+                              <br />
+                              Test consensus and p2p algorithms.
                             </div>
                           </div>
                         </div>{" "}
@@ -168,15 +168,13 @@ const Option = () => {
                               className="quickfinder-item-title"
                               style={{ color: "#00e290" }}
                             >
-                              Feb 2017
+                              Oct 2021
                             </div>
                             <div
                               className="quickfinder-item-text"
                               style={{ color: "#ffffff" }}
                             >
-                              Lorem Ipsum. Proin gravida nibh vel velit auctor
-                              aliquet. Aenean sollicitudin, lorem quis bibendum
-                              auctor.
+                              Launch testnet block explorer.
                             </div>
                           </div>
                         </div>{" "}
@@ -211,20 +209,9 @@ const Option = () => {
                             >
                               <div
                                 className="ct-icon-inner"
-                                style={{ backgroundColor: "rgb(40, 78, 89)" }}
+                                style={{ backgroundColor: "#284e59" }}
                               >
-                                <span
-                                  className="ct-icon-half-1"
-                                  style={{ color: "rgba(0, 0, 0, 0)" }}
-                                >
-                                  <span className="back-angle"></span>
-                                </span>
-                                <span
-                                  className="ct-icon-half-2"
-                                  style={{ color: "rgba(0, 0, 0, 0)" }}
-                                >
-                                  <span className="back-angle"></span>
-                                </span>
+                                <i className="fas fa-check check-icon"></i>
                               </div>
                             </div>
                           </div>{" "}
@@ -254,15 +241,14 @@ const Option = () => {
                               className="quickfinder-item-title"
                               style={{ color: "#00e290" }}
                             >
-                              Apr 2017
+                              Nov 2021
                             </div>
                             <div
                               className="quickfinder-item-text"
                               style={{ color: "#ffffff" }}
                             >
-                              Lorem Ipsum. Proin gravida nibh vel velit auctor
-                              aliquet. Aenean sollicitudin, lorem quis bibendum
-                              auctor.
+                              Test smart contract VM. Launch DEX and NFT market
+                              place.
                             </div>
                           </div>
                         </div>{" "}
@@ -337,15 +323,13 @@ const Option = () => {
                               className="quickfinder-item-title"
                               style={{ color: "#00e290" }}
                             >
-                              Aug 2017
+                              Dec 2021
                             </div>
                             <div
                               className="quickfinder-item-text"
                               style={{ color: "#ffffff" }}
                             >
-                              Lorem Ipsum. Proin gravida nibh vel velit auctor
-                              aliquet. Aenean sollicitudin, lorem quis bibendum
-                              auctor.
+                              Launch Zilionixx mainnet and block explorer.
                             </div>
                           </div>
                         </div>{" "}
@@ -382,7 +366,7 @@ const Option = () => {
                                 className="ct-icon-inner"
                                 style={{ backgroundColor: "rgb(40, 78, 89)" }}
                               >
-                                <i className="fas fa-check check-icon"></i>
+                                {/* <i className="fas fa-check check-icon"></i> */}
                               </div>
                             </div>
                           </div>{" "}
@@ -412,15 +396,13 @@ const Option = () => {
                               className="quickfinder-item-title"
                               style={{ color: "#00e290" }}
                             >
-                              Nov 2017
+                              Feb 2022
                             </div>
                             <div
                               className="quickfinder-item-text"
                               style={{ color: "#ffffff" }}
                             >
-                              Lorem Ipsum. Proin gravida nibh vel velit auctor
-                              aliquet. Aenean sollicitudin, lorem quis bibendum
-                              auctor.
+                              Launch CEX(Centralized Exchange, Dongle).
                             </div>
                           </div>
                         </div>{" "}
@@ -457,7 +439,7 @@ const Option = () => {
                                 className="ct-icon-inner"
                                 style={{ backgroundColor: "rgb(40, 78, 89)" }}
                               >
-                                <i className="fas fa-check check-icon"></i>
+                                {/* <i className="fas fa-check check-icon"></i> */}
                               </div>
                             </div>
                           </div>{" "}
@@ -487,15 +469,14 @@ const Option = () => {
                               className="quickfinder-item-title"
                               style={{ color: "#00e290" }}
                             >
-                              Jan 2018
+                              Apr 2022
                             </div>
                             <div
                               className="quickfinder-item-text"
                               style={{ color: "#ffffff" }}
                             >
-                              Lorem Ipsum. Proin gravida nibh vel velit auctor
-                              aliquet. Aenean sollicitudin, lorem quis bibendum
-                              auctor.
+                              Implement Hashgraph on Zilionixx consensus
+                              algorithm.
                             </div>
                           </div>
                         </div>{" "}
@@ -540,7 +521,7 @@ const Option = () => {
                                 className="ct-icon-inner"
                                 style={{ backgroundColor: "rgb(40, 78, 89)" }}
                               >
-                                <i className="fas fa-check check-icon"></i>
+                                {/* <i className="fas fa-check check-icon"></i> */}
                               </div>
                             </div>
                           </div>{" "}
@@ -570,15 +551,13 @@ const Option = () => {
                               className="quickfinder-item-title"
                               style={{ color: "#00e290" }}
                             >
-                              Feb 2018
+                              Sep 2022
                             </div>
                             <div
                               className="quickfinder-item-text"
                               style={{ color: "#ffffff" }}
                             >
-                              Lorem Ipsum. Proin gravida nibh vel velit auctor
-                              aliquet. Aenean sollicitudin, lorem quis bibendum
-                              auctor.
+                              Implement AI on smart contract VM.
                             </div>
                           </div>
                         </div>{" "}
@@ -656,15 +635,13 @@ const Option = () => {
                               className="quickfinder-item-title"
                               style={{ color: "#00e290" }}
                             >
-                              Mar 2018
+                              Nov 2022
                             </div>
                             <div
                               className="quickfinder-item-text"
                               style={{ color: "#ffffff" }}
                             >
-                              Lorem Ipsum. Proin gravida nibh vel velit auctor
-                              aliquet. Aenean sollicitudin, lorem quis bibendum
-                              auctor.
+                              Optimize transaction protocol to reduce tx size.
                             </div>
                           </div>
                         </div>{" "}
@@ -742,15 +719,13 @@ const Option = () => {
                               className="quickfinder-item-title"
                               style={{ color: "#00e290" }}
                             >
-                              Jun 2018
+                              Jan 2023
                             </div>
                             <div
                               className="quickfinder-item-text"
                               style={{ color: "#ffffff" }}
                             >
-                              Lorem Ipsum. Proin gravida nibh vel velit auctor
-                              aliquet. Aenean sollicitudin, lorem quis bibendum
-                              auctor.
+                              Launch Zilionixx SDK for game developers.
                             </div>
                           </div>
                         </div>{" "}
@@ -795,7 +770,7 @@ const Option = () => {
                                 className="ct-icon-inner"
                                 style={{ backgroundColor: "rgb(40, 78, 89)" }}
                               >
-                                <i className="fas fa-check check-icon"></i>
+                                {/* <i className="fas fa-check check-icon"></i> */}
                               </div>
                             </div>
                           </div>{" "}
@@ -825,15 +800,13 @@ const Option = () => {
                               className="quickfinder-item-title"
                               style={{ color: "#00e290" }}
                             >
-                              Sep 2018
+                              Mar 2023
                             </div>
                             <div
                               className="quickfinder-item-text"
                               style={{ color: "#ffffff" }}
                             >
-                              Lorem Ipsum. Proin gravida nibh vel velit auctor
-                              aliquet. Aenean sollicitudin, lorem quis bibendum
-                              auctor.
+                              Launch Unicial 3D AR/VR toolkit.
                             </div>
                           </div>
                         </div>{" "}
@@ -911,101 +884,13 @@ const Option = () => {
                               className="quickfinder-item-title"
                               style={{ color: "#00e290" }}
                             >
-                              Oct 2018
+                              Jun 2023
                             </div>
                             <div
                               className="quickfinder-item-text"
                               style={{ color: "#ffffff" }}
                             >
-                              Lorem Ipsum. Proin gravida nibh vel velit auctor
-                              aliquet. Aenean sollicitudin, lorem quis bibendum
-                              auctor.
-                            </div>
-                          </div>
-                        </div>{" "}
-                        <a
-                          href="#"
-                          target="_self"
-                          className="quickfinder-item-link"
-                        ></a>
-                      </div>
-                    </div>
-                    <div
-                      id="post-1602"
-                      data-ll-finish-delay="200"
-                      className="quickfinder-item odd quickfinder-item-effect-border-reverse border-reverse-with-background small lazy-loading post-1602 ct_qf_item type-ct_qf_item status-publish hentry lazy-loading-showed"
-                      style={{ visibility: "visible" }}
-                    >
-                      <div className="quickfinder-item-image">
-                        <div
-                          className="quickfinder-item-image-content lazy-loading-item lazy-loading-showed"
-                          data-ll-item-delay="0"
-                          data-ll-effect="clip"
-                          style={{
-                            position: "relative",
-                            transform:
-                              "translate(0px, 0px) rotate(0rad) skewX(0rad) scale(1, 1)",
-                          }}
-                        >
-                          <div className="quickfinder-item-image-wrapper">
-                            <div
-                              className="ct-icon ct-icon-pack-material ct-icon-size-small ct-icon-shape-circle"
-                              style={{ borderColor: "#678785", opacity: 1 }}
-                            >
-                              <div
-                                className="ct-icon-inner"
-                                style={{ backgroundColor: "rgb(40, 78, 89)" }}
-                              >
-                                <span
-                                  className="ct-icon-half-1"
-                                  style={{ color: "rgba(0, 0, 0, 0)" }}
-                                >
-                                  <span className="back-angle"></span>
-                                </span>
-                                <span
-                                  className="ct-icon-half-2"
-                                  style={{ color: "rgba(0, 0, 0, 0)" }}
-                                >
-                                  <span className="back-angle"></span>
-                                </span>
-                              </div>
-                            </div>
-                          </div>{" "}
-                          <a
-                            href="#"
-                            target="_self"
-                            className="quickfinder-item-link"
-                          ></a>
-                        </div>
-                      </div>
-                      <div
-                        className="quickfinder-item-info-wrapper"
-                        style={{ minHeight: "100px" }}
-                      >
-                        <div
-                          className="connector"
-                          style={{ borderColor: "#678785", left: "-27px" }}
-                        ></div>
-                        <div
-                          className="quickfinder-item-info lazy-loading-item lazy-loading-showed"
-                          data-ll-item-delay="200"
-                          data-ll-effect="fading"
-                          style={{ opacity: 1 }}
-                        >
-                          <div style={{ display: "block", minHeight: "50px" }}>
-                            <div
-                              className="quickfinder-item-title"
-                              style={{ color: "#00e290" }}
-                            >
-                              Jan 2019
-                            </div>
-                            <div
-                              className="quickfinder-item-text"
-                              style={{ color: "#ffffff" }}
-                            >
-                              Lorem Ipsum. Proin gravida nibh vel velit auctor
-                              aliquet. Aenean sollicitudin, lorem quis bibendum
-                              auctor.
+                              Launch 3D Unicial.
                             </div>
                           </div>
                         </div>{" "}
