@@ -1,3 +1,7 @@
+.c-roadmap-icon:hover .ct-icon-inner {
+  background-color: #678785!important;
+}
+
 .roadmap-container {
   background-image: url("../public/static/images/ico_bg_image_17.jpg");
   background-position: center;

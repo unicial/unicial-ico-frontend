@@ -45,7 +45,7 @@ const Option = () => {
                     >
                       <div className="quickfinder-item-image">
                         <div
-                          className="quickfinder-item-image-content lazy-loading-item lazy-loading-showed"
+                          className="quickfinder-item-image-content lazy-loading-item lazy-loading-showed c-roadmap-icon"
                           data-ll-item-delay="0"
                           data-ll-effect="clip"
                           style={{
