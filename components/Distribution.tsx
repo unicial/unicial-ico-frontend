@@ -6,23 +6,43 @@ import { Chart, ArcElement, Pie } from "chart.js";
 const Distribution = () => {
   Chart.register(ArcElement);
   const dataDoughnut = {
-    labels: ["Red", "Green", "Yellow", "Grey", "Dark Grey"],
+    labels: ["Red", "Green", "Yellow", "Dark Grey"],
     datasets: [
       {
-        data: [300, 50, 100, 40, 120],
+        data: [350, 150, 50, 100],
         backgroundColor: [
           "#00e290",
-          "#46BFBD",
-          "#FDB45C",
-          "#949FB1",
-          "#4D5360",
+          "#00bbb3",
+          "#007471",
+          "#0d2035",
         ],
         hoverBackgroundColor: [
           "#00e290",
           "#5AD3D1",
           "#FFC870",
-          "#A8B3C5",
           "#616774",
+        ],
+      },
+    ],
+  };
+   const dataDoughnut_per = {
+    labels: ["Red", "Green", "Yellow", "light", "Dark Grey"],
+    datasets: [
+      {
+        data: [45, 25, 9, 3, 2],
+        backgroundColor: [
+          "#00e290",
+          "#00bbb3",
+          "#007471",
+          "#0d2035",
+          "#e8e041",
+        ],
+        hoverBackgroundColor: [
+          "#00e290",
+          "#5AD3D1",
+          "#FFC870",
+          "#616774",
+          "#e8e041",
         ],
       },
     ],
@@ -229,7 +249,7 @@ const Distribution = () => {
                 <div className="vc_chart-with-legend">
                   <div className="c-chart-container">
                     <Doughnut
-                      data={dataDoughnut}
+                      data={dataDoughnut_per}
                       options={{ responsive: true }}
                     />
                   </div>

@@ -1,7 +1,11 @@
-import React from "react";
+import React,{useRef} from "react";
 import { Row, Col } from "reactstrap";
 
 const Option = () => {
+  const ref = useRef()
+  const hoverHandle = () => {
+    this.refs.hoverElement.add('c-roadmap-icon');
+  }
   return (
     <div className="roadmap-container" id="Roadmap">
       <div className="c-container">
@@ -45,9 +49,11 @@ const Option = () => {
                     >
                       <div className="quickfinder-item-image">
                         <div
-                          className="quickfinder-item-image-content lazy-loading-item lazy-loading-showed c-roadmap-icon"
+                        ref="hoverElement"
+                          className="quickfinder-item-image-content lazy-loading-item lazy-loading-showed"
                           data-ll-item-delay="0"
                           data-ll-effect="clip"
+                          onMouseEnter={hoverHandle}
                           style={{
                             position: "relative",
                             transform:
