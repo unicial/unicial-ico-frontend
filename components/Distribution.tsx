@@ -1,7 +1,7 @@
 import React from "react";
 import { Row, Col } from "reactstrap";
 import { Doughnut } from "react-chartjs-2";
-import {Chart, ArcElement} from 'chart.js'
+import {Chart, ArcElement, Pie} from 'chart.js'
 
 const Distribution = () => {
   Chart.register(ArcElement)
@@ -21,6 +21,22 @@ const Distribution = () => {
       }
     ]
   }
+   const plugins = [{
+     beforeDraw: function(chart) {
+      var width = chart.width,
+          height = chart.height,
+          ctx = chart.ctx;
+          ctx.restore();
+          var fontSize = (height / 160).toFixed(2);
+          ctx.font = fontSize + "em sans-serif";
+          ctx.textBaseline = "top";
+          var text = "Foo-bar",
+          textX = Math.round((width - ctx.measureText(text).width) / 2),
+          textY = height / 2;
+          ctx.fillText(text, textX, textY);
+          ctx.save();
+     } 
+   }]
   return (
     <div
       id="crowdsale"
@@ -130,7 +146,22 @@ const Distribution = () => {
               <div className="wpb_wrapper">
                 <div className="vc_chart-with-legend">
                   <div className="c-chart-container">
-                    <Doughnut data = {dataDoughnut} options={{responsive: true}}/>
+                    <Doughnut data = {dataDoughnut} options={{
+                      width:"400",
+                      height:"400",
+                      responsive: true,
+                      maintainAspectRatio: true,
+                      title:{
+                        display:true,
+                        text:'Average Rainfall per month',
+                        fontSize:20
+                      },
+                      legend:{
+                        display:true,
+                        position:'right'
+                      } 
+                    }}
+                    />
                   </div>
                 </div>
                 <ul className="vc_chart-legend">
