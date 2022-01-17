@@ -10,22 +10,12 @@ const Distribution = () => {
     datasets: [
       {
         data: [350, 150, 50, 100],
-        backgroundColor: [
-          "#00e290",
-          "#00bbb3",
-          "#007471",
-          "#0d2035",
-        ],
-        hoverBackgroundColor: [
-          "#00e290",
-          "#5AD3D1",
-          "#FFC870",
-          "#616774",
-        ],
+        backgroundColor: ["#00e290", "#00bbb3", "#007471", "#0d2035"],
+        hoverBackgroundColor: ["#00e290", "#5AD3D1", "#FFC870", "#616774"],
       },
     ],
   };
-   const dataDoughnut_per = {
+  const dataDoughnut_per = {
     labels: ["Red", "Green", "Yellow", "light", "Dark Grey"],
     datasets: [
       {
@@ -82,6 +72,21 @@ const Distribution = () => {
                   We would like to proceed with the Zilionxx Crowdsale as
                   follows:
                 </p>
+                <p style={{ color: "#000000", fontSize: "13px" }}>
+                  <b>- Feb 1th ~ Feb 10th </b>
+                  <br />
+                  <b>&nbsp;&nbsp;&nbsp;1 ZNX = 1.2 USDT, 1.5 milion ZNX </b>
+                </p>
+                <p style={{ color: "#000000", fontSize: "13px" }}>
+                  <b>- Feb 11th ~ Feb 20th </b>
+                  <br />
+                  <b>&nbsp;&nbsp;&nbsp;1 ZNX = 1.23 USDT, 1.5 milion ZNX </b>
+                </p>
+                <p style={{ color: "#000000", fontSize: "13px" }}>
+                  <b>- Feb 21th ~ Feb 28th </b>
+                  <br />
+                  <b>&nbsp;&nbsp;&nbsp;1 ZNX = 1.25 USDT, 1.5 milion ZNX </b>
+                </p>
               </div>
             </div>
             <div className="clearboth"></div>
@@ -110,6 +115,10 @@ const Distribution = () => {
               <div className="wpb_wrapper">
                 <div className="title-h3" style={{ textAlign: "left" }}>
                   <span style={{ color: "#121822" }}>1 ZNX = 1.18 USDT</span>
+                  <br />
+                  <span style={{ color: "#121822", fontSize: "18px" }}>
+                    ZNX Total Supply 88,888,888
+                  </span>
                 </div>
               </div>
             </div>
@@ -195,7 +204,7 @@ const Distribution = () => {
                 <ul className="vc_chart-legend">
                   <li>
                     <span style={{ backgroundColor: "#00e290" }}></span>
-                    <b>350 millions</b> Token
+                    <b>Total Supply 88,888,888</b> ZNX
                   </li>
                   <li>
                     <span style={{ backgroundColor: "#00bbb3" }}></span>
@@ -226,7 +235,7 @@ const Distribution = () => {
             <div className="wpb_text_column wpb_content_element  wpb_animate_when_almost_visible wpb_fadeIn fadeIn wpb_start_animation animated">
               <div className="wpb_wrapper">
                 <div className="title-h3" style={{ textTransform: "none" }}>
-                  Token distribution
+                  ZNX distribution
                 </div>
               </div>
             </div>

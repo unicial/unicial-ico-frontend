@@ -22,24 +22,33 @@ const Toparea = () => {
             </span>
           </div>
           <div className="toparea-social">
-            {/* <a className="link-item ps-3" href="#">
+            <a className="link-item ps-3" href="https://twitter.com/zilionixx">
               <i className="fab fa-twitter"></i>
             </a>
-            <a className="link-item ps-3" href="#">
+            <a
+              className="link-item ps-3"
+              href="https://www.facebook.com/groups/4354141514692375/"
+            >
               <i className="fab fa-facebook-f"></i>
             </a>
-            <a className="link-item ps-3" href="#">
+            <a
+              className="link-item ps-3"
+              href="https://www.linkedin.com/company/zilionixx "
+            >
               <i className="fab fa-linkedin-in"></i>
             </a>
-            <a className="link-item ps-3" href="#">
+            {/* <a className="link-item ps-3" href="#">
               <i className="fab fa-google-plus-g"></i>
             </a>
             <a className="link-item ps-3" href="#">
               <i className="fab fa-instagram"></i>
-            </a>
-            <a className="link-item ps-3" href="#">
-              <i className="fab fa-youtube"></i>
             </a> */}
+            <a
+              className="link-item ps-3"
+              href="https://www.youtube.com/channel/UCvM8xLpdbdyNFVXf5-NmnOA"
+            >
+              <i className="fab fa-youtube"></i>
+            </a>
             <a className="link-item ps-3" href="https://t.me/zilionixx">
               <i className="fab fa-telegram-plane"></i>
             </a>
