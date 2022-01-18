@@ -66,10 +66,8 @@ const ConnectWithUs = () => {
                         }}
                       >
                         <span style={{ color: "#ffffff" }}>
-                          Lorem ipsum dolor sit ametcon sectetur adipisicing
-                          elit, sed doiusmod tempor incidi labore. Ut enim ad
-                          mini veniam, quis nostrud exercitation ullamco
-                          aliquip.
+                          You can subscribe about Zilionixx blockchain from
+                          below Zilionixx social links. <br /> Please join here.
                         </span>
                       </p>
                     </div>
@@ -82,8 +80,7 @@ const ConnectWithUs = () => {
                   <div className="socials socials-list socials-colored-hover socials-rounded socials-alignment-center">
                     <a
                       className="socials-item"
-                      target="_blank"
-                      href="#"
+                      href="https://twitter.com/zilionixx"
                       style={{ color: "#ffffff" }}
                     >
                       <i
@@ -93,8 +90,7 @@ const ConnectWithUs = () => {
                     </a>
                     <a
                       className="socials-item"
-                      target="_blank"
-                      href="#"
+                      href="https://www.facebook.com/groups/4354141514692375/"
                       style={{ color: "#ffffff" }}
                     >
                       <i
@@ -102,7 +98,7 @@ const ConnectWithUs = () => {
                         style={{ fontSize: "40px" }}
                       ></i>
                     </a>
-                    <a
+                    {/* <a
                       className="socials-item"
                       target="_blank"
                       href="#"
@@ -112,8 +108,8 @@ const ConnectWithUs = () => {
                         className="socials-item-icon pinterest"
                         style={{ fontSize: "40px" }}
                       ></i>
-                    </a>
-                    <a
+                    </a> */}
+                    {/* <a
                       className="socials-item"
                       target="_blank"
                       href="#"
@@ -123,11 +119,10 @@ const ConnectWithUs = () => {
                         className="socials-item-icon instagram"
                         style={{ fontSize: "40px" }}
                       ></i>
-                    </a>
+                    </a> */}
                     <a
                       className="socials-item"
-                      target="_blank"
-                      href="#"
+                      href="https://www.youtube.com/channel/UCvM8xLpdbdyNFVXf5-NmnOA"
                       style={{ color: "#ffffff" }}
                     >
                       <i
@@ -137,8 +132,7 @@ const ConnectWithUs = () => {
                     </a>
                     <a
                       className="socials-item"
-                      target="_blank"
-                      href="#"
+                      href="https://t.me/zilionixx"
                       style={{ color: "#ffffff" }}
                     >
                       <i

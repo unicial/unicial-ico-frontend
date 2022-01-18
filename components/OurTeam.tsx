@@ -49,11 +49,9 @@ const OurTeam = () => {
                 </a>
               </div>
               <div className="team-person-info">
-                <div className="team-person-name title-h4">
-                  Emerson Anderson
-                </div>
+                <div className="team-person-name title-h4">Doctor Joe Luo</div>
                 <div className="team-person-position date-color small-body">
-                  Co-founder, VP Marketing
+                  Co-founder, CEO
                 </div>
                 <div className="team-person-content"></div>
                 <div className="socials team-person-socials socials-colored-hover">
@@ -103,9 +101,9 @@ const OurTeam = () => {
                 </a>
               </div>
               <div className="team-person-info">
-                <div className="team-person-name title-h4">Steven Beals</div>
+                <div className="team-person-name title-h4">Tsimafei</div>
                 <div className="team-person-position date-color small-body">
-                  CMO, VP Marketing
+                  CTO, Blockchain engineer
                 </div>
                 <div className="team-person-content"></div>
                 <div className="socials team-person-socials socials-colored-hover">
@@ -155,9 +153,9 @@ const OurTeam = () => {
                 </a>
               </div>
               <div className="team-person-info">
-                <div className="team-person-name title-h4">Evelyn Snyder</div>
+                <div className="team-person-name title-h4">Joan Lau</div>
                 <div className="team-person-position date-color small-body">
-                  Blockchain architect
+                  Co-founder, Marketing
                 </div>
                 <div className="team-person-content"></div>
                 <div className="socials team-person-socials socials-colored-hover">
@@ -207,9 +205,9 @@ const OurTeam = () => {
                 </a>
               </div>
               <div className="team-person-info">
-                <div className="team-person-name title-h4">Herman Ledford</div>
+                <div className="team-person-name title-h4">Raymend</div>
                 <div className="team-person-position date-color small-body">
-                  Lead Product Manager
+                  Marketing manager
                 </div>
                 <div className="team-person-content"></div>
                 <div className="socials team-person-socials socials-colored-hover">

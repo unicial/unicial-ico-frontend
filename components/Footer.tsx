@@ -9,9 +9,8 @@ const Footer = () => {
           <Col lg={3} md={6} sm={12} className="py-3">
             <img src="/static/images/logo_large.png"></img>
             <span className="d-block my-4">
-              ICO Landing Page Template. Lorem ipsum dolor sit amet, consectetur
-              adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua enim dolor sit amet.
+              Zilionixx crowdsale landing page. Zilionixx crowdsale will be
+              start on 1th Febrary.
             </span>
             <Button outline className="c-aboutus-btn">
               About Us
@@ -25,35 +24,37 @@ const Footer = () => {
                   <i className="fal fa-map-marker-alt" />
                   Address:
                   <br />
-                  908 New Hampshire Avenue #100, Washington, DC 20037, United
-                  States
+                  140 Paya Lebar road #05-15 AZ @ Paya Lebar Singapore (409015)
                 </span>
               </div>
               <div className="mt-1">
                 <span className="c-bottom-item">
                   <i className="fas fa-headphones"></i>
-                  Phone: +1 916-85-2235
+                  Phone: +65 6702 3011
                 </span>
               </div>
               <div className="mt-1">
                 <span className="c-bottom-item">
                   <i className="fal fa-fax"></i>
-                  Fax: +1 916-85-2235
+                  Fax: +65 6702 3011
                 </span>
               </div>
               <div className="mt-1">
                 <span className="c-bottom-item">
                   <i className="far fa-envelope"></i>
                   Email:&nbsp;
-                  <a className="link-item" href="mailto:info@cryption.network">
-                    info@cryption.network
+                  <a className="link-item" href="mailto:tsimafei@zilionixx.com">
+                    tsimafei@zilionixx.com
                   </a>
                 </span>
               </div>
               <div className="mt-1">
                 <span className="c-bottom-item">
                   <i className="fal fa-globe"></i>
-                  Website: cryption.network
+                  Website:&nbsp;
+                  <a className="link-item" href="https://zilionixx.com">
+                    zilionixx.com
+                  </a>
                 </span>
               </div>
             </div>
@@ -62,13 +63,25 @@ const Footer = () => {
             <span className="c-footer-title">Links</span>
             <div>
               <div className="mt-1">
-                <span className="c-footer-link">ICO list</span>
+                <span className="c-footer-link">
+                  <a className="link-item" href="https://znxscan.com">
+                    Block Explorer
+                  </a>
+                </span>
               </div>
               <div className="mt-1">
-                <span className="c-footer-link">Our approach</span>
+                <span className="c-footer-link">
+                  <a className="link-item" href="https://dongletrade.com">
+                    Dongle Trade
+                  </a>
+                </span>
               </div>
               <div className="mt-1">
-                <span className="c-footer-link">History</span>
+                <span className="c-footer-link">
+                  <a className="link-item" href="https://zilionixx.com">
+                    Zilionixx
+                  </a>
+                </span>
               </div>
               <div className="mt-1">
                 <span className="c-footer-link">News</span>

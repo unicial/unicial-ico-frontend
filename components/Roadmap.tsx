@@ -402,6 +402,8 @@ const Option = () => {
                               style={{ color: "#ffffff" }}
                             >
                               Launch CEX(Centralized Exchange, Dongle).
+                              <br /> Start Unicial(Metaverse) development and
+                              presale of UCC token.
                             </div>
                           </div>
                         </div>{" "}
