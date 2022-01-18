@@ -1,7 +1,7 @@
 import React from "react";
 import { Row, Col } from "reactstrap";
 import { Doughnut } from "react-chartjs-2";
-import { Chart, ArcElement, Pie } from "chart.js";
+import { Chart, ArcElement } from "chart.js";
 
 const Distribution = () => {
   Chart.register(ArcElement);
