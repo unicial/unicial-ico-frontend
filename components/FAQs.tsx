@@ -11,49 +11,29 @@ import {
 const FAQs = () => {
   const faqs = [
     {
-      title: "Cryption Coins",
+      title: "Zilionixx blockchain",
       content:
-        "A paragraph is a series of related sentences developing a central idea, called the topic. Try to think about paragraphs in terms of thematic unity: a paragraph is a sentence or a group of sentences that supports one central, unified idea. Paragraphs add one idea at a time to your broader argument.",
+        "Zilionixx is a layer-1 blockchain development platform that enables developers to build efficient and secure decentralized applications. Developers can use solidity code of Ethereum or Binance on Zilionixx blockchain.",
     },
     {
-      title: "How many sentences is a paragraph?",
+      title: "What is smart contract?",
       content:
-        "Aim for three to five or more sentences per paragraph. Include on each page about two handwritten or three typed paragraphs. Make your paragraphs proportional to your paper. Since paragraphs do less work in short papers, have short paragraphs for short papers and longer paragraphs for longer papers.",
+        "A smart contract is a self-executing contract with the terms of the agreement between buyer and seller being directly written into lines of code. The code and the agreements contained therein exist across a distributed, decentralized blockchain network. The code controls the execution, and transactions are trackable and irreversible.",
     },
     {
-      title: "What is a paragraph and example?",
+      title: "What is Unicial?",
       content:
-        "A paragraph is a series of sentences that are organized and coherent, and are all related to a single topic. ... Paragraphs can contain many different kinds of information. A paragraph could contain a series of brief examples or a single long illustration of a general point.",
+        "Unicial is a metaverse. The term metaverse can be traced back to Neal Stephenson and his dystopian cyberpunk novel Snow Crash. The novel was released in 1992, and it’s considered a canon of the genre, along with William Gibson’s Neuromancer, which describes a virtual reality dataspace called the matrix.",
     },
     {
-      title: "What is a paragraph and example?",
+      title: "What is dongletrade?",
       content:
-        "A paragraph is a series of sentences that are organized and coherent, and are all related to a single topic. ... Paragraphs can contain many different kinds of information. A paragraph could contain a series of brief examples or a single long illustration of a general point.",
+        "Dongletrade is an exchange website where users can buy and sell coins including znx. For most digital currency investors, the centralized cryptocurrency exchange is one of the most important vehicles for transacting. Centralized cryptocurrency exchanges are online platforms used to buy and sell cryptocurrencies. They are the most common means that investors use to buy and sell cryptocurrency holdings.",
     },
     {
-      title: "What is a paragraph and example?",
+      title: "What is Zilionixx block explorer?",
       content:
-        "A paragraph is a series of sentences that are organized and coherent, and are all related to a single topic. ... Paragraphs can contain many different kinds of information. A paragraph could contain a series of brief examples or a single long illustration of a general point.",
-    },
-    {
-      title: "What is a paragraph and example?",
-      content:
-        "A paragraph is a series of sentences that are organized and coherent, and are all related to a single topic. ... Paragraphs can contain many different kinds of information. A paragraph could contain a series of brief examples or a single long illustration of a general point.",
-    },
-    {
-      title: "What is a paragraph and example?",
-      content:
-        "A paragraph is a series of sentences that are organized and coherent, and are all related to a single topic. ... Paragraphs can contain many different kinds of information. A paragraph could contain a series of brief examples or a single long illustration of a general point.",
-    },
-    {
-      title: "What is a paragraph and example?",
-      content:
-        "A paragraph is a series of sentences that are organized and coherent, and are all related to a single topic. ... Paragraphs can contain many different kinds of information. A paragraph could contain a series of brief examples or a single long illustration of a general point.",
-    },
-    {
-      title: "What is a paragraph and example?",
-      content:
-        "A paragraph is a series of sentences that are organized and coherent, and are all related to a single topic. ... Paragraphs can contain many different kinds of information. A paragraph could contain a series of brief examples or a single long illustration of a general point.",
+        "Zilionixx block explorer(https://znxscan.com) is a block explorer on where users and developers can check their transactions.",
     },
   ];
 
@@ -73,7 +53,7 @@ const FAQs = () => {
               <div className="wpb_text_column wpb_content_element  vc_custom_1520421849945">
                 <div className="wpb_wrapper">
                   <div className="title-h3" style={{ textAlign: "left" }}>
-                    Cryption Coins
+                    Zilionixx blockchain
                   </div>
                 </div>
               </div>
