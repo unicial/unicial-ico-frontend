@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Col, Progress, Row } from "reactstrap";
+import BuyTokenModal from "./BuyTokenModal";
 
 interface TimeLeft {
   days: number;
@@ -10,7 +11,9 @@ interface TimeLeft {
 
 const Toparea = () => {
   const [percent, setPercent] = useState(0);
-  const interval: time = useRef(0);
+  const interval: any = useRef(0);
+  const [isOpen, setIsOpen] = useState(false);
+
   const calculateTimeLeft = () => {
     let year = new Date().getFullYear();
     let difference = +new Date("2022-12-30") - +new Date();
@@ -27,7 +30,15 @@ const Toparea = () => {
 
     return timeLeft;
   };
-  const [timeLeft, setTimeLeft] = useState<TimeLeft>(calculateTimeLeft());
+  const [timeLeft, setTimeLeft] = useState<any>(calculateTimeLeft());
+
+  const handleModal = () => {
+    setIsOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsOpen(false);
+  };
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -46,6 +57,7 @@ const Toparea = () => {
       });
     }, 20);
   }, []);
+
   return (
     <div className="first-content" id="About ZNX">
       <div className="c-container">
@@ -57,7 +69,9 @@ const Toparea = () => {
               goods & assets according to users interests including metaverse
               and medical tech.
             </div>
-            <a className="c-buytoken-btn">BUY ZNX -25% OFF</a>
+            <span className="c-buytoken-btn" onClick={handleModal}>
+              BUY ZNX -25% OFF
+            </span>
           </Col>
           <Col lg={5} className="offset-lg-1">
             <div className="c-medium-text">ZNX sale ends in:</div>
@@ -124,6 +138,7 @@ const Toparea = () => {
           </Col>
         </Row>
       </div>
+      <BuyTokenModal isOpen={isOpen} handleCloseModal={handleCloseModal} />
     </div>
   );
 };

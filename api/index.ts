@@ -8,3 +8,12 @@ export const getUserDetails = async () => {
     return console.log(error);
   }
 };
+
+export const addMailchimp = async () => {
+  try {
+    const response = await axios.get(`${process.env.ApiUrl}`);
+    return response.data;
+  } catch (error: any) {
+    return console.log(error);
+  }
+};

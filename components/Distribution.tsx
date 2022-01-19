@@ -62,7 +62,7 @@ const Distribution = () => {
   };
   const plugins = [
     {
-      beforeDraw: function (chart) {
+      beforeDraw: function (chart: any) {
         var width = chart.width,
           height = chart.height,
           ctx = chart.ctx;
@@ -204,7 +204,12 @@ const Distribution = () => {
               <div className="wpb_wrapper">
                 <div className="vc_chart-with-legend">
                   <div className="c-chart-container">
-                    <Doughnut data={dataDoughnut} />
+                    <Doughnut
+                      data={dataDoughnut}
+                      options={{
+                        responsive: true,
+                      }}
+                    />
                   </div>
                 </div>
                 <ul className="vc_chart-legend">
