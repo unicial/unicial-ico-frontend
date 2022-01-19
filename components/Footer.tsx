@@ -1,7 +1,57 @@
 import React from "react";
+import React, { useState } from "react";
 import { Col, Row, Button } from "reactstrap";
 
 const Footer = () => {
+  const [firstName, setFirstName] = useState("");
+  const [errorFirstName, setErrorFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [errorLastName, setErrorLastName] = useState("");
+  const [email, setEmail] = useState("");
+  const [errorEmail, setErrorEmail] = useState("");
+
+  const handleFirstName = (str: string) => {
+    setFirstName(str);
+  };
+
+  const handleLastName = (str: string) => {
+    setLastName(str);
+  };
+
+  const handleEmail = (str: string) => {
+    setEmail(str);
+  };
+
+  const handleSubmit = () => {
+    let flag = true;
+    if (firstName) {
+      setErrorFirstName("");
+    } else {
+      flag = false;
+      setErrorFirstName("Please enter your First Name");
+    }
+    if (lastName) {
+      setErrorLastName("");
+    } else {
+      flag = false;
+      setErrorLastName("Please enter your Last Name");
+    }
+    if (email) {
+      let regEmail =
+        /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+      if (!regEmail.test(email)) {
+        setErrorEmail("Please enter a correct email address");
+        flag = false;
+      } else {
+        setErrorEmail("");
+      }
+    } else {
+      flag = false;
+      setErrorEmail("Please enter your email");
+    }
+    if (flag) {
+    }
+  };
   return (
     <div className="c-footer">
       <div className="c-container">
@@ -92,6 +142,7 @@ const Footer = () => {
                     Medium News
                   </a>
                 </span>
+                <span className="c-footer-link">News</span>
               </div>
             </div>
           </Col>
@@ -99,19 +150,35 @@ const Footer = () => {
             <span className="c-footer-title">Newsletter</span>
             <div>
               <div className="mt-1">
-                <span>Subscribe to get updates</span>
+                <span>
+                  Subscribe to our MailChimp newsletter and stay up to date with
+                  all events coming straight in your mailbox:
+                </span>
               </div>
+
+
+
               <input
-                placeholder="Your first name"
+
+                placeholder="Your First Name"
                 className="c-footer-input mt-3"
+                onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
+                  handleFirstName(e.target.value)
+                }
               ></input>
               <input
-                placeholder="Your last name"
+                placeholder="Your LastName"
                 className="c-footer-input mt-3"
+                onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
+                  handleLastName(e.target.value)
+                }
               ></input>
               <input
                 placeholder="Your E-mail address"
                 className="c-footer-input mt-3"
+                onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
+                  handleEmail(e.target.value)
+                }
               ></input>
               <a className="c-footer-subscribe mt-3">SUBSCRIBE</a>
               <span className="c-encrypted-text mt-3">

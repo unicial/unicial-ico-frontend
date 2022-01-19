@@ -15,6 +15,7 @@ import "../styles/roadmap.css";
 import "../styles/short-codes-custom.css";
 import "../styles/faq.css";
 import "../styles/distribution.css";
+import "../styles/modal.css";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return <Component {...pageProps} />;
