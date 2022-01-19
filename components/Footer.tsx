@@ -1,4 +1,3 @@
-import React from "react";
 import React, { useState } from "react";
 import { Col, Row, Button } from "reactstrap";
 
@@ -150,16 +149,10 @@ const Footer = () => {
             <span className="c-footer-title">Newsletter</span>
             <div>
               <div className="mt-1">
-                <span>
-                  Subscribe to our MailChimp newsletter and stay up to date with
-                  all events coming straight in your mailbox:
-                </span>
+                <span>Subscribe to get news.</span>
               </div>
 
-
-
               <input
-
                 placeholder="Your First Name"
                 className="c-footer-input mt-3"
                 onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
