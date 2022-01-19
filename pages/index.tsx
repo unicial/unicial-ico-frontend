@@ -23,7 +23,7 @@ const Home = (props: any) => {
           name="description"
           content="Next generation blockchain, Zilionixx"
         />
-        <link rel="icon" href="/favicon_.ico" />
+        <link rel="icon" href="/favicon.ico" />
         <link
           rel="stylesheet"
           href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"

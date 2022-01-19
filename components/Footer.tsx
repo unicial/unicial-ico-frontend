@@ -84,7 +84,14 @@ const Footer = () => {
                 </span>
               </div>
               <div className="mt-1">
-                <span className="c-footer-link">News</span>
+                <span className="c-footer-link">
+                  <a
+                    className="link-item"
+                    href="https://medium.com/@zilionixx_foundation"
+                  >
+                    Medium News
+                  </a>
+                </span>
               </div>
             </div>
           </Col>

@@ -1,31 +1,54 @@
 import React from "react";
 import { Row, Col } from "reactstrap";
 import { Doughnut } from "react-chartjs-2";
-import { Chart, ArcElement } from "chart.js";
+import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
 
 const Distribution = () => {
-  Chart.register(ArcElement);
+  ChartJS.register(ArcElement, Tooltip);
   const dataDoughnut = {
-    labels: ["Red", "Green", "Yellow", "Dark Grey"],
+    labels: [
+      "Zilionixx Infra",
+      "Unicial Project Dev",
+      "Dongle Trade Dev",
+      "Defi & NFT",
+      "DAO Community Dev",
+      "Bonus reserved",
+    ],
     datasets: [
       {
-        data: [350, 150, 50, 100],
-        backgroundColor: ["#00e290", "#00bbb3", "#007471", "#0d2035"],
-        hoverBackgroundColor: ["#00e290", "#5AD3D1", "#FFC870", "#616774"],
+        label: "# of Votes",
+        data: [25, 30, 10, 16, 14, 5],
+        backgroundColor: [
+          "#3a6efa",
+          "#e75c22",
+          "#8c6bff",
+          "#f6c120",
+          "#6fb1f1",
+          "#79d21e",
+        ],
+        hoverBackgroundColor: ["#00f2a0", "#00ccc3", "#008481", "#0d2035"],
       },
     ],
   };
   const dataDoughnut_per = {
-    labels: ["Red", "Green", "Yellow", "light", "Dark Grey"],
+    labels: [
+      "Distributed to Community",
+      "Reserved Funding",
+      "Founders and Team",
+      "Marketing",
+      "Advisors",
+      "Bounty campaign",
+    ],
     datasets: [
       {
-        data: [45, 25, 9, 3, 2],
+        data: [45, 30, 15, 5, 3, 2],
         backgroundColor: [
-          "#00e290",
-          "#00bbb3",
-          "#007471",
-          "#0d2035",
-          "#e8e041",
+          "#3a6efa",
+          "#e75c22",
+          "#8c6bff",
+          "#f6c120",
+          "#6fb1f1",
+          "#79d21e",
         ],
         hoverBackgroundColor: [
           "#00e290",
@@ -181,42 +204,33 @@ const Distribution = () => {
               <div className="wpb_wrapper">
                 <div className="vc_chart-with-legend">
                   <div className="c-chart-container">
-                    <Doughnut
-                      data={dataDoughnut}
-                      options={{
-                        width: "400",
-                        height: "400",
-                        responsive: true,
-                        maintainAspectRatio: true,
-                        title: {
-                          display: true,
-                          text: "Average Rainfall per month",
-                          fontSize: 20,
-                        },
-                        legend: {
-                          display: true,
-                          position: "right",
-                        },
-                      }}
-                    />
+                    <Doughnut data={dataDoughnut} />
                   </div>
                 </div>
                 <ul className="vc_chart-legend">
                   <li>
-                    <span style={{ backgroundColor: "#00e290" }}></span>
-                    <b>Total Supply 88,888,888</b> ZNX
+                    <span style={{ backgroundColor: "#3a6efa" }}></span>
+                    <b>25%</b> Zilionixx Infra
                   </li>
                   <li>
-                    <span style={{ backgroundColor: "#00bbb3" }}></span>
-                    <b>150 millions</b> Token sale
+                    <span style={{ backgroundColor: "#e75c22" }}></span>
+                    <b>30%</b> Unicial Project Dev
                   </li>
                   <li>
-                    <span style={{ backgroundColor: "#007471" }}></span>
-                    <b>10 millions</b> Hard Cap
+                    <span style={{ backgroundColor: "#8c6bff" }}></span>
+                    <b>10%</b> Dongle Trade Dev
                   </li>
                   <li>
-                    <span style={{ backgroundColor: "#0d2035" }}></span>
-                    <b>$0.04</b> - Coin price
+                    <span style={{ backgroundColor: "#f6c120" }}></span>
+                    <b>16%</b> Defi & NFT
+                  </li>
+                  <li>
+                    <span style={{ backgroundColor: "#6fb1f1" }}></span>
+                    <b>14%</b> DAO Community Dev
+                  </li>
+                  <li>
+                    <span style={{ backgroundColor: "#79d21e" }}></span>
+                    <b>5%</b> Bonus reserved
                   </li>
                 </ul>
               </div>
@@ -265,23 +279,27 @@ const Distribution = () => {
                 </div>
                 <ul className="vc_chart-legend">
                   <li>
-                    <span style={{ backgroundColor: "#00e290" }}></span>
+                    <span style={{ backgroundColor: "#3a6efa" }}></span>
                     <b>45%</b> Distributed to Community
                   </li>
                   <li>
-                    <span style={{ backgroundColor: "#00bbb3" }}></span>
-                    <b>25%</b> Reserved Funding
+                    <span style={{ backgroundColor: "#e75c22" }}></span>
+                    <b>30%</b> Reserved Funding
                   </li>
                   <li>
-                    <span style={{ backgroundColor: "#007471" }}></span>
-                    <b>9%</b> Founders and Team
+                    <span style={{ backgroundColor: "#8c6bff" }}></span>
+                    <b>15%</b> Founders and Team
                   </li>
                   <li>
-                    <span style={{ backgroundColor: "#0d2035" }}></span>
+                    <span style={{ backgroundColor: "#f6c120" }}></span>
+                    <b>5%</b> Marketing
+                  </li>
+                  <li>
+                    <span style={{ backgroundColor: "#6fb1f1" }}></span>
                     <b>3%</b> Advisors
                   </li>
                   <li>
-                    <span style={{ backgroundColor: "#e8e041" }}></span>
+                    <span style={{ backgroundColor: "#79d21e" }}></span>
                     <b>2%</b> “Bounty” campaign
                   </li>
                 </ul>

@@ -51,7 +51,7 @@ const OurTeam = () => {
               <div className="team-person-info">
                 <div className="team-person-name title-h4">Doctor Joe Luo</div>
                 <div className="team-person-position date-color small-body">
-                  Co-founder, CEO
+                  Co-Founder, CEO
                 </div>
                 <div className="team-person-content"></div>
                 <div className="socials team-person-socials socials-colored-hover">
@@ -103,7 +103,7 @@ const OurTeam = () => {
               <div className="team-person-info">
                 <div className="team-person-name title-h4">Tsimafei</div>
                 <div className="team-person-position date-color small-body">
-                  CTO, Blockchain engineer
+                  CTO, Blockchain Engineer
                 </div>
                 <div className="team-person-content"></div>
                 <div className="socials team-person-socials socials-colored-hover">
@@ -155,7 +155,7 @@ const OurTeam = () => {
               <div className="team-person-info">
                 <div className="team-person-name title-h4">Joan Lau</div>
                 <div className="team-person-position date-color small-body">
-                  Co-founder, Marketing
+                  Co-Founder, Marketing
                 </div>
                 <div className="team-person-content"></div>
                 <div className="socials team-person-socials socials-colored-hover">
@@ -207,7 +207,7 @@ const OurTeam = () => {
               <div className="team-person-info">
                 <div className="team-person-name title-h4">Raymend</div>
                 <div className="team-person-position date-color small-body">
-                  Marketing manager
+                  Marketing Manager
                 </div>
                 <div className="team-person-content"></div>
                 <div className="socials team-person-socials socials-colored-hover">

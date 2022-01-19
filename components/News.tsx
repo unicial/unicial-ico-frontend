@@ -39,13 +39,13 @@ const OurTokens = () => {
           <div className="post-content-wrapper blog-item-default-background centered-box shadow-box">
             <div className="post-image">
               <div className="post-featured-content">
-                <a href="https://codex-themes.com/themes/cryption/news-page-3-1/">
+                <a href="https://medium.com/@zilionixx_foundation/an-introduction-to-zilionixx-8ddb5ed51535">
                   <picture>
                     <source media="(max-width: 992px)" />
                     <source media="(max-width: 1100px)" />
                     <source media="(max-width: 1920px)" />
                     <img
-                      src="https://codex-themes.com/themes/cryption/wp-content/uploads/sites/9/2018/02/2-1-ct-blog-justified.jpg"
+                      src="https://miro.medium.com/max/1400/1*KWOlXlNJ5Rc1320cR4g1uQ.jpeg"
                       width="640"
                       height="480"
                       className="img-responsive"
@@ -58,8 +58,11 @@ const OurTokens = () => {
             <div className="description">
               <div className="post-meta-container date-color">
                 <div className="post-meta-date">
-                  February 19, 2018
-                  <span className="post-meta-author">by admin</span>
+                  December 29, 2021
+                  <span className="post-meta-author">
+                    {" "}
+                    by Zilionixx Foundation
+                  </span>
                 </div>
                 <div className="post-meta-likes">
                   <span className="post-meta-like">
@@ -81,16 +84,16 @@ const OurTokens = () => {
                     href="https://codex-themes.com/themes/cryption/news-page-3-1/"
                     rel="bookmark"
                   >
-                    Pay for Purchases Directly with Your Cryptocurrency
+                    An introduction to Zilionixx
                   </a>
                 </h5>
               </div>
               <div className="post-text">
                 <div className="summary">
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.
+                    Zilionixx is a blockchain startup company based in Singapore
+                    and it was founded by Dr. Joe Luo in Singapore. And we are
+                    happy to announce this with our first publication in Medium.
                   </p>
                 </div>
               </div>
@@ -102,7 +105,7 @@ const OurTokens = () => {
                       style={{ borderRadius: "20px" }}
                       // onmouseleave=""
                       // onmouseenter=""
-                      href="https://codex-themes.com/themes/cryption/news-page-3-1/"
+                      href="https://medium.com/@zilionixx_foundation/an-introduction-to-zilionixx-8ddb5ed51535"
                       target="_self"
                     >
                       Read More
@@ -124,13 +127,13 @@ const OurTokens = () => {
           >
             <div className="post-image">
               <div className="post-featured-content">
-                <a href="https://codex-themes.com/themes/cryption/news-page-3-2/">
+                <a href="https://medium.com/@zilionixx_foundation/the-way-of-zilionixx-a7a9eebe620e">
                   <picture>
                     <source media="(max-width: 992px)" />
                     <source media="(max-width: 1100px)" />
                     <source media="(max-width: 1920px)" />
                     <img
-                      src="https://codex-themes.com/themes/cryption/wp-content/uploads/sites/9/2018/02/3-1-ct-blog-justified.jpg"
+                      src="https://miro.medium.com/max/958/1*ID4DWJBEaVkOK87RoZ1C6w.png"
                       width="640"
                       height="480"
                       className="img-responsive"
@@ -143,8 +146,11 @@ const OurTokens = () => {
             <div className="description">
               <div className="post-meta-container date-color">
                 <div className="post-meta-date">
-                  February 18, 2018
-                  <span className="post-meta-author">by admin</span>
+                  January 5, 2022
+                  <span className="post-meta-author">
+                    {" "}
+                    by Zilionixx Foundation
+                  </span>
                 </div>
                 <div className="post-meta-likes">
                   <span className="post-meta-like">
@@ -166,16 +172,17 @@ const OurTokens = () => {
                     href="https://codex-themes.com/themes/cryption/news-page-3-2/"
                     rel="bookmark"
                   >
-                    Pay for Purchases Directly with Your Cryptocurrency
+                    The way of Zilionixx
                   </a>
                 </h5>
               </div>
               <div className="post-text">
                 <div className="summary">
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.
+                    The coin price has increased from several times to even
+                    hundreds of times on major networks such as Bitcoin,
+                    Ethereum and Binance Smart Chain, constantly breaking new
+                    records.
                   </p>
                 </div>
               </div>
