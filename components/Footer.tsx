@@ -99,11 +99,16 @@ const Footer = () => {
             <span className="c-footer-title">Newsletter</span>
             <div>
               <div className="mt-1">
-                <span>
-                  Subscribe to our MailChimp newsletter and stay up to date with
-                  all events coming straight in your mailbox:
-                </span>
+                <span>Subscribe to get updates</span>
               </div>
+              <input
+                placeholder="Your first name"
+                className="c-footer-input mt-3"
+              ></input>
+              <input
+                placeholder="Your last name"
+                className="c-footer-input mt-3"
+              ></input>
               <input
                 placeholder="Your E-mail address"
                 className="c-footer-input mt-3"

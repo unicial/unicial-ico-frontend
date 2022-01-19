@@ -222,7 +222,7 @@ const OurTokens = () => {
                     <source media="(max-width: 1100px)" />
                     <source media="(max-width: 1920px)" />
                     <img
-                      src="https://codex-themes.com/themes/cryption/wp-content/uploads/sites/9/2018/02/4-1-ct-blog-justified.jpg"
+                      src="https://miro.medium.com/max/592/1*nXY1dG2VmsjLp_wor8epHQ.png"
                       width="640"
                       height="480"
                       className="img-responsive"
@@ -235,8 +235,11 @@ const OurTokens = () => {
             <div className="description">
               <div className="post-meta-container date-color">
                 <div className="post-meta-date">
-                  February 17, 2018
-                  <span className="post-meta-author">by admin</span>
+                  January 20, 2022
+                  <span className="post-meta-author">
+                    {" "}
+                    by Zilionixx Foundation
+                  </span>
                 </div>
                 <div className="post-meta-likes">
                   <span className="post-meta-like">
@@ -258,16 +261,16 @@ const OurTokens = () => {
                     href="https://codex-themes.com/themes/cryption/news-page-3-3/"
                     rel="bookmark"
                   >
-                    Pay for Purchases Directly with Your Cryptocurrency
+                    Connecting MetaMask to Zilionixx Network
                   </a>
                 </h5>
               </div>
               <div className="post-text">
                 <div className="summary">
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.
+                    For the purposes of this tutorial, we’ll use the Chrome
+                    version, but the instructions will be more or less the same
+                    for every platform. At worst, you could lose...
                   </p>
                 </div>
               </div>
@@ -277,7 +280,7 @@ const OurTokens = () => {
                     <a
                       className="ct-button ct-button-size-small ct-button-style-flat ct-button-text-weight-normal ct-button-icon-position-right"
                       style={{ borderRadius: "20px" }}
-                      href="https://codex-themes.com/themes/cryption/news-page-3-3/"
+                      href="https://medium.com/p/connecting-metamask-to-zilionixx-network-7ec14b6a36af?source=email-9a88f1652d75-1642609485258-newsletter.subscribeToProfile-------------------------4df407aa_b6f8_4690_bc4a_3977d271e8cd--------cb5c70c6433d"
                       target="_self"
                     >
                       Read More

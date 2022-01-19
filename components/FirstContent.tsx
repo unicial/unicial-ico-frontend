@@ -38,9 +38,9 @@ const Toparea = () => {
   useEffect(() => {
     interval.current = setInterval(() => {
       setPercent((val: any) => {
-        if (val >= 42) {
+        if (val >= 4) {
           clearInterval(interval.current);
-          return 42;
+          return 17;
         }
         return val + 1;
       });
@@ -92,12 +92,12 @@ const Toparea = () => {
               </div>
             </div>
             <div className="c-medium-text my-5">
-              <span className="fw-bold">$25,256,432</span> contribution received
+              <span className="fw-bold">$310,500</span> contribution received
             </div>
             <div className="mb-5">
               <div className="c-progress-range">
-                <span>$5m</span>
-                <span>$55m</span>
+                <span>$0.1m</span>
+                <span>$4.5m</span>
               </div>
               <Progress value={percent.toString()} className="c-progress-bar">
                 <span className="c-progress-value">{percent.toString()}%</span>
