@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import { useRouter } from "next/router";
+import React, { useState, useEffect } from "react";
 import Head from "next/head";
 import Toparea from "../components/Toparea";
 import Header from "../components/Header";
@@ -16,19 +15,33 @@ import ConnectWithUs from "../components/ConnectWithUs";
 import Distribution from "../components/Distribution";
 import ModalComponent from "../components/SubmitModal";
 import { getUserDetails } from "../api";
+import Banner from "../components/Banner";
 
 const Home = (props: any) => {
-  let isOpen;
-  let bannerStatus;
-  const router = useRouter();
+  const [isOpen, setIsOpen] = useState<boolean>();
+  const [isOpenModal, setIsOpenModal] = useState<boolean>();
 
-  if (typeof window !== "undefined") {
-    bannerStatus = localStorage.getItem("banner_status");
-  }
-  if (router.pathname === "/") isOpen = true;
-  else isOpen = false;
+  const handleClose = () => {
+    setIsOpen(false);
+  };
 
-  if (bannerStatus === "disable") isOpen = false;
+  const handleCloseModal = () => {
+    setIsOpenModal(false);
+  };
+
+  useEffect(() => {
+    let bannerStatus;
+    if (typeof window !== "undefined") {
+      bannerStatus = localStorage.getItem("banner_status");
+    }
+    if (bannerStatus === "disable") {
+      setIsOpen(false);
+      setIsOpenModal(false);
+    } else {
+      setIsOpen(true);
+      setIsOpenModal(true);
+    }
+  }, []);
 
   return (
     <React.StrictMode>
@@ -62,10 +75,11 @@ const Home = (props: any) => {
           media="all"
         /> */}
       </Head>
-      <Toparea isOpen={isOpen} />
+      <Banner isOpen={isOpen} handleClose={handleClose} />
+      <Toparea />
       <Header />
       <FirstContent />
-      <ModalComponent isOpen={isOpen} />
+      <ModalComponent isOpen={isOpenModal} handleClose={handleCloseModal} />
       <Option />
       <OurTokens />
       <Distribution />

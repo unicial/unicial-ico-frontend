@@ -169,6 +169,39 @@
   line-height: 16px;
   color: #191f25;
 }
+.c-modal-backbtn {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #677777;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+}
+.c-modal-backbtn:hover {
+  text-decoration: underline;
+}
+.c-modal-backbtnothers {
+  width: 41px;
+}
+.c-modal-footer {
+  padding: 0px 30px;
+}
+.c-modal-highlight-text {
+  color: #00d58b;
+  font-weight: 600;
+}
+.c-modal-small-text {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  color: #677777;
+  margin-top: 20px;
+}
 @media screen and (max-width: 500px) {
   .c-modal-name {
     display: block;

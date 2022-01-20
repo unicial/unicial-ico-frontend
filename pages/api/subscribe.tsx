@@ -50,9 +50,9 @@ export default async (req: any, res: any) => {
     const { url, data, headers } = getRequestParams(email, firstName, lastName);
 
     const response = await axios.post(url, data, { headers });
-    console.log("response", response);
     // Success
-    return res.status(201).json({ error: null });
+    if (response.status === 200) return res.status(200);
+    else return res.status(201).json({ error: null });
   } catch (error) {
     return res.status(400).json({
       error: `Oops, something went wrong... Send me an email at djsfdavid@gmail.com and I'll manually add you to the list.`,

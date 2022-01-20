@@ -1,21 +1,19 @@
 import React from "react";
 import { Button } from "reactstrap";
-import Router from "next/router";
 
 interface BannerProps {
-  isOpen: boolean;
+  isOpen?: boolean;
+  handleClose: () => void;
 }
-const Banner = ({ isOpen }: BannerProps) => {
+const Banner = ({ isOpen, handleClose }: BannerProps) => {
   const handleJoin = () => {};
-  const handleClose = () => {
+  const handleCloseBanner = () => {
     localStorage.setItem("banner_status", "disable");
-    window.location.reload();
+    handleClose();
   };
 
   return (
-    <div
-      className={isOpen ? "c-banner-root" : "c-banner-root c-banner-disable"}
-    >
+    <div className={isOpen ? "c-banner-root" : "c-banner-disable"}>
       <img
         src="/static/svg/banner_texture.svg"
         alt="texture"
@@ -40,7 +38,7 @@ const Banner = ({ isOpen }: BannerProps) => {
         >
           Join now
         </Button>
-        <span className="c-banner-close-btn" onClick={handleClose}>
+        <span className="c-banner-close-btn" onClick={handleCloseBanner}>
           <i className="fas fa-times"></i>
         </span>
       </div>

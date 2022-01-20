@@ -1,12 +1,9 @@
 import React from "react";
 import Banner from "./Banner";
-interface TopareaProps {
-  isOpen: boolean;
-}
-const Toparea = ({ isOpen }: TopareaProps) => {
+
+const Toparea = () => {
   return (
     <>
-      <Banner isOpen={isOpen} />
       <div className="toparea">
         <div className="c-container">
           <div className="toparea-content">

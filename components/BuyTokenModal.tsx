@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { Modal, ModalBody, Button, Input, FormFeedback } from "reactstrap";
-import { addMailchimp } from "../api";
 import { stepIndex } from "../common/constant";
 
 interface BuyTokenModalProps {
@@ -102,6 +101,7 @@ const BuyTokenModal = ({ isOpen, handleCloseModal }: BuyTokenModalProps) => {
             <Input
               className="c-modal-input"
               placeholder="First Name"
+              value={firstName}
               onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
                 handleFirstName(e.target.value)
               }
@@ -112,6 +112,7 @@ const BuyTokenModal = ({ isOpen, handleCloseModal }: BuyTokenModalProps) => {
             <Input
               className="c-modal-input"
               placeholder="Last Name"
+              value={lastName}
               onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
                 handleLastName(e.target.value)
               }
@@ -122,6 +123,7 @@ const BuyTokenModal = ({ isOpen, handleCloseModal }: BuyTokenModalProps) => {
         <Input
           className="c-modal-input"
           placeholder="Email"
+          value={email}
           onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
             handleEmail(e.target.value)
           }
@@ -144,15 +146,29 @@ const BuyTokenModal = ({ isOpen, handleCloseModal }: BuyTokenModalProps) => {
           className="c-modal-input"
           placeholder="Address"
           maxLength={22}
+          value={address}
           onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
             handleAddress(e.target.value)
           }
         />
         <FormFeedback>{errorAddress}</FormFeedback>
       </div>
-      <Button className="c-modal-submit" onClick={handleSecondNext}>
-        Next <i className="fas fa-arrow-right"></i>
-      </Button>
+      <div className="d-flex justify-content-around align-items-center c-modal-footer">
+        <span
+          className="c-modal-backbtn"
+          onClick={() => setStepId(stepIndex.first)}
+        >
+          Back
+        </span>
+        <Button className="c-modal-submit" onClick={handleSecondNext}>
+          Next <i className="fas fa-arrow-right"></i>
+        </Button>
+        <span className="c-modal-backbtnothers"></span>
+      </div>
+      <div className="c-modal-small-text">
+        *Note: To get your ZNX Address, click{" "}
+        <span className="c-modal-highlight-text">HERE</span> for full guide
+      </div>
     </>
   );
 
@@ -175,9 +191,18 @@ const BuyTokenModal = ({ isOpen, handleCloseModal }: BuyTokenModalProps) => {
           </span>
         </div>
       </div>
-      <Button className="c-modal-submit" onClick={handleThirdNext}>
-        Receive ZNX <i className="fas fa-arrow-right"></i>
-      </Button>
+      <div className="d-flex justify-content-around align-items-center c-modal-footer">
+        <span
+          className="c-modal-backbtn"
+          onClick={() => setStepId(stepIndex.second)}
+        >
+          Back
+        </span>
+        <Button className="c-modal-submit" onClick={handleThirdNext}>
+          Receive ZNX <i className="fas fa-arrow-right"></i>
+        </Button>
+        <span className="c-modal-backbtnothers"></span>
+      </div>
     </>
   );
   return (

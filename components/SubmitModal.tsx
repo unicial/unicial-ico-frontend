@@ -3,11 +3,11 @@ import { Modal, ModalBody, Button, Input, FormFeedback } from "reactstrap";
 import axios from "axios";
 
 interface ModalComponentProps {
-  isOpen: boolean;
+  isOpen?: boolean;
+  handleClose: () => void;
 }
 
-const ModalComponent = ({ isOpen }: ModalComponentProps) => {
-  const [showStatus, setShowStatus] = useState(isOpen);
+const ModalComponent = ({ isOpen, handleClose }: ModalComponentProps) => {
   const [firstName, setFirstName] = useState("");
   const [errorFirstName, setErrorFirstName] = useState("");
   const [lastName, setLastName] = useState("");
@@ -27,8 +27,8 @@ const ModalComponent = ({ isOpen }: ModalComponentProps) => {
     setEmail(str);
   };
 
-  const handleClose = () => {
-    setShowStatus(false);
+  const handleCloseModal = () => {
+    handleClose();
   };
 
   const handleSubmit = async () => {
@@ -64,14 +64,14 @@ const ModalComponent = ({ isOpen }: ModalComponentProps) => {
         lastName,
         email,
       });
-      setShowStatus(false);
+      console.log(response.status);
     }
   };
   return (
     <div>
-      <Modal isOpen={showStatus} size="md" centered>
+      <Modal isOpen={isOpen} size="md" centered>
         <ModalBody className="c-modal-body">
-          <span className="c-modal-close-btn" onClick={handleClose}>
+          <span className="c-modal-close-btn" onClick={handleCloseModal}>
             <i className="fas fa-times"></i>
           </span>
           <div className="c-modal-header">
