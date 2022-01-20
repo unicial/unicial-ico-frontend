@@ -1,13 +1,5 @@
 import React, { useState } from "react";
-import {
-  Modal,
-  ModalHeader,
-  ModalBody,
-  ModalFooter,
-  Button,
-  Input,
-  FormFeedback,
-} from "reactstrap";
+import { Modal, ModalBody, Button, Input, FormFeedback } from "reactstrap";
 import { addMailchimp } from "../api";
 
 interface ModalComponentProps {
@@ -68,7 +60,7 @@ const ModalComponent = ({ isOpen }: ModalComponentProps) => {
     }
     if (flag) {
       addMailchimp().then((res) => {
-        console.log(res);
+        console.log("mailchimp result", res);
       });
       setShowStatus(false);
     }

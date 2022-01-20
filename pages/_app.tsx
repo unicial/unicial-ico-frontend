@@ -16,6 +16,7 @@ import "../styles/short-codes-custom.css";
 import "../styles/faq.css";
 import "../styles/distribution.css";
 import "../styles/modal.css";
+import "../styles/banner.css";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return <Component {...pageProps} />;

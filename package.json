@@ -8,6 +8,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@mailchimp/mailchimp_marketing": "^3.0.73",
+    "@types/react-scroll": "^1.8.3",
     "@types/reactstrap": "^8.7.2",
     "axios": "^0.24.0",
     "bootstrap": "^5.1.3",
