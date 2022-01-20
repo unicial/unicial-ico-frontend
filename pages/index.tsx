@@ -16,7 +16,6 @@ import ConnectWithUs from "../components/ConnectWithUs";
 import Distribution from "../components/Distribution";
 import ModalComponent from "../components/SubmitModal";
 import { getUserDetails } from "../api";
-import Banner from "../components/Banner";
 
 const Home = (props: any) => {
   let isOpen;
@@ -63,7 +62,7 @@ const Home = (props: any) => {
           media="all"
         /> */}
       </Head>
-      <Toparea is={isOpen} />
+      <Toparea isOpen={isOpen} />
       <Header />
       <FirstContent />
       <ModalComponent isOpen={isOpen} />

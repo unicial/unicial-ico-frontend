@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Modal, ModalBody, Button, Input, FormFeedback } from "reactstrap";
-import { addMailchimp } from "../api";
+import axios from "axios";
 
 interface ModalComponentProps {
   isOpen: boolean;
@@ -31,7 +31,7 @@ const ModalComponent = ({ isOpen }: ModalComponentProps) => {
     setShowStatus(false);
   };
 
-  const handleSubmit = () => {
+  const handleSubmit = async () => {
     let flag = true;
     if (firstName) {
       setErrorFirstName("");
@@ -59,9 +59,7 @@ const ModalComponent = ({ isOpen }: ModalComponentProps) => {
       setErrorEmail("Please enter your email");
     }
     if (flag) {
-      addMailchimp().then((res) => {
-        console.log("mailchimp result", res);
-      });
+      const response = await axios.post("/api/subscribe", { email });
       setShowStatus(false);
     }
   };
