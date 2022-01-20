@@ -59,7 +59,11 @@ const ModalComponent = ({ isOpen }: ModalComponentProps) => {
       setErrorEmail("Please enter your email");
     }
     if (flag) {
-      const response = await axios.post("/api/subscribe", { email });
+      const response = await axios.post("/api/subscribe", {
+        firstName,
+        lastName,
+        email,
+      });
       setShowStatus(false);
     }
   };

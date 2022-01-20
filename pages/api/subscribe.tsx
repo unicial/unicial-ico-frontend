@@ -1,6 +1,6 @@
 import axios from "axios";
 
-function getRequestParams(email: any) {
+function getRequestParams(email: any, firstName: any, lastName: any) {
   // get env variables
   const API_KEY = "9dd187dbbeac3093b31a494962e34432-us20";
   const AUDIENCE_ID = "612f35554b";
@@ -17,8 +17,8 @@ function getRequestParams(email: any) {
     email_address: email,
     status: "subscribed",
     merge_fields: {
-      FNAME: "Hony",
-      LNAME: "Hamid",
+      FNAME: firstName,
+      LNAME: lastName,
     },
     tags: ["CrowdSaleLeads"],
   };
@@ -38,7 +38,7 @@ function getRequestParams(email: any) {
 }
 
 export default async (req: any, res: any) => {
-  const { email } = req.body;
+  const { email, firstName, lastName } = req.body;
 
   if (!email || !email.length) {
     return res.status(400).json({
@@ -47,7 +47,7 @@ export default async (req: any, res: any) => {
   }
 
   try {
-    const { url, data, headers } = getRequestParams(email);
+    const { url, data, headers } = getRequestParams(email, firstName, lastName);
 
     const response = await axios.post(url, data, { headers });
     console.log("response", response);
