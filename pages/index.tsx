@@ -63,8 +63,7 @@ const Home = (props: any) => {
           media="all"
         /> */}
       </Head>
-      <Banner isOpen={isOpen} />
-      <Toparea />
+      <Toparea is={isOpen} />
       <Header />
       <FirstContent />
       <ModalComponent isOpen={isOpen} />

@@ -13,7 +13,9 @@ const Banner = ({ isOpen }: BannerProps) => {
   };
 
   return (
-    <div className={"c-banner-root"}>
+    <div
+      className={isOpen ? "c-banner-root" : "c-banner-root c-banner-disable"}
+    >
       <img
         src="/static/svg/banner_texture.svg"
         alt="texture"
