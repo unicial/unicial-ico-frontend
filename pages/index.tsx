@@ -16,10 +16,16 @@ import Distribution from "../components/Distribution";
 import ModalComponent from "../components/SubmitModal";
 import { getUserDetails } from "../api";
 import Banner from "../components/Banner";
+import AlertComponent from "../components/Alert";
 
 const Home = (props: any) => {
   const [isOpen, setIsOpen] = useState<boolean>();
   const [isOpenModal, setIsOpenModal] = useState<boolean>();
+  const [alertState, setAlertState] = useState({
+    isOpen: false,
+    msg: "",
+    severity: "",
+  });
 
   const handleClose = () => {
     setIsOpen(false);
@@ -27,6 +33,22 @@ const Home = (props: any) => {
 
   const handleCloseModal = () => {
     setIsOpenModal(false);
+  };
+
+  const handleCloseAlert = () => {
+    setAlertState({
+      isOpen: false,
+      msg: "",
+      severity: "",
+    });
+  };
+
+  const handleShowAlert = (msg: string, severity: string) => {
+    setAlertState({
+      isOpen: true,
+      msg: msg,
+      severity: severity,
+    });
   };
 
   useEffect(() => {
@@ -79,7 +101,11 @@ const Home = (props: any) => {
       <Toparea />
       <Header />
       <FirstContent />
-      <ModalComponent isOpen={isOpenModal} handleClose={handleCloseModal} />
+      <ModalComponent
+        isOpen={isOpenModal}
+        handleClose={handleCloseModal}
+        handleShowAlert={handleShowAlert}
+      />
       <Option />
       <OurTokens />
       <Distribution />
@@ -90,6 +116,7 @@ const Home = (props: any) => {
       <ConnectWithUs />
       <Footer />
       <Bottomarea />
+      <AlertComponent alertData={alertState} handleClose={handleCloseAlert} />
     </React.StrictMode>
   );
 };

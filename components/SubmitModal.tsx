@@ -5,9 +5,14 @@ import axios from "axios";
 interface ModalComponentProps {
   isOpen?: boolean;
   handleClose: () => void;
+  handleShowAlert: (msg: any, severity: any) => void;
 }
 
-const ModalComponent = ({ isOpen, handleClose }: ModalComponentProps) => {
+const ModalComponent = ({
+  isOpen,
+  handleClose,
+  handleShowAlert,
+}: ModalComponentProps) => {
   const [firstName, setFirstName] = useState("");
   const [errorFirstName, setErrorFirstName] = useState("");
   const [lastName, setLastName] = useState("");
@@ -64,7 +69,14 @@ const ModalComponent = ({ isOpen, handleClose }: ModalComponentProps) => {
         lastName,
         email,
       });
-      console.log(response.status);
+      const { error } = response.data;
+      if (error) {
+        handleClose();
+        handleShowAlert(error, "error");
+      } else {
+        handleClose();
+        handleShowAlert("You have successfully submitted", "success");
+      }
     }
   };
   return (

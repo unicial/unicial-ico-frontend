@@ -1,0 +1,60 @@
+.c-alert-root {
+  position: absolute;
+  right: 40px;
+  top: 40px;
+  z-index: 2;
+}
+.c-alert-content {
+  width: 463px;
+  height: 44px;
+  background: #f0f4f7;
+  display: flex;
+  align-items: center;
+  border: none;
+}
+.c-alert-content button {
+  width: 20px;
+  height: 20px;
+  padding: 11px 15px !important;
+}
+.c-alert-success-title {
+  font-size: 13px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  color: #191f25;
+  font-weight: 600;
+  padding: 0px 20px;
+  border-right: 2px solid #00d58b;
+  margin-right: 20px;
+}
+.c-alert-error-title {
+  font-size: 13px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  color: #191f25;
+  font-weight: 600;
+  padding: 0px 20px;
+  border-right: 2px solid #e75c22;
+  margin-right: 20px;
+}
+.c-alert-text {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.05em;
+  color: #697671;
+}
+.c-alert-close {
+  position: absolute;
+  right: 20px;
+  color: #777777;
+  cursor: pointer;
+}
+.c-alert-close:hover {
+  color: black;
+}
+.c-alert-texture {
+  position: absolute;
+}

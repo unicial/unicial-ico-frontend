@@ -52,10 +52,11 @@ export default async (req: any, res: any) => {
     const response = await axios.post(url, data, { headers });
     // Success
     if (response.status === 200) return res.status(200);
-    else return res.status(201).json({ error: null });
+    else return res.status(200).json({ error: "please check your network" });
   } catch (error) {
-    return res.status(400).json({
-      error: `Oops, something went wrong... Send me an email at djsfdavid@gmail.com and I'll manually add you to the list.`,
-    });
+    return res.status(200).json({ error: "please check your network" });
+    // return res.status(400).json({
+    //   error: `Oops, something went wrong... Send me an email at djsfdavid@gmail.com and I'll manually add you to the list.`,
+    // });
   }
 };
