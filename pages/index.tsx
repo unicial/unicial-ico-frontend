@@ -100,7 +100,7 @@ const Home = (props: any) => {
       <Banner isOpen={isOpen} handleClose={handleClose} />
       <Toparea />
       <Header />
-      <FirstContent />
+      <FirstContent handleShowAlert={handleShowAlert} />
       <ModalComponent
         isOpen={isOpenModal}
         handleClose={handleCloseModal}

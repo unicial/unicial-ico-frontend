@@ -33,7 +33,7 @@
 }
 
 .c-modal-input-group {
-  margin: 20px 50px;
+  margin: 20px 40px;
   z-index: 1;
   position: relative;
 }
@@ -201,6 +201,14 @@
   text-align: center;
   color: #677777;
   margin-top: 20px;
+}
+.c-modal-copyicon {
+  position: absolute;
+  cursor: pointer;
+  padding: 0px 5px;
+}
+.c-modal-copyicon i {
+  color: #00d58b;
 }
 @media screen and (max-width: 500px) {
   .c-modal-name {

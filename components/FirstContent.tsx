@@ -1,39 +1,51 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Col, Progress, Row } from "reactstrap";
 import BuyTokenModal from "./BuyTokenModal";
+import { getLeftTime } from "../api";
 
-interface TimeLeft {
-  days: number;
-  hours: number;
-  minutes: number;
-  seconds: number;
+interface TopareaProps {
+  handleShowAlert: (msg: any, severity: any) => void;
 }
 
-const Toparea = () => {
+const Toparea = ({ handleShowAlert }: TopareaProps) => {
   const [percent, setPercent] = useState(0);
   const interval: any = useRef(0);
   const [isOpen, setIsOpen] = useState(false);
+  const [buyTokenStatus, setBuyTokenStatus] = useState(true);
 
-  const calculateTimeLeft = () => {
-    let year = new Date().getFullYear();
-    let difference = +new Date("2022-12-30") - +new Date();
+  const calculateTimeLeft = async () => {
+    let res_difference = await getLeftTime();
+    const { Success, LeftTime } = res_difference;
     let timeLeft = {};
 
-    if (difference > 0) {
+    if (Success) {
+      if (LeftTime > 0) {
+        timeLeft = {
+          days: Math.floor(LeftTime / (60 * 60 * 24)),
+          hours: Math.floor((LeftTime / (60 * 60)) % 24),
+          minutes: Math.floor((LeftTime / 60) % 60),
+          seconds: Math.floor(LeftTime % 60),
+        };
+        setBuyTokenStatus(true);
+      } else {
+        setBuyTokenStatus(false);
+      }
+    } else {
       timeLeft = {
-        days: Math.floor(difference / (1000 * 60 * 60 * 24)),
-        hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
-        minutes: Math.floor((difference / 1000 / 60) % 60),
-        seconds: Math.floor((difference / 1000) % 60),
+        days: 0,
+        hours: 0,
+        minutes: 0,
+        seconds: 0,
       };
+      setBuyTokenStatus(false);
     }
-
     return timeLeft;
   };
   const [timeLeft, setTimeLeft] = useState<any>(calculateTimeLeft());
 
   const handleModal = () => {
-    setIsOpen(true);
+    if (buyTokenStatus) setIsOpen(true);
+    else handleShowAlert("Left time is done", "error");
   };
 
   const handleCloseModal = () => {
@@ -41,11 +53,12 @@ const Toparea = () => {
   };
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      return setTimeLeft(calculateTimeLeft());
+    const timer = setTimeout(async () => {
+      return setTimeLeft(await calculateTimeLeft());
     }, 1000);
     return () => clearTimeout(timer);
   });
+
   useEffect(() => {
     interval.current = setInterval(() => {
       setPercent((val: any) => {
@@ -138,7 +151,11 @@ const Toparea = () => {
           </Col>
         </Row>
       </div>
-      <BuyTokenModal isOpen={isOpen} handleCloseModal={handleCloseModal} />
+      <BuyTokenModal
+        isOpen={isOpen}
+        handleCloseModal={handleCloseModal}
+        handleShowAlert={handleShowAlert}
+      />
     </div>
   );
 };

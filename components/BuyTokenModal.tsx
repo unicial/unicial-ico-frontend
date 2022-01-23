@@ -1,13 +1,20 @@
 import React, { useState, useEffect } from "react";
 import { Modal, ModalBody, Button, Input, FormFeedback } from "reactstrap";
 import { stepIndex } from "../common/constant";
+import { addUser, addAddress, getAddress } from "../api";
+import copy from "copy-text-to-clipboard";
 
 interface BuyTokenModalProps {
   isOpen: boolean;
   handleCloseModal: () => void;
+  handleShowAlert: (msg: any, severity: any) => void;
 }
 
-const BuyTokenModal = ({ isOpen, handleCloseModal }: BuyTokenModalProps) => {
+const BuyTokenModal = ({
+  isOpen,
+  handleCloseModal,
+  handleShowAlert,
+}: BuyTokenModalProps) => {
   const [firstName, setFirstName] = useState("");
   const [errorFirstName, setErrorFirstName] = useState("");
   const [lastName, setLastName] = useState("");
@@ -17,6 +24,10 @@ const BuyTokenModal = ({ isOpen, handleCloseModal }: BuyTokenModalProps) => {
   const [address, setAddress] = useState("");
   const [errorAddress, setErrorAddress] = useState("");
   const [stepId, setStepId] = useState(stepIndex.first);
+  const [addressETH, setAddressETH] = useState("");
+  const [addressBNB, setAddressBNB] = useState("");
+  const [copyETHStatus, setCopyETHStatus] = useState(true);
+  const [copyBNBStatus, setCopyBNBStatus] = useState(true);
 
   const handleFirstName = (str: string) => {
     setFirstName(str);
@@ -47,7 +58,7 @@ const BuyTokenModal = ({ isOpen, handleCloseModal }: BuyTokenModalProps) => {
     handleInit();
   };
 
-  const handleFirstNext = () => {
+  const handleFirstNext = async () => {
     let flag = true;
     if (firstName) {
       setErrorFirstName("");
@@ -75,20 +86,76 @@ const BuyTokenModal = ({ isOpen, handleCloseModal }: BuyTokenModalProps) => {
       setErrorEmail("Please enter your email");
     }
     if (flag) {
-      setStepId(stepIndex.second);
+      const form = new FormData();
+      form.append("email", email);
+      form.append("firstname", firstName);
+      form.append("lastname", lastName);
+      const res = await addUser(form);
+      if (res.Success) setStepId(stepIndex.second);
+      else handleShowAlert("Network Error", "error");
     }
   };
 
-  const handleSecondNext = () => {
+  const handleSecondNext = async () => {
+    let flag = true;
     if (!address) {
+      flag = false;
       setErrorAddress("Please enter your Address");
+    }
+    const formSetAddr = new FormData();
+    formSetAddr.append("email", email);
+    formSetAddr.append("address", address);
+    const res_address = await addAddress(formSetAddr);
+    if (!res_address.Success) {
+      flag = false;
+      handleShowAlert("Network Error", "error");
     } else {
       setErrorAddress("");
+    }
+    if (flag) {
+      const formGetAddr = new FormData();
+      formGetAddr.append("email", email);
+      const res_getaddr = await getAddress(formGetAddr);
+      const { Success, Data } = res_getaddr;
+      if (!Success) {
+        flag = false;
+        handleShowAlert("Network Error", "error");
+      } else {
+        Data.Wallet.forEach((item: any) => {
+          if (item.ChainName === "ETH") {
+            setAddressETH(item.Address);
+          } else if (item.ChainName === "BNB") {
+            setAddressBNB(item.Address);
+          }
+        });
+      }
       setStepId(stepIndex.third);
     }
   };
 
-  const handleThirdNext = () => {};
+  const handleThirdNext = () => {
+    handleInit();
+    handleCloseModal();
+  };
+
+  const handleCopyAddress = (coin: string) => {
+    if (coin === "eth") {
+      copy(addressETH);
+      setCopyETHStatus(!copyETHStatus);
+      const timer = setTimeout(() => {
+        setCopyETHStatus(true);
+      }, 1000);
+      return () => clearTimeout(timer);
+    }
+    if (coin === "bnb") {
+      copy(addressBNB);
+      setCopyBNBStatus(!copyBNBStatus);
+      const timer = setTimeout(() => {
+        setCopyBNBStatus(true);
+      }, 1000);
+      return () => clearTimeout(timer);
+    }
+  };
 
   let stepFirst = (
     <>
@@ -145,7 +212,7 @@ const BuyTokenModal = ({ isOpen, handleCloseModal }: BuyTokenModalProps) => {
         <Input
           className="c-modal-input"
           placeholder="Address"
-          maxLength={22}
+          maxLength={42}
           value={address}
           onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
             handleAddress(e.target.value)
@@ -180,14 +247,32 @@ const BuyTokenModal = ({ isOpen, handleCloseModal }: BuyTokenModalProps) => {
       <div className="c-modal-input-group">
         <div>
           <span className="c-modal-address-header">ETH</span>
-          <span className="c-modal-address-content">
-            0x460D4386f74395F8A784Ea40CF65cde1bADb1679
+          <span className="c-modal-address-content">{addressETH}</span>
+          <span className="c-modal-copyicon">
+            {copyETHStatus ? (
+              <img
+                src="/static/svg/copy_icon.svg"
+                alt="copy"
+                onClick={() => handleCopyAddress("eth")}
+              />
+            ) : (
+              <i className="fa fa-check"></i>
+            )}
           </span>
         </div>
         <div className="c-m-t-10">
           <span className="c-modal-address-header">BNB</span>
-          <span className="c-modal-address-content">
-            0x460D4386f74395F8A784Ea40CF65cde1bADb1679
+          <span className="c-modal-address-content">{addressBNB}</span>
+          <span className="c-modal-copyicon">
+            {copyBNBStatus ? (
+              <img
+                src="/static/svg/copy_icon.svg"
+                alt="copy"
+                onClick={() => handleCopyAddress("bnb")}
+              />
+            ) : (
+              <i className="fa fa-check"></i>
+            )}
           </span>
         </div>
       </div>
@@ -199,7 +284,7 @@ const BuyTokenModal = ({ isOpen, handleCloseModal }: BuyTokenModalProps) => {
           Back
         </span>
         <Button className="c-modal-submit" onClick={handleThirdNext}>
-          Receive ZNX <i className="fas fa-arrow-right"></i>
+          Finish <i className="fas fa-arrow-right"></i>
         </Button>
         <span className="c-modal-backbtnothers"></span>
       </div>

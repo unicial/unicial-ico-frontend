@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Alert } from "reactstrap";
 
 interface AlertComponentProps {
@@ -8,9 +8,16 @@ interface AlertComponentProps {
 
 const AlertComponent = ({ alertData, handleClose }: AlertComponentProps) => {
   const { isOpen, msg, severity } = alertData;
+  useEffect(() => {
+    if (isOpen) {
+      setTimeout(() => {
+        handleClose();
+      }, 5000);
+    }
+  }, [isOpen]);
   return (
     <div className={"c-alert-root"}>
-      <Alert isOpen={isOpen} color="primary" className="c-alert-content">
+      <Alert isOpen={isOpen} color="primary" fade className="c-alert-content">
         <img
           src="/static/svg/alert_texture.svg"
           alt="texture"
