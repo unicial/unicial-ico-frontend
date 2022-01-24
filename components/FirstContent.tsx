@@ -96,52 +96,56 @@ const Toparea = ({ handleShowAlert }: TopareaProps) => {
               <p className="c-large-text1">Zilionixx</p>
               <p className="c-large-text2">Layer1 Blockchain!</p>
             </div>
-            <div className="c-medium-text my-5">
+            <div className="c-small-text my-5">
               A new smart block chain based marketplace for trading digital
               goods & assets according to users interests including metaverse
               and medical tech.
             </div>
-            {/* <span className="c-buytoken-btn" onClick={handleModal}>
+            <span className="c-buytoken-btn" onClick={handleModal}>
               BUY ZNX -25% OFF
-            </span> */}
-            <button className="c-buy-token-button" onClick={handleModal}>
+              <i className="fas fa-arrow-right ms-2"></i>
+            </span>
+            {/* <button className="c-buy-token-button" onClick={handleModal}>
               <img src="/static/images/buy_token_button.png" alt="my image" />
-            </button>
+            </button> */}
           </Col>
           <Col lg={5} className="offset-lg-1">
-            <div className="c-medium-text">ZNX sale ends in:</div>
+            <div className="c-small-text">ZNX sale ends in:</div>
             <div className="c-countdown mt-4">
-              <div className="c-countdown-items">
-                <div className="c-time-item c-time-days">
+              <div className="c-countdown-items c-time-days">
+                <div className="c-time-item">
                   {timeLeft.days < 10 ? "0" + timeLeft.days : timeLeft.days}
+                  <span className="c-time-desc">d</span>
                 </div>
-                <div className="c-time-desc">Days</div>
               </div>
-              <div className="c-countdown-items">
-                <div className="c-time-item c-time-hours">
+              <div className="c-countdown-items c-time-hours">
+                <div className="c-time-item ">
                   {timeLeft.hours < 10 ? "0" + timeLeft.hours : timeLeft.hours}
+                  <span className="c-time-desc">h</span>
                 </div>
-                <div className="c-time-desc">Hours</div>
               </div>
-              <div className="c-countdown-items">
-                <div className="c-time-item c-time-minutes">
+              <div className="c-countdown-items c-time-hours">
+                <div className="c-time-item">
                   {timeLeft.minutes < 10
                     ? "0" + timeLeft.minutes
                     : timeLeft.minutes}
+                  <span className="c-time-desc">m</span>
                 </div>
-                <div className="c-time-desc">Minutes</div>
               </div>
-              <div className="c-countdown-items">
+              <div className="c-countdown-items c-time-hours">
                 <div className="c-time-item">
-                  {timeLeft.seconds < 10
-                    ? "0" + timeLeft.seconds
-                    : timeLeft.seconds}
+                  <span>
+                    {timeLeft.seconds < 10
+                      ? "0" + timeLeft.seconds
+                      : timeLeft.seconds}
+                  </span>
+                  <span className="c-time-desc">s</span>
                 </div>
-                <div className="c-time-desc">Seconds</div>
               </div>
             </div>
             <div className="c-medium-text my-5">
-              <span className="fw-bold">$310,500</span> contribution received
+              <span className="fw-bold c-price-light">$310,500</span>{" "}
+              contribution received
             </div>
             <div className="mb-5">
               <div className="c-progress-range">
@@ -149,7 +153,14 @@ const Toparea = ({ handleShowAlert }: TopareaProps) => {
                 <span>$4.5m</span>
               </div>
               <Progress value={percent.toString()} className="c-progress-bar">
-                <span className="c-progress-value">{percent.toString()}%</span>
+                <span
+                  className="c-progress-arrow"
+                  style={{ right: `${99 - percent}%` }}
+                >
+                  <span>{percent.toString()}%</span>
+                  <i className="fas fa-caret-down"></i>
+                </span>
+                {/* <span className="c-progress-value">{percent.toString()}%</span> */}
               </Progress>
               <div className="c-progress-desc">
                 <span>Softcap in 1069 days</span>

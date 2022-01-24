@@ -81,7 +81,7 @@ const Header = () => {
   };
   return (
     <div className={`header${sticky ? " sticky" : ""}`}>
-      <Navbar light expand="md">
+      <Navbar light expand="md" className="py-0">
         <div className="c-container c-nav-header">
           <NavbarBrand href="/">
             {nosticky === 1 ? (
@@ -91,12 +91,12 @@ const Header = () => {
               ></img>
             ) : nosticky === 2 ? (
               <img
-                src="/static/images/logo_res.png"
+                src="/static/images/logo_large.png"
                 className="c-logo-large"
               ></img>
             ) : sticky ? (
               <img
-                src="/static/images/logo_small.png"
+                src="/static/images/logo_large.png"
                 className="c-logo-small"
               ></img>
             ) : (
