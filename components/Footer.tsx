@@ -70,38 +70,46 @@ const Footer = () => {
             <div>
               <div className="mt-1">
                 <span className="c-bottom-item">
-                  <i className="fal fa-map-marker-alt" />
-                  Address:
-                  <br />
-                  140 Paya Lebar road #05-15 AZ @ Paya Lebar Singapore (409015)
+                  <img src="/static/svg/location.svg" alt="location" />
+                  <span className="c-footer-contact-stick"></span>
+                  <div>
+                    <span className="c-footer-contact-title">Address:</span>
+                    <br />
+                    140 Paya Lebar road #05-15 AZ @ Paya Lebar Singapore
+                    (409015)
+                  </div>
                 </span>
               </div>
               <div className="mt-1">
                 <span className="c-bottom-item">
-                  <i className="fas fa-headphones"></i>
-                  Phone: +65 6702 3011
+                  <img src="/static/svg/headphones.svg" alt="phone" />
+                  <span className="c-footer-contact-stick"></span>
+                  <span className="c-footer-contact-title">
+                    Phone/Fax:&nbsp;
+                  </span>{" "}
+                  +65 6702 3011
                 </span>
               </div>
               <div className="mt-1">
                 <span className="c-bottom-item">
-                  <i className="fal fa-fax"></i>
-                  Fax: +65 6702 3011
-                </span>
-              </div>
-              <div className="mt-1">
-                <span className="c-bottom-item">
-                  <i className="far fa-envelope"></i>
-                  Email:&nbsp;
-                  <a className="link-item" href="mailto:tsimafei@zilionixx.com">
+                  <img src="/static/svg/email.svg" alt="email" />
+                  <span className="c-footer-contact-stick"></span>
+                  <span className="c-footer-contact-title">Email:&nbsp;</span>
+                  <a
+                    target="_blank"
+                    className="c-footer-contact-mail"
+                    href="mailto:tsimafei@zilionixx.com"
+                  >
                     tsimafei@zilionixx.com
                   </a>
                 </span>
               </div>
               <div className="mt-1">
                 <span className="c-bottom-item">
-                  <i className="fal fa-globe"></i>
-                  Website:&nbsp;
-                  <a className="link-item" href="https://zilionixx.com">
+                  <img src="/static/svg/world.svg" alt="world" />
+                  <span className="c-footer-contact-stick"></span>
+                  <span className="c-footer-contact-title">Website:&nbsp;</span>
+                  <a target="_blank" href="https://zilionixx.com">
                     zilionixx.com
                   </a>
                 </span>
@@ -113,21 +121,21 @@ const Footer = () => {
             <div>
               <div className="mt-1">
                 <span className="c-footer-link">
-                  <a className="link-item" href="https://znxscan.com">
+                  <a target="_blank" href="https://znxscan.com">
                     Block Explorer
                   </a>
                 </span>
               </div>
               <div className="mt-1">
                 <span className="c-footer-link">
-                  <a className="link-item" href="https://dongletrade.com">
+                  <a target="_blank" href="https://dongletrade.com">
                     Dongle Trade
                   </a>
                 </span>
               </div>
               <div className="mt-1">
                 <span className="c-footer-link">
-                  <a className="link-item" href="https://zilionixx.com">
+                  <a target="_blank" href="https://zilionixx.com">
                     Zilionixx
                   </a>
                 </span>
@@ -135,13 +143,12 @@ const Footer = () => {
               <div className="mt-1">
                 <span className="c-footer-link">
                   <a
-                    className="link-item"
+                    target="_blank"
                     href="https://medium.com/@zilionixx_foundation"
                   >
                     Medium News
                   </a>
                 </span>
-                <span className="c-footer-link">News</span>
               </div>
             </div>
           </Col>
@@ -173,7 +180,9 @@ const Footer = () => {
                   handleEmail(e.target.value)
                 }
               ></input>
-              <a className="c-footer-subscribe mt-3">SUBSCRIBE</a>
+              <a className="c-footer-subscribe mt-3">
+                SUBSCRIBE <i className="fas fa-arrow-right ms-2"></i>
+              </a>
               <span className="c-encrypted-text mt-3">
                 <span className="c-color-green">*</span> Personal information
                 will be encrypted

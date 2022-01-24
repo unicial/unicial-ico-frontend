@@ -1,7 +1,7 @@
 .c-footer {
   background-color: #12222f;
   padding: 130px 0px 120px 0px;
-  color: white;
+  color: #7599a2;
   font-size: 15px;
 }
 
@@ -30,27 +30,33 @@
   line-height: 22px;
   font-size: 19px;
   font-weight: 700;
+  color: white;
 }
 
 .c-bottom-item {
   line-height: 1.7;
+  display: flex;
+  align-items: flex-start;
 }
 
 .c-bottom-item i {
-  color: #18d685;
-  margin-right: 0.55em;
+  color: #0df0a3;
   width: 16px;
   font-size: 16px;
   text-align: center;
 }
 
-.c-footer-link {
-  font-size: 14px;
-  font-weight: 600;
-  cursor: pointer;
+.c-bottom-item a:hover {
+  color: #0df0a3;
 }
 
-.c-footer-link:hover {
+.c-footer-link a {
+  font-size: 14px;
+  cursor: pointer;
+  color: #7599a2;
+}
+
+.c-footer-link a:hover {
   color: rgb(10, 204, 149);
 }
 
@@ -63,7 +69,7 @@
   font-weight: 700;
   cursor: pointer;
   height: 40px !important;
-  line-height: 38px !important;
+  line-height: 40px !important;
   padding: 0px 70px;
   width: 100%;
   text-align: center;
@@ -71,11 +77,12 @@
 
 .c-footer-subscribe:hover {
   color: rgb(255, 255, 255);
+  background: linear-gradient(to right, rgb(4, 221, 138), rgb(18, 178, 165));
 }
 
 .c-footer-input {
-  background: #2e3b45;
-  border: 1px solid #5c676f;
+  /* background: #2e3b45; */
+  border: 1px solid #0df0a3;
   color: #c2cec9 !important;
   height: 40px !important;
   line-height: 38px !important;
@@ -98,4 +105,20 @@
   font-size: 12px;
   color: #949ca1;
   line-height: 18px;
+}
+
+.c-footer-contact-stick {
+  width: 0.95px;
+  height: 11px;
+  background-color: #7599a2;
+  margin: 7px 10px;
+  opacity: 0.3;
+}
+
+.c-footer-contact-title {
+  font-weight: 600;
+}
+
+.c-footer-contact-mail {
+  width: 10px;
 }
