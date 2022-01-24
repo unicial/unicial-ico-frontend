@@ -12,22 +12,27 @@ const Toparea = ({ handleShowAlert }: TopareaProps) => {
   const interval: any = useRef(0);
   const [isOpen, setIsOpen] = useState(false);
   const [buyTokenStatus, setBuyTokenStatus] = useState(true);
+  const [endTime, setEndTime] = useState(0);
 
-  const calculateTimeLeft = async () => {
-    let res_difference = await getLeftTime();
-    const { Success, LeftTime } = res_difference;
+  const calculateTimeLeft = () => {
+    let res_difference = endTime - new Date().getTime() / 1000;
     let timeLeft = {};
 
-    if (Success) {
-      if (LeftTime > 0) {
+    if (buyTokenStatus) {
+      if (res_difference > 0) {
         timeLeft = {
-          days: Math.floor(LeftTime / (60 * 60 * 24)),
-          hours: Math.floor((LeftTime / (60 * 60)) % 24),
-          minutes: Math.floor((LeftTime / 60) % 60),
-          seconds: Math.floor(LeftTime % 60),
+          days: Math.floor(res_difference / (60 * 60 * 24)),
+          hours: Math.floor((res_difference / (60 * 60)) % 24),
+          minutes: Math.floor((res_difference / 60) % 60),
+          seconds: Math.floor(res_difference % 60),
         };
-        setBuyTokenStatus(true);
       } else {
+        timeLeft = {
+          days: 0,
+          hours: 0,
+          minutes: 0,
+          seconds: 0,
+        };
         setBuyTokenStatus(false);
       }
     } else {
@@ -37,10 +42,10 @@ const Toparea = ({ handleShowAlert }: TopareaProps) => {
         minutes: 0,
         seconds: 0,
       };
-      setBuyTokenStatus(false);
     }
     return timeLeft;
   };
+
   const [timeLeft, setTimeLeft] = useState<any>(calculateTimeLeft());
 
   const handleModal = () => {
@@ -53,8 +58,10 @@ const Toparea = ({ handleShowAlert }: TopareaProps) => {
   };
 
   useEffect(() => {
-    const timer = setTimeout(async () => {
-      return setTimeLeft(await calculateTimeLeft());
+    const timer = setTimeout(() => {
+      if (buyTokenStatus) {
+        return setTimeLeft(calculateTimeLeft());
+      }
     }, 1000);
     return () => clearTimeout(timer);
   });
@@ -69,6 +76,15 @@ const Toparea = ({ handleShowAlert }: TopareaProps) => {
         return val + 1;
       });
     }, 20);
+    getLeftTime().then((res: any) => {
+      const { EndTime, Success } = res;
+      if (Success) {
+        setEndTime(EndTime);
+        setBuyTokenStatus(true);
+      } else {
+        setBuyTokenStatus(false);
+      }
+    });
   }, []);
 
   return (
