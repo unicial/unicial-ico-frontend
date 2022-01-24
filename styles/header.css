@@ -8,6 +8,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-bottom: 1px solid rgba(117, 153, 162, 0.3);
 }
 
 .c-nav-header .navbar-brand {
@@ -25,7 +26,7 @@
 
 .header .nav-link {
   color: white !important;
-  font-weight: 600 !important;
+  font-weight: 500 !important;
 }
 
 .header .nav-link:hover {
@@ -33,7 +34,7 @@
 }
 
 .c-logo-large {
-  padding: 40px 0px;
+  padding: 25px 0px;
 }
 
 .c-logo-small {

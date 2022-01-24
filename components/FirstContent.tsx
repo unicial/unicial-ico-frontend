@@ -76,15 +76,21 @@ const Toparea = ({ handleShowAlert }: TopareaProps) => {
       <div className="c-container">
         <Row>
           <Col lg={6}>
-            <div className="c-large-text">Zilionixx Layer1 Blockchain!</div>
+            <div>
+              <p className="c-large-text1">Zilionixx</p>
+              <p className="c-large-text2">Layer1 Blockchain!</p>
+            </div>
             <div className="c-medium-text my-5">
               A new smart block chain based marketplace for trading digital
               goods & assets according to users interests including metaverse
               and medical tech.
             </div>
-            <span className="c-buytoken-btn" onClick={handleModal}>
+            {/* <span className="c-buytoken-btn" onClick={handleModal}>
               BUY ZNX -25% OFF
-            </span>
+            </span> */}
+            <button className="c-buy-token-button" onClick={handleModal}>
+              <img src="/static/images/buy_token_button.png" alt="my image" />
+            </button>
           </Col>
           <Col lg={5} className="offset-lg-1">
             <div className="c-medium-text">ZNX sale ends in:</div>

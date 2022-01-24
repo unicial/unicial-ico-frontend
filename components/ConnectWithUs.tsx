@@ -38,24 +38,24 @@ const ConnectWithUs = () => {
                   className="fullwidth-block-inner"
                   style={{ padding: "0 21px" }}
                 >
-                  <div className="vc_empty_space" style={{ height: "130px" }}>
+                  <div className="vc_empty_space" style={{ height: "80px" }}>
                     <span className="vc_empty_space_inner"></span>
                   </div>
 
                   <div className="wpb_text_column wpb_content_element ">
                     <div className="wpb_wrapper">
                       <div className="title-h1" style={{ textAlign: "center" }}>
-                        <span className="light" style={{ color: "#ffffff" }}>
+                        <span
+                          className="paragraph-title"
+                          style={{ color: "#000000" }}
+                        >
                           Connect with us
                         </span>
                       </div>
                     </div>
                   </div>
                   <div className="clearboth"></div>
-                  <div
-                    className="ct-divider "
-                    style={{ marginTop: "50px" }}
-                  ></div>
+                  <div className="ct-divider "></div>
                   <div className="wpb_text_column wpb_content_element ">
                     <div className="wpb_wrapper">
                       <p
@@ -65,9 +65,9 @@ const ConnectWithUs = () => {
                           margin: "auto",
                         }}
                       >
-                        <span style={{ color: "#ffffff" }}>
+                        <span className="sub-content1">
                           You can subscribe about Zilionixx blockchain from
-                          below Zilionixx social links. <br /> Please join here.
+                          below Zilionixx social links. Please join here.
                         </span>
                       </p>
                     </div>
@@ -75,7 +75,7 @@ const ConnectWithUs = () => {
                   <div className="clearboth"></div>
                   <div
                     className="ct-divider "
-                    style={{ marginTop: "70px" }}
+                    style={{ marginTop: "20px" }}
                   ></div>
                   <div className="socials socials-list socials-colored-hover socials-rounded socials-alignment-center">
                     <a
@@ -98,28 +98,6 @@ const ConnectWithUs = () => {
                         style={{ fontSize: "40px" }}
                       ></i>
                     </a>
-                    {/* <a
-                      className="socials-item"
-                      target="_blank"
-                      href="#"
-                      style={{ color: "#ffffff" }}
-                    >
-                      <i
-                        className="socials-item-icon pinterest"
-                        style={{ fontSize: "40px" }}
-                      ></i>
-                    </a> */}
-                    {/* <a
-                      className="socials-item"
-                      target="_blank"
-                      href="#"
-                      style={{ color: "#ffffff" }}
-                    >
-                      <i
-                        className="socials-item-icon instagram"
-                        style={{ fontSize: "40px" }}
-                      ></i>
-                    </a> */}
                     <a
                       className="socials-item"
                       href="https://www.youtube.com/channel/UCvM8xLpdbdyNFVXf5-NmnOA"
@@ -156,7 +134,7 @@ const ConnectWithUs = () => {
                   <div className="clearboth"></div>
                   <div
                     className="ct-divider "
-                    style={{ marginTop: "130px" }}
+                    style={{ marginTop: "80px" }}
                   ></div>
                 </div>
               </div>

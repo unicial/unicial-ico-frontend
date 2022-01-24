@@ -1,11 +1,14 @@
 .bottomarea {
   background-color: #12232f;
   color: #8fa5a2;
+  border-top: 1px solid rgba(117, 153, 161, 0.3);
 }
 
 .c-bottomarea-text {
-  padding: 12px 15px 12px 15px;
+  padding: 25px 0;
   font-size: 13px;
+  font-weight: 500;
+  line-height: 30px;
+  color: "#7599A2";
   display: block;
-  text-align: center;
 }
