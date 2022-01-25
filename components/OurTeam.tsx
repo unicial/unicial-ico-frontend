@@ -1,10 +1,13 @@
 import React from "react";
-import clsx from "clsx";
-import { Row, Col, Container } from "reactstrap";
 
 const OurTeam = () => {
   return (
-    <div className="c-container">
+    <div className="c-container c-news-container">
+      <img
+        className="c-ourteam-rectangle-svg"
+        src="/static/svg/rectangle.svg"
+        alt="rectangle"
+      />
       <div className="wpb_wrapper">
         <div className="clearboth"></div>
         <div
@@ -75,9 +78,7 @@ const OurTeam = () => {
               </div>
               <div className="team-person-info">
                 <div className="c-ourteam-name">Tsimafei</div>
-                <div className="c-ourteam-role">
-                  CTO, Blockchain Engineer
-                </div>
+                <div className="c-ourteam-role">CTO, Blockchain Engineer</div>
                 <div className="team-person-content"></div>
               </div>
             </div>

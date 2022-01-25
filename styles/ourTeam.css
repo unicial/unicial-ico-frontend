@@ -15,3 +15,9 @@
   text-align: center;
   color: #7599a2;
 }
+
+.c-ourteam-rectangle-svg {
+  position: absolute;
+  right: 20%;
+  top: 0%;
+}

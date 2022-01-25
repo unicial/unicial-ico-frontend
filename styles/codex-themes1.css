@@ -17316,10 +17316,10 @@ Copyright (c) 2014 Daniel Eden
   src: url("/themes/wp-content/themes/cryption/fonts/material/materialdesignicons.eot");
   src: url("/themes/wp-content/themes/cryption/fonts/material/materialdesignicons.eot?#iefix")
       format("embedded-opentype"),
-    url("/themes/wp-content/themes/cryption/fonts/material/materialdesignicons.woff")
-      format("woff"),
-    url("/themes/wp-content/themes/cryption/fonts/material/materialdesignicons.ttf")
-      format("truetype"),
+    /* url("/themes/wp-content/themes/cryption/fonts/material/materialdesignicons.woff")
+      format("woff"), */
+    /* url("/themes/wp-content/themes/cryption/fonts/material/materialdesignicons.ttf")
+      format("truetype"), */
     url("/themes/wp-content/themes/cryption/fonts/material/materialdesignicons.svg#MaterialDesignIcons")
       format("svg");
   font-weight: normal;

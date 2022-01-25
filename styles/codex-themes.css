@@ -1703,9 +1703,9 @@ blockquote > :first-child,
   height: 50px;
 }
 .ct-icon-size-small .ct-icon-inner {
-  width: 46px;
-  height: 46px;
-  line-height: 46px;
+  width: 42px;
+  height: 42px;
+  line-height: 42px;
 }
 .ct-icon.ct-simple-icon {
   -moz-border-radius: 0;
@@ -16299,7 +16299,7 @@ body .ct-icon-with-text.ct-icon-with-text-float-right .ct-icon-with-text-icon {
   border-radius: 3px;
 }
 body .ct-icon.ct-icon-size-small {
-  border-width: 3px;
+  border-width: 5px;
 }
 .ct-wrapbox {
   position: relative;

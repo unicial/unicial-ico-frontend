@@ -1,9 +1,21 @@
 .c-roadmap-icon:hover .ct-icon-inner {
-  background-color: #678785!important;
+  background-color: #678785 !important;
+}
+.c-roadmap-title-large {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 70px;
+  color: white;
+}
+.c-roadmap-dark-icon {
+  color: #12222f;
+  font-size: 19px;
 }
 
 .roadmap-container {
-  background-image: url("../public/static/images/ico_bg_image_17.jpg");
+  background-image: url("/static/images/ico_bg_image_17.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -15,47 +27,11 @@
   font-weight: 400;
   font-size: 20px;
 }
-
-/* .roadmap-title {
-  text-align: center;
-  color: #ffffff;
+.c-roadmap-icon-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
-.roadmap-column {
-  padding: 60px 0;
-}
-
-.quickfinder-item-image {
-  padding-top: 11px;
-}
-
-.quickfinder-item-image-content {
-  position: relative;
-  transform: translate(0px, 0px) rotate(0rad) skewX(0rad) scale(1, 1);
-  padding-top: 0 !important;
-  z-index: 10;
-}
-
-.quickerfinder-item-wrapper {
-  vertical-align: top;
-  display: inline-block;
-  text-align: center;
-  border: 3px solid #678785;
-  border-radius: 50%;
-  background: transparent;
-  transition: all 0.3s;
-}
-
-.quickfinder-item-link {
-  z-index: 20;
-  vertical-align: top;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  color: #0df0a3;
-} */
 
 #site-header .site-title {
   padding: 40px 0;

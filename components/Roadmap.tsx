@@ -8,29 +8,24 @@ const Option = () => {
           <div className="clearboth"></div>
           <div
             className="ct-divider divider_responsive"
-            style={{ marginTop: "140px" }}
+            style={{ marginTop: "100px" }}
           ></div>
           <div className="wpb_text_column wpb_content_element  wpb_animate_when_almost_visible wpb_fadeIn fadeIn vc_custom_1522921895262 wpb_start_animation animated">
             <div className="wpb_wrapper">
-              <div className="title-h3" style={{ textAlign: "center" }}>
-                <span style={{ color: "#ffffff" }}>Roadmap</span>
+              <div className="c-news-title-small">
+                <i className="fas fa-circle c-news-title-dot"></i>
+                Roadmap
               </div>
             </div>
           </div>
           <div className="wpb_text_column wpb_content_element  wpb_animate_when_almost_visible wpb_fadeIn fadeIn wpb_start_animation animated">
             <div className="wpb_wrapper">
-              <div className="title-h1" style={{ textAlign: "center" }}>
-                <span className="light" style={{ color: "#ffffff" }}>
-                  Our Plan of Zilionixx
-                </span>
+              <div className="c-roadmap-title-large">
+                <span>Our Plan of Zilionixx</span>
               </div>
             </div>
           </div>
           <div className="clearboth"></div>
-          <div
-            className="ct-divider divider_responsive"
-            style={{ marginTop: "25px" }}
-          ></div>
           <div className="vc_row wpb_row vc_inner vc_row-fluid">
             <div className="wpb_column vc_column_container vc_col-sm-6 vc_col-md-3">
               <div className="vc_column-inner">
@@ -56,18 +51,23 @@ const Option = () => {
                           <div className="quickfinder-item-image-wrapper">
                             <div
                               className="ct-icon ct-icon-pack-material ct-icon-size-small ct-icon-shape-circle"
-                              style={{ borderColor: "#678785", opacity: 1 }}
+                              style={{
+                                borderColor: "#18d685",
+                                opacity: 1,
+                                borderWidth: "5px",
+                              }}
                             >
                               <div
-                                className="ct-icon-inner"
-                                style={{ backgroundColor: "rgb(40, 78, 89)" }}
+                                className="ct-icon-inner  c-roadmap-icon-inner"
+                                style={{
+                                  backgroundColor: "#18d685",
+                                }}
                               >
-                                <i className="fas fa-check check-icon"></i>
+                                <i className="far fa-check-circle c-roadmap-dark-icon"></i>
                               </div>
                             </div>
                           </div>{" "}
                           <a
-                            href="#"
                             target="_self"
                             className="quickfinder-item-link"
                           ></a>
@@ -90,13 +90,13 @@ const Option = () => {
                           <div style={{ display: "block", minHeight: "50px" }}>
                             <div
                               className="quickfinder-item-title"
-                              style={{ color: "#00e290" }}
+                              style={{ color: "white" }}
                             >
                               Aug 2021
                             </div>
                             <div
                               className="quickfinder-item-text"
-                              style={{ color: "#ffffff" }}
+                              style={{ color: "#7599A2" }}
                             >
                               Launch testnet of Zilionixx.
                               <br />
@@ -104,11 +104,7 @@ const Option = () => {
                             </div>
                           </div>
                         </div>{" "}
-                        <a
-                          href="#"
-                          target="_self"
-                          className="quickfinder-item-link"
-                        ></a>
+                        <a target="_self" className="quickfinder-item-link"></a>
                       </div>
                     </div>
                     <div
@@ -131,18 +127,17 @@ const Option = () => {
                           <div className="quickfinder-item-image-wrapper">
                             <div
                               className="ct-icon ct-icon-pack-material ct-icon-size-small ct-icon-shape-circle"
-                              style={{ borderColor: "#678785", opacity: 1 }}
+                              style={{ borderColor: "#18d685", opacity: 1 }}
                             >
                               <div
-                                className="ct-icon-inner"
-                                style={{ backgroundColor: "#284e59" }}
+                                className="ct-icon-inner  c-roadmap-icon-inner"
+                                style={{ backgroundColor: "#18d685" }}
                               >
-                                <i className="fas fa-check check-icon"></i>
+                                <i className="far fa-check-circle c-roadmap-dark-icon"></i>
                               </div>
                             </div>
                           </div>{" "}
                           <a
-                            href="#"
                             target="_self"
                             className="quickfinder-item-link"
                           ></a>
@@ -165,23 +160,19 @@ const Option = () => {
                           <div style={{ display: "block", minHeight: "50px" }}>
                             <div
                               className="quickfinder-item-title"
-                              style={{ color: "#00e290" }}
+                              style={{ color: "white" }}
                             >
                               Oct 2021
                             </div>
                             <div
                               className="quickfinder-item-text"
-                              style={{ color: "#ffffff" }}
+                              style={{ color: "#7599A2" }}
                             >
                               Launch testnet block explorer.
                             </div>
                           </div>
                         </div>{" "}
-                        <a
-                          href="#"
-                          target="_self"
-                          className="quickfinder-item-link"
-                        ></a>
+                        <a target="_self" className="quickfinder-item-link"></a>
                       </div>
                     </div>
                     <div
@@ -204,18 +195,17 @@ const Option = () => {
                           <div className="quickfinder-item-image-wrapper">
                             <div
                               className="ct-icon ct-icon-pack-material ct-icon-size-small ct-icon-shape-circle"
-                              style={{ borderColor: "#678785", opacity: 1 }}
+                              style={{ borderColor: "#18d685", opacity: 1 }}
                             >
                               <div
-                                className="ct-icon-inner"
-                                style={{ backgroundColor: "#284e59" }}
+                                className="ct-icon-inner  c-roadmap-icon-inner"
+                                style={{ backgroundColor: "#18d685" }}
                               >
-                                <i className="fas fa-check check-icon"></i>
+                                <i className="far fa-check-circle c-roadmap-dark-icon"></i>
                               </div>
                             </div>
                           </div>{" "}
                           <a
-                            href="#"
                             target="_self"
                             className="quickfinder-item-link"
                           ></a>
@@ -238,24 +228,20 @@ const Option = () => {
                           <div style={{ display: "block", minHeight: "50px" }}>
                             <div
                               className="quickfinder-item-title"
-                              style={{ color: "#00e290" }}
+                              style={{ color: "white" }}
                             >
                               Nov 2021
                             </div>
                             <div
                               className="quickfinder-item-text"
-                              style={{ color: "#ffffff" }}
+                              style={{ color: "#7599A2" }}
                             >
                               Test smart contract VM. Launch DEX and NFT market
                               place.
                             </div>
                           </div>
                         </div>{" "}
-                        <a
-                          href="#"
-                          target="_self"
-                          className="quickfinder-item-link"
-                        ></a>
+                        <a target="_self" className="quickfinder-item-link"></a>
                       </div>
                     </div>
                   </div>
@@ -286,18 +272,17 @@ const Option = () => {
                           <div className="quickfinder-item-image-wrapper">
                             <div
                               className="ct-icon ct-icon-pack-material ct-icon-size-small ct-icon-shape-circle"
-                              style={{ borderColor: "#678785", opacity: 1 }}
+                              style={{ borderColor: "#18d685", opacity: 1 }}
                             >
                               <div
-                                className="ct-icon-inner"
-                                style={{ backgroundColor: "rgb(40, 78, 89)" }}
+                                className="ct-icon-inner  c-roadmap-icon-inner"
+                                style={{ backgroundColor: "#18d685" }}
                               >
-                                <i className="fas fa-check check-icon"></i>
+                                <i className="far fa-check-circle c-roadmap-dark-icon"></i>
                               </div>
                             </div>
                           </div>{" "}
                           <a
-                            href="#"
                             target="_self"
                             className="quickfinder-item-link"
                           ></a>
@@ -320,23 +305,19 @@ const Option = () => {
                           <div style={{ display: "block", minHeight: "50px" }}>
                             <div
                               className="quickfinder-item-title"
-                              style={{ color: "#00e290" }}
+                              style={{ color: "white" }}
                             >
                               Dec 2021
                             </div>
                             <div
                               className="quickfinder-item-text"
-                              style={{ color: "#ffffff" }}
+                              style={{ color: "#7599A2" }}
                             >
                               Launch Zilionixx mainnet and block explorer.
                             </div>
                           </div>
                         </div>{" "}
-                        <a
-                          href="#"
-                          target="_self"
-                          className="quickfinder-item-link"
-                        ></a>
+                        <a target="_self" className="quickfinder-item-link"></a>
                       </div>
                     </div>
                     <div
@@ -359,18 +340,17 @@ const Option = () => {
                           <div className="quickfinder-item-image-wrapper">
                             <div
                               className="ct-icon ct-icon-pack-material ct-icon-size-small ct-icon-shape-circle"
-                              style={{ borderColor: "#678785", opacity: 1 }}
+                              style={{ borderColor: "#18d685", opacity: 1 }}
                             >
                               <div
-                                className="ct-icon-inner"
-                                style={{ backgroundColor: "rgb(40, 78, 89)" }}
+                                className="ct-icon-inner  c-roadmap-icon-inner"
+                                style={{ backgroundColor: "#12222F" }}
                               >
-                                {/* <i className="fas fa-check check-icon"></i> */}
+                                {/* <i className="far fa-check-circle c-roadmap-dark-icon"></i> */}
                               </div>
                             </div>
                           </div>{" "}
                           <a
-                            href="#"
                             target="_self"
                             className="quickfinder-item-link"
                           ></a>
@@ -393,13 +373,13 @@ const Option = () => {
                           <div style={{ display: "block", minHeight: "50px" }}>
                             <div
                               className="quickfinder-item-title"
-                              style={{ color: "#00e290" }}
+                              style={{ color: "white" }}
                             >
                               Feb 2022
                             </div>
                             <div
                               className="quickfinder-item-text"
-                              style={{ color: "#ffffff" }}
+                              style={{ color: "#7599A2" }}
                             >
                               Launch CEX(Centralized Exchange, Dongle).
                               <br /> Start Unicial(Metaverse) development and
@@ -407,11 +387,7 @@ const Option = () => {
                             </div>
                           </div>
                         </div>{" "}
-                        <a
-                          href="#"
-                          target="_self"
-                          className="quickfinder-item-link"
-                        ></a>
+                        <a target="_self" className="quickfinder-item-link"></a>
                       </div>
                     </div>
                     <div
@@ -434,18 +410,17 @@ const Option = () => {
                           <div className="quickfinder-item-image-wrapper">
                             <div
                               className="ct-icon ct-icon-pack-material ct-icon-size-small ct-icon-shape-circle"
-                              style={{ borderColor: "#678785", opacity: 1 }}
+                              style={{ borderColor: "#18d685", opacity: 1 }}
                             >
                               <div
-                                className="ct-icon-inner"
-                                style={{ backgroundColor: "rgb(40, 78, 89)" }}
+                                className="ct-icon-inner  c-roadmap-icon-inner"
+                                style={{ backgroundColor: "#12222F" }}
                               >
-                                {/* <i className="fas fa-check check-icon"></i> */}
+                                {/* <i className="far fa-check-circle c-roadmap-dark-icon"></i> */}
                               </div>
                             </div>
                           </div>{" "}
                           <a
-                            href="#"
                             target="_self"
                             className="quickfinder-item-link"
                           ></a>
@@ -468,24 +443,20 @@ const Option = () => {
                           <div style={{ display: "block", minHeight: "50px" }}>
                             <div
                               className="quickfinder-item-title"
-                              style={{ color: "#00e290" }}
+                              style={{ color: "white" }}
                             >
                               Apr 2022
                             </div>
                             <div
                               className="quickfinder-item-text"
-                              style={{ color: "#ffffff" }}
+                              style={{ color: "#7599A2" }}
                             >
                               Implement Hashgraph on Zilionixx consensus
                               algorithm.
                             </div>
                           </div>
                         </div>{" "}
-                        <a
-                          href="#"
-                          target="_self"
-                          className="quickfinder-item-link"
-                        ></a>
+                        <a target="_self" className="quickfinder-item-link"></a>
                       </div>
                     </div>
                   </div>
@@ -516,18 +487,17 @@ const Option = () => {
                           <div className="quickfinder-item-image-wrapper">
                             <div
                               className="ct-icon ct-icon-pack-material ct-icon-size-small ct-icon-shape-circle"
-                              style={{ borderColor: "#678785", opacity: 1 }}
+                              style={{ borderColor: "#18d685", opacity: 1 }}
                             >
                               <div
-                                className="ct-icon-inner"
-                                style={{ backgroundColor: "rgb(40, 78, 89)" }}
+                                className="ct-icon-inner  c-roadmap-icon-inner"
+                                style={{ backgroundColor: "#12222F" }}
                               >
-                                {/* <i className="fas fa-check check-icon"></i> */}
+                                {/* <i className="far fa-check-circle c-roadmap-dark-icon"></i> */}
                               </div>
                             </div>
                           </div>{" "}
                           <a
-                            href="#"
                             target="_self"
                             className="quickfinder-item-link"
                           ></a>
@@ -550,23 +520,19 @@ const Option = () => {
                           <div style={{ display: "block", minHeight: "50px" }}>
                             <div
                               className="quickfinder-item-title"
-                              style={{ color: "#00e290" }}
+                              style={{ color: "white" }}
                             >
                               Sep 2022
                             </div>
                             <div
                               className="quickfinder-item-text"
-                              style={{ color: "#ffffff" }}
+                              style={{ color: "#7599A2" }}
                             >
                               Implement AI on smart contract VM.
                             </div>
                           </div>
                         </div>{" "}
-                        <a
-                          href="#"
-                          target="_self"
-                          className="quickfinder-item-link"
-                        ></a>
+                        <a target="_self" className="quickfinder-item-link"></a>
                       </div>
                     </div>
                     <div
@@ -589,11 +555,11 @@ const Option = () => {
                           <div className="quickfinder-item-image-wrapper">
                             <div
                               className="ct-icon ct-icon-pack-material ct-icon-size-small ct-icon-shape-circle"
-                              style={{ borderColor: "#678785", opacity: 1 }}
+                              style={{ borderColor: "#18d685", opacity: 1 }}
                             >
                               <div
-                                className="ct-icon-inner"
-                                style={{ backgroundColor: "#284e59" }}
+                                className="ct-icon-inner  c-roadmap-icon-inner"
+                                style={{ backgroundColor: "#12222F" }}
                               >
                                 <span
                                   className="ct-icon-half-1"
@@ -611,7 +577,6 @@ const Option = () => {
                             </div>
                           </div>{" "}
                           <a
-                            href="#"
                             target="_self"
                             className="quickfinder-item-link"
                           ></a>
@@ -634,23 +599,19 @@ const Option = () => {
                           <div style={{ display: "block", minHeight: "50px" }}>
                             <div
                               className="quickfinder-item-title"
-                              style={{ color: "#00e290" }}
+                              style={{ color: "white" }}
                             >
                               Nov 2022
                             </div>
                             <div
                               className="quickfinder-item-text"
-                              style={{ color: "#ffffff" }}
+                              style={{ color: "#7599A2" }}
                             >
                               Optimize transaction protocol to reduce tx size.
                             </div>
                           </div>
                         </div>{" "}
-                        <a
-                          href="#"
-                          target="_self"
-                          className="quickfinder-item-link"
-                        ></a>
+                        <a target="_self" className="quickfinder-item-link"></a>
                       </div>
                     </div>
                     <div
@@ -673,11 +634,11 @@ const Option = () => {
                           <div className="quickfinder-item-image-wrapper">
                             <div
                               className="ct-icon ct-icon-pack-material ct-icon-size-small ct-icon-shape-circle"
-                              style={{ borderColor: "#678785", opacity: 1 }}
+                              style={{ borderColor: "#18d685", opacity: 1 }}
                             >
                               <div
-                                className="ct-icon-inner"
-                                style={{ backgroundColor: "rgb(40, 78, 89)" }}
+                                className="ct-icon-inner  c-roadmap-icon-inner"
+                                style={{ backgroundColor: "#12222F" }}
                               >
                                 <span
                                   className="ct-icon-half-1"
@@ -695,7 +656,6 @@ const Option = () => {
                             </div>
                           </div>{" "}
                           <a
-                            href="#"
                             target="_self"
                             className="quickfinder-item-link"
                           ></a>
@@ -718,23 +678,19 @@ const Option = () => {
                           <div style={{ display: "block", minHeight: "50px" }}>
                             <div
                               className="quickfinder-item-title"
-                              style={{ color: "#00e290" }}
+                              style={{ color: "white" }}
                             >
                               Jan 2023
                             </div>
                             <div
                               className="quickfinder-item-text"
-                              style={{ color: "#ffffff" }}
+                              style={{ color: "#7599A2" }}
                             >
                               Launch Zilionixx SDK for game developers.
                             </div>
                           </div>
                         </div>{" "}
-                        <a
-                          href="#"
-                          target="_self"
-                          className="quickfinder-item-link"
-                        ></a>
+                        <a target="_self" className="quickfinder-item-link"></a>
                       </div>
                     </div>
                   </div>
@@ -765,18 +721,17 @@ const Option = () => {
                           <div className="quickfinder-item-image-wrapper">
                             <div
                               className="ct-icon ct-icon-pack-material ct-icon-size-small ct-icon-shape-circle"
-                              style={{ borderColor: "#678785", opacity: 1 }}
+                              style={{ borderColor: "#18d685", opacity: 1 }}
                             >
                               <div
-                                className="ct-icon-inner"
-                                style={{ backgroundColor: "rgb(40, 78, 89)" }}
+                                className="ct-icon-inner  c-roadmap-icon-inner"
+                                style={{ backgroundColor: "#12222F" }}
                               >
-                                {/* <i className="fas fa-check check-icon"></i> */}
+                                {/* <i className="far fa-check-circle c-roadmap-dark-icon"></i> */}
                               </div>
                             </div>
                           </div>{" "}
                           <a
-                            href="#"
                             target="_self"
                             className="quickfinder-item-link"
                           ></a>
@@ -799,23 +754,19 @@ const Option = () => {
                           <div style={{ display: "block", minHeight: "50px" }}>
                             <div
                               className="quickfinder-item-title"
-                              style={{ color: "#00e290" }}
+                              style={{ color: "white" }}
                             >
                               Mar 2023
                             </div>
                             <div
                               className="quickfinder-item-text"
-                              style={{ color: "#ffffff" }}
+                              style={{ color: "#7599A2" }}
                             >
                               Launch Unicial 3D AR/VR toolkit.
                             </div>
                           </div>
                         </div>{" "}
-                        <a
-                          href="#"
-                          target="_self"
-                          className="quickfinder-item-link"
-                        ></a>
+                        <a target="_self" className="quickfinder-item-link"></a>
                       </div>
                     </div>
                     <div
@@ -838,11 +789,11 @@ const Option = () => {
                           <div className="quickfinder-item-image-wrapper">
                             <div
                               className="ct-icon ct-icon-pack-material ct-icon-size-small ct-icon-shape-circle"
-                              style={{ borderColor: "#678785", opacity: 1 }}
+                              style={{ borderColor: "#18d685", opacity: 1 }}
                             >
                               <div
-                                className="ct-icon-inner"
-                                style={{ backgroundColor: "rgb(40, 78, 89)" }}
+                                className="ct-icon-inner  c-roadmap-icon-inner"
+                                style={{ backgroundColor: "#12222F" }}
                               >
                                 <span
                                   className="ct-icon-half-1"
@@ -860,7 +811,6 @@ const Option = () => {
                             </div>
                           </div>{" "}
                           <a
-                            href="#"
                             target="_self"
                             className="quickfinder-item-link"
                           ></a>
@@ -883,23 +833,19 @@ const Option = () => {
                           <div style={{ display: "block", minHeight: "50px" }}>
                             <div
                               className="quickfinder-item-title"
-                              style={{ color: "#00e290" }}
+                              style={{ color: "white" }}
                             >
                               Jun 2023
                             </div>
                             <div
                               className="quickfinder-item-text"
-                              style={{ color: "#ffffff" }}
+                              style={{ color: "#7599A2" }}
                             >
                               Launch 3D Unicial.
                             </div>
                           </div>
                         </div>{" "}
-                        <a
-                          href="#"
-                          target="_self"
-                          className="quickfinder-item-link"
-                        ></a>
+                        <a target="_self" className="quickfinder-item-link"></a>
                       </div>
                     </div>
                   </div>
