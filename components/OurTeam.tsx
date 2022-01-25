@@ -9,19 +9,20 @@ const OurTeam = () => {
         <div className="clearboth"></div>
         <div
           className="ct-divider divider_responsive"
-          style={{ marginTop: "140px" }}
+          style={{ marginTop: "106px" }}
         ></div>
         <div className="wpb_text_column wpb_content_element  wpb_animate_when_almost_visible wpb_fadeIn fadeIn vc_custom_1522922142217 wpb_start_animation animated">
           <div className="wpb_wrapper">
-            <div className="title-h3" style={{ textAlign: "center" }}>
+            <div className="c-news-title-small">
+              <i className="fas fa-circle c-news-title-dot"></i>
               Our Team
             </div>
           </div>
         </div>
         <div className="wpb_text_column wpb_content_element  wpb_animate_when_almost_visible wpb_fadeIn fadeIn wpb_start_animation animated">
           <div className="wpb_wrapper">
-            <div className="title-h1" style={{ textAlign: "center" }}>
-              <span className="light">Meet a Crew of Professionals</span>
+            <div className="c-news-title-large">
+              <span>Meet a Crew of Professionals</span>
             </div>
           </div>
         </div>
@@ -49,37 +50,9 @@ const OurTeam = () => {
                 </a>
               </div>
               <div className="team-person-info">
-                <div className="team-person-name title-h4">Doctor Joe Luo</div>
-                <div className="team-person-position date-color small-body">
-                  Co-Founder, CEO
-                </div>
+                <div className="c-ourteam-name">Doctor Joe Luo</div>
+                <div className="c-ourteam-role">Co-Founder, CEO</div>
                 <div className="team-person-content"></div>
-                <div className="socials team-person-socials socials-colored-hover">
-                  <a
-                    title="Facebook"
-                    target="_blank"
-                    href="#"
-                    className="socials-item"
-                  >
-                    <i className="socials-item-icon social-item-rounded facebook"></i>
-                  </a>
-                  <a
-                    title="LinkedIn"
-                    target="_blank"
-                    href="#"
-                    className="socials-item"
-                  >
-                    <i className="socials-item-icon social-item-rounded linkedin"></i>
-                  </a>
-                  <a
-                    title="Skype"
-                    target="_blank"
-                    href="#"
-                    className="socials-item"
-                  >
-                    <i className="socials-item-icon social-item-rounded skype"></i>
-                  </a>
-                </div>
               </div>
             </div>
           </div>
@@ -101,37 +74,11 @@ const OurTeam = () => {
                 </a>
               </div>
               <div className="team-person-info">
-                <div className="team-person-name title-h4">Tsimafei</div>
-                <div className="team-person-position date-color small-body">
+                <div className="c-ourteam-name">Tsimafei</div>
+                <div className="c-ourteam-role">
                   CTO, Blockchain Engineer
                 </div>
                 <div className="team-person-content"></div>
-                <div className="socials team-person-socials socials-colored-hover">
-                  <a
-                    title="Facebook"
-                    target="_blank"
-                    href="#"
-                    className="socials-item"
-                  >
-                    <i className="socials-item-icon social-item-rounded facebook"></i>
-                  </a>
-                  <a
-                    title="LinkedIn"
-                    target="_blank"
-                    href="#"
-                    className="socials-item"
-                  >
-                    <i className="socials-item-icon social-item-rounded linkedin"></i>
-                  </a>
-                  <a
-                    title="Skype"
-                    target="_blank"
-                    href="#"
-                    className="socials-item"
-                  >
-                    <i className="socials-item-icon social-item-rounded skype"></i>
-                  </a>
-                </div>
               </div>
             </div>
           </div>
@@ -158,32 +105,6 @@ const OurTeam = () => {
                   Co-Founder, Marketing
                 </div>
                 <div className="team-person-content"></div>
-                <div className="socials team-person-socials socials-colored-hover">
-                  <a
-                    title="Facebook"
-                    target="_blank"
-                    href="#"
-                    className="socials-item"
-                  >
-                    <i className="socials-item-icon social-item-rounded facebook"></i>
-                  </a>
-                  <a
-                    title="LinkedIn"
-                    target="_blank"
-                    href="#"
-                    className="socials-item"
-                  >
-                    <i className="socials-item-icon social-item-rounded linkedin"></i>
-                  </a>
-                  <a
-                    title="Skype"
-                    target="_blank"
-                    href="#"
-                    className="socials-item"
-                  >
-                    <i className="socials-item-icon social-item-rounded skype"></i>
-                  </a>
-                </div>
               </div>
             </div>
           </div>
@@ -210,7 +131,7 @@ const OurTeam = () => {
                   Marketing Manager
                 </div>
                 <div className="team-person-content"></div>
-                <div className="socials team-person-socials socials-colored-hover">
+                {/* <div className="socials team-person-socials socials-colored-hover">
                   <a
                     title="Facebook"
                     target="_blank"
@@ -235,7 +156,7 @@ const OurTeam = () => {
                   >
                     <i className="socials-item-icon social-item-rounded skype"></i>
                   </a>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
