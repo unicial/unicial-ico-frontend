@@ -1,8 +1,95 @@
 .c-chart-container {
-    width: 280px;
-    height: 280px;
+  width: 280px;
+  height: 280px;
+}
+.vc_chart-with-legend {
+}
+.c-distribution-container {
+  background-image: url("/static/images/distribution.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 1px;
+}
+.c-distribution-title {
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 40px;
+  color: #12222f;
+  margin-top: 100px;
+}
+.c-distribution-history-container {
+  margin: 40px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+.c-distribution-history {
+  display: flex;
+}
+.c-distribution-dot-icon {
+  color: #00d58b;
+  margin-top: 10px;
+}
+.c-distribution-history-text {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 30px;
+  letter-spacing: 0.05em;
+  color: #12222f;
+}
+.c-distribution-coin-text {
+  color: #00d58b;
+  font-weight: 600;
+}
+.c-distribution-chart-container {
+  border-top: 1px solid #7599a24b;
+  padding: 50px 0px;
+}
+.c-distribution-chart-desc {
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 40px;
+  color: #7599a2;
+}
+.c-distribution-chart-totalsupply {
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 40px;
+  color: #12222f;
+}
+.c-distribution-chart-vector {
+  position: absolute;
+  right: -30px;
+  top: 20px;
+}
+.c-distribution-price-content {
+  width: 188px;
+  height: 188px;
+  border-radius: 50%;
+  background: #00d58b;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 40px;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+.c-distribution-dark {
+  color: #12222f;
 }
 
-.vc_chart-with-legend {
-    
+@media (max-width: 768px) {
+  .c-distribution-history {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .c-distribution-history-container {
+    margin: 40px 0px;
+    display: grid;
+    justify-content: space-around;
+  }
 }
