@@ -1,9 +1,31 @@
+/* // */
+.c-upPart {
+  display: flex;
+  justify-content: center;
+}
+.c-letterPart {
+  margin-left: 17px;
+  position: relative;
+}
+.c-footerimgContainer {
+  background-image: linear-gradient(#12b3a4 0%, #04dc8a 98.37%);
+  width: 66px;
+  height: 66px;
+  border-radius: 100%;
+  padding: 10px;
+}
+.c-pig {
+  position: absolute;
+  top: 53px;
+  left: 200px;
+}
+/* // */
 .option-container {
-  background-image: url("../public/static/images/ico_bg_image_14.jpg");
+  background-image: url("../public/static/images/second.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 100px 0;
+  padding: 100px auto;
 }
 
 .card-container {
@@ -16,9 +38,9 @@
 }
 
 .option-img {
-  margin-bottom: 30px;
-  width: 64px;
-  height: 64px;
+  /* margin-bottom: 30px; */
+  width: 100%;
+  height: 100%;
 }
 
 .title {
@@ -26,7 +48,8 @@
   font-size: 24px;
   font-weight: 200;
   line-height: 30px;
-  color: #ffffff;
+  color: #7599a1;
+  text-align: start;
 }
 
 .content {
@@ -35,6 +58,7 @@
   font-weight: 700;
   line-height: 40px;
   color: #ffffff;
+  text-align: start;
 }
 
 .card-link {
@@ -44,7 +68,7 @@
   font-size: 16px;
   margin: 30px auto;
   line-height: 48px;
-  color: #0acc95;
+  color: white;
   background-color: transparent;
   border-radius: 25px;
   border: 1px solid #0acc95;
