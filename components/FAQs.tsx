@@ -1,12 +1,6 @@
 import React, { useState } from "react";
 import clsx from "clsx";
-import {
-  Row,
-  Col,
-  Accordion,
-  AccordionItem,
-  AccordionHeader,
-} from "reactstrap";
+import { Row, Col } from "reactstrap";
 
 const FAQs = () => {
   const faqs = [
@@ -48,19 +42,20 @@ const FAQs = () => {
               <div className="clearboth"></div>
               <div
                 className="ct-divider divider_responsive"
-                style={{ marginTop: "140px" }}
+                style={{ marginTop: "106px" }}
               ></div>
               <div className="wpb_text_column wpb_content_element  vc_custom_1520421849945">
                 <div className="wpb_wrapper">
-                  <div className="title-h3" style={{ textAlign: "left" }}>
+                  <div className="c-news-title-small">
+                    <i className="fas fa-circle c-news-title-dot"></i>
                     Zilionixx blockchain
                   </div>
                 </div>
               </div>
               <div className="wpb_text_column wpb_content_element ">
                 <div className="wpb_wrapper">
-                  <div className="title-h1" style={{ textAlign: "left" }}>
-                    <span className="light">Frequently Questions</span>
+                  <div className="c-news-title-large">
+                    <span>Frequently Questions</span>
                   </div>
                 </div>
               </div>
@@ -71,7 +66,10 @@ const FAQs = () => {
               ></div>
               <div className="accordion" id="accordionExample">
                 {faqs.map((faq, key) => (
-                  <div className="accordion-item" key={key}>
+                  <div
+                    className="accordion-item c-faq-accordion-item"
+                    key={key}
+                  >
                     <h2 className="accordion-header" id={`heading${key}`}>
                       <button
                         className={clsx("accordion-button", {
