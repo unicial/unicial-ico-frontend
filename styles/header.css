@@ -35,10 +35,26 @@
 
 .c-logo-large {
   padding: 25px 0px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 50px;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  display: flex;
 }
 
 .c-logo-small {
   padding: 7px 0px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 50px;
+  letter-spacing: 0.05em;
+  color: #18d685;
+  display: flex;
 }
 
 .c-toggler {
@@ -70,7 +86,7 @@
 
 .c-navbar-res {
   width: 95%;
-  margin: -1em 1em;
+  margin: 0em 1em;
 }
 .c-navbar-res .nav-item {
   background: #12232f;

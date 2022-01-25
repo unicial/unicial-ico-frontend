@@ -90,8 +90,8 @@ const Toparea = ({ handleShowAlert }: TopareaProps) => {
   return (
     <div className="first-content" id="About ZNX">
       <div className="c-container">
-        <Row>
-          <Col lg={6}>
+        <div className="c-container-content">
+          <div className="c-firstcontent-left">
             <div>
               <p className="c-large-text1">Zilionixx</p>
               <p className="c-large-text2">Layer1 Blockchain!</p>
@@ -105,11 +105,8 @@ const Toparea = ({ handleShowAlert }: TopareaProps) => {
               BUY ZNX -25% OFF
               <i className="fas fa-arrow-right ms-2"></i>
             </span>
-            {/* <button className="c-buy-token-button" onClick={handleModal}>
-              <img src="/static/images/buy_token_button.png" alt="my image" />
-            </button> */}
-          </Col>
-          <Col lg={5} className="offset-lg-1">
+          </div>
+          <div className="c-firstcontent-right">
             <div className="c-small-text">ZNX sale ends in:</div>
             <div className="c-countdown mt-4">
               <div className="c-countdown-items c-time-days">
@@ -144,7 +141,7 @@ const Toparea = ({ handleShowAlert }: TopareaProps) => {
               </div>
             </div>
             <div className="c-medium-text my-5">
-              <span className="fw-bold c-price-light">$310,500</span>{" "}
+              <span className="fw-bold c-price-light">$ 310,500 </span>{" "}
               contribution received
             </div>
             <div className="mb-5">
@@ -167,22 +164,11 @@ const Toparea = ({ handleShowAlert }: TopareaProps) => {
                 <span>Hardcap</span>
               </div>
             </div>
-            <div className="d-flex justify-content-between mt-5">
-              <div className="c-token-item">
-                <img src="/static/images/1.png"></img>
-              </div>
-              <div className="c-token-item">
-                <img src="/static/images/2.png"></img>
-              </div>
-              <div className="c-token-item">
-                <img src="/static/images/3.png"></img>
-              </div>
-              <div className="c-token-item">
-                <img src="/static/images/4.png"></img>
-              </div>
+            <div className="d-flex justify-content-end mt-5">
+              <img src="/static/svg/visa_group.svg" alt="visa" />
             </div>
-          </Col>
-        </Row>
+          </div>
+        </div>
       </div>
       <BuyTokenModal
         isOpen={isOpen}

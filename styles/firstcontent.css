@@ -5,6 +5,20 @@
   color: white;
 }
 
+.c-container-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.c-firstcontent-left {
+  min-width: 500px;
+}
+
+.c-firstcontent-right {
+  min-width: 500px;
+}
+
 .c-buy-token-button {
   border: none;
   padding: 0px;
@@ -240,6 +254,19 @@
 .c-price-light {
   color: white;
   font-size: 24px;
+}
+
+@media (max-width: 1120px) {
+  .c-container-content {
+    width: 100%;
+    display: block;
+  }
+  .c-firstcontent-right {
+    min-width: 100%;
+  }
+  .c-firstcontent-left {
+    min-width: 100%;
+  }
 }
 
 @media (max-width: 800px) {
