@@ -3,30 +3,36 @@ import { Row, Col, Container } from "reactstrap";
 
 const OurTokens = () => {
   return (
-    <div className="container">
+    <div className="container c-news-container">
+      <img
+        className="c-news-rectangle-svg"
+        src="/static/svg/rectangle.svg"
+        alt="rectangle"
+      />
       <div className="clearboth"></div>
       <div
         className="ct-divider divider_responsive"
-        style={{ marginTop: "140px" }}
+        style={{ marginTop: "100px" }}
       ></div>
       <div className="wpb_text_column wpb_content_element  vc_custom_1520419829929">
         <div className="wpb_wrapper">
-          <div className="title-h3" style={{ textAlign: "center" }}>
+          <div className="c-news-title-small">
+            <i className="fas fa-circle c-news-title-dot"></i>
             In the News
           </div>
         </div>
       </div>
       <div className="wpb_text_column wpb_content_element ">
         <div className="wpb_wrapper">
-          <div className="title-h1" style={{ textAlign: "center" }}>
-            <span className="light">Media about us</span>
+          <div className="c-news-title-large">
+            <span>Media about us</span>
           </div>
         </div>
       </div>
       <div className="clearboth"></div>
       <div
         className="ct-divider divider_responsive"
-        style={{ marginTop: "90px" }}
+        style={{ marginTop: "50px" }}
       ></div>
       <div
         className="blog blog-style-justified-3x style-1 inline-row clearfix item-animation-move-up"
@@ -45,7 +51,7 @@ const OurTokens = () => {
                     <source media="(max-width: 1100px)" />
                     <source media="(max-width: 1920px)" />
                     <img
-                      src="https://miro.medium.com/max/1400/1*KWOlXlNJ5Rc1320cR4g1uQ.jpeg"
+                      src="/static/images/media0.png"
                       width="640"
                       height="480"
                       className="img-responsive"
@@ -97,23 +103,6 @@ const OurTokens = () => {
                   </p>
                 </div>
               </div>
-              <div className="info clearfix">
-                <div className="post-read-more">
-                  <div className="ct-button-container ct-button-position-left">
-                    <a
-                      className="ct-button ct-button-size-small ct-button-style-flat ct-button-text-weight-normal ct-button-icon-position-right"
-                      style={{ borderRadius: "20px" }}
-                      // onmouseleave=""
-                      // onmouseenter=""
-                      href="https://medium.com/@zilionixx_foundation/an-introduction-to-zilionixx-8ddb5ed51535"
-                      target="_self"
-                    >
-                      Read More
-                      <i className="ct-print-icon ct-icon-pack-ct-icons ct-icon-more"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </article>
@@ -133,7 +122,7 @@ const OurTokens = () => {
                     <source media="(max-width: 1100px)" />
                     <source media="(max-width: 1920px)" />
                     <img
-                      src="https://miro.medium.com/max/958/1*ID4DWJBEaVkOK87RoZ1C6w.png"
+                      src="/static/images/media1.png"
                       width="640"
                       height="480"
                       className="img-responsive"
@@ -186,23 +175,6 @@ const OurTokens = () => {
                   </p>
                 </div>
               </div>
-              <div className="info clearfix">
-                <div className="post-read-more">
-                  <div className="ct-button-container ct-button-position-left">
-                    <a
-                      className="ct-button ct-button-size-small ct-button-style-flat ct-button-text-weight-normal ct-button-icon-position-right"
-                      style={{ borderRadius: "20px" }}
-                      // onmouseleave=""
-                      // onmouseenter=""
-                      href="https://codex-themes.com/themes/cryption/news-page-3-2/"
-                      target="_self"
-                    >
-                      Read More
-                      <i className="ct-print-icon ct-icon-pack-ct-icons ct-icon-more"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </article>
@@ -222,7 +194,7 @@ const OurTokens = () => {
                     <source media="(max-width: 1100px)" />
                     <source media="(max-width: 1920px)" />
                     <img
-                      src="https://miro.medium.com/max/592/1*nXY1dG2VmsjLp_wor8epHQ.png"
+                      src="/static/images/media2.png"
                       width="640"
                       height="480"
                       className="img-responsive"
@@ -274,30 +246,11 @@ const OurTokens = () => {
                   </p>
                 </div>
               </div>
-              <div className="info clearfix">
-                <div className="post-read-more">
-                  <div className="ct-button-container ct-button-position-left">
-                    <a
-                      className="ct-button ct-button-size-small ct-button-style-flat ct-button-text-weight-normal ct-button-icon-position-right"
-                      style={{ borderRadius: "20px" }}
-                      href="https://medium.com/p/connecting-metamask-to-zilionixx-network-7ec14b6a36af?source=email-9a88f1652d75-1642609485258-newsletter.subscribeToProfile-------------------------4df407aa_b6f8_4690_bc4a_3977d271e8cd--------cb5c70c6433d"
-                      target="_self"
-                    >
-                      Read More
-                      <i className="ct-print-icon ct-icon-pack-ct-icons ct-icon-more"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </article>
       </div>
       <div className="clearboth"></div>
-      <div
-        className="ct-divider divider_responsive"
-        style={{ marginTop: "85px" }}
-      ></div>
     </div>
   );
 };

@@ -1,0 +1,31 @@
+.c-news-container {
+  position: relative;
+}
+
+.c-news-title-small {
+  text-align: left;
+  color: #00d58b;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 40px;
+}
+
+.c-news-title-dot {
+  font-size: 8px;
+  margin-right: 10px;
+}
+
+.c-news-title-large {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 70px;
+  color: #12222f;
+}
+
+.c-news-rectangle-svg {
+  position: absolute;
+  right: 30%;
+  top: 10%;
+}
