@@ -52,6 +52,6 @@ export const getLeftTime = async () => {
     );
     return response.data;
   } catch (error: any) {
-    return { Success: false, LeftTime: 0 };
+    return { Success: false, EndTime: 0 };
   }
 };

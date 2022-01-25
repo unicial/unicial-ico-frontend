@@ -18,6 +18,8 @@ import "../styles/distribution.css";
 import "../styles/modal.css";
 import "../styles/banner.css";
 import "../styles/alert.css";
+import "../styles/contactus.css";
+import "../styles/news.css";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return <Component {...pageProps} />;

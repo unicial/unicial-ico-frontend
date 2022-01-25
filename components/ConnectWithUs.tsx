@@ -27,8 +27,7 @@ const ConnectWithUs = () => {
                 <div
                   className="fullwidth-block-background"
                   style={{
-                    backgroundImage:
-                      "url(https://codex-themes.com/themes/cryption/wp-content/uploads/sites/9/2018/02/ico_bg_image_9.jpg)",
+                    backgroundImage: "url(static/images/connectus_bg.png)",
                     backgroundRepeat: "no-repeat",
                     backgroundSize: "cover",
                     backgroundPosition: "center top",
@@ -77,55 +76,54 @@ const ConnectWithUs = () => {
                     className="ct-divider "
                     style={{ marginTop: "20px" }}
                   ></div>
-                  <div className="socials socials-list socials-colored-hover socials-rounded socials-alignment-center">
+                  <div className="c-contactus-social-items socials socials-list socials-colored-hover socials-rounded socials-alignment-center">
                     <a
-                      className="socials-item"
+                      className="c-contactus-social-item"
                       href="https://twitter.com/zilionixx"
-                      style={{ color: "#ffffff" }}
-                    >
-                      <i
-                        className="socials-item-icon twitter"
-                        style={{ fontSize: "40px" }}
-                      ></i>
-                    </a>
-                    <a
-                      className="socials-item"
-                      href="https://www.facebook.com/groups/4354141514692375/"
-                      style={{ color: "#ffffff" }}
-                    >
-                      <i
-                        className="socials-item-icon facebook"
-                        style={{ fontSize: "40px" }}
-                      ></i>
-                    </a>
-                    <a
-                      className="socials-item"
-                      href="https://www.youtube.com/channel/UCvM8xLpdbdyNFVXf5-NmnOA"
-                      style={{ color: "#ffffff" }}
-                    >
-                      <i
-                        className="socials-item-icon youtube"
-                        style={{ fontSize: "40px" }}
-                      ></i>
-                    </a>
-                    <a
-                      className="socials-item"
-                      href="https://t.me/zilionixx"
-                      style={{ color: "#ffffff" }}
-                    >
-                      <i
-                        className="socials-item-icon telegram"
-                        style={{ fontSize: "40px" }}
-                      ></i>
-                    </a>
-                    <a
-                      className="socials-item"
                       target="_blank"
-                      href="#"
-                      style={{ color: "#ffffff" }}
                     >
                       <i
-                        className="socials-item-icon slack"
+                        className="fab fa-twitter"
+                        style={{ fontSize: "23px" }}
+                      ></i>
+                    </a>
+                    <a
+                      className="c-contactus-social-item"
+                      href="https://www.facebook.com/groups/4354141514692375/"
+                      target="_blank"
+                    >
+                      <i
+                        className="fab fa-facebook-f"
+                        style={{ fontSize: "23px" }}
+                      ></i>
+                    </a>
+                    <a
+                      className="c-contactus-social-item"
+                      href="https://www.youtube.com/channel/UCvM8xLpdbdyNFVXf5-NmnOA"
+                      target="_blank"
+                    >
+                      <i
+                        className="fab fa-youtube"
+                        style={{ fontSize: "23px" }}
+                      ></i>
+                    </a>
+                    <a
+                      className="c-contactus-social-item"
+                      href="https://t.me/zilionixx"
+                      target="_blank"
+                    >
+                      <i
+                        className="fab fa-telegram-plane"
+                        style={{ fontSize: "40px" }}
+                      ></i>
+                    </a>
+                    <a
+                      className="c-contactus-social-item"
+                      href="#"
+                      target="_blank"
+                    >
+                      <i
+                        className="fab fa-slack-hash"
                         style={{ fontSize: "40px" }}
                       ></i>
                     </a>

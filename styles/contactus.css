@@ -1,0 +1,26 @@
+.c-contactus-social-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.c-contactus-social-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 66px;
+  height: 66px;
+  border-radius: 50%;
+  border: 1px solid white;
+  color: white;
+  margin: 0px 10px;
+}
+
+.c-contactus-social-item:hover {
+  background-color: #12222f;
+  background-clip: content-box, border-box;
+  background-origin: border-box;
+  color: white;
+  border: none;
+  border: 1px solid #12222f;
+}

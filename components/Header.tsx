@@ -81,29 +81,29 @@ const Header = () => {
   };
   return (
     <div className={`header${sticky ? " sticky" : ""}`}>
-      <Navbar light expand="md">
+      <Navbar light expand="md" className="py-0">
         <div className="c-container c-nav-header">
           <NavbarBrand href="/">
             {nosticky === 1 ? (
-              <img
-                src="/static/images/logo_large.png"
-                className="c-logo-large"
-              ></img>
+              <span className="c-logo-large">
+                <img src="/static/svg/logo.svg"></img>
+                <span className="ms-2">Zilionixx</span>
+              </span>
             ) : nosticky === 2 ? (
-              <img
-                src="/static/images/logo_res.png"
-                className="c-logo-large"
-              ></img>
+              <span className="c-logo-large">
+                <img src="/static/svg/logo.svg"></img>
+                <span className="ms-2">Zilionixx</span>
+              </span>
             ) : sticky ? (
-              <img
-                src="/static/images/logo_small.png"
-                className="c-logo-small"
-              ></img>
+              <span className="c-logo-small">
+                <img src="/static/svg/logo.svg"></img>
+                <span className="ms-2">Zilionixx</span>
+              </span>
             ) : (
-              <img
-                src="/static/images/logo_large.png"
-                className="c-logo-large"
-              ></img>
+              <span className="c-logo-large">
+                <img src="/static/svg/logo.svg"></img>
+                <span className="ms-2">Zilionixx</span>
+              </span>
             )}
           </NavbarBrand>
           <div onClick={toggle} className="c-toggler">
@@ -141,22 +141,27 @@ const Header = () => {
       {isOpen && (
         <Nav className="c-navbar-res" navbar forwardref={ref}>
           <NavItem>
-            <NavLink href="/">About ZNX</NavLink>
+            <NavLink onClick={() => scrollToSection("About ZNX")}>
+              About ZNX
+            </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="#feature">Our ZNX</NavLink>
+            <NavLink onClick={() => scrollToSection("Our Tokens")}>
+              Our ZNX
+            </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="#service">Crowdsale</NavLink>
+            <NavLink onClick={() => scrollToSection("crowdsale")}>
+              Crowdsale
+            </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="#about">Roadmap</NavLink>
+            <NavLink onClick={() => scrollToSection("Roadmap")}>
+              Roadmap
+            </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="#about">FAQ</NavLink>
-          </NavItem>
-          <NavItem>
-            <NavLink href="#about">News</NavLink>
+            <NavLink onClick={() => scrollToSection("FAQ")}>FAQ</NavLink>
           </NavItem>
         </Nav>
       )}
