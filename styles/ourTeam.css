@@ -21,3 +21,35 @@
   right: 20%;
   top: 0%;
 }
+
+.c-ourteam-person-info > a:after {
+  content: "\f39e \f0e1 \f17e";
+  position: absolute;
+  top: 150%;
+  left: 40%;
+  height: 70px;
+  border-radius: 50%;
+  font-family: "Font Awesome 5 Brands";
+  font-size: 20px;
+  line-height: 70px;
+  margin-top: -35px;
+  margin-left: -35px;
+  opacity: 0;
+  text-align: center;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: top 0.4s, opacity 0.4s, -webkit-transform 0s 0.4s;
+  transition: top 0.4s, opacity 0.4s, transform 0s 0.4s;
+  z-index: 10;
+  background-color: transparent !important;
+  letter-spacing: 35px;
+  color: white;
+}
+.c-ourteam-person-info > a:hover:after {
+  opacity: 1;
+  top: 50%;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: top 0s, opacity 0.4s, -webkit-transform 0.4s;
+  transition: top 0s, opacity 0.4s, transform 0.4s;
+}

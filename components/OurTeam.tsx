@@ -40,7 +40,7 @@ const OurTeam = () => {
               id="post-441"
               className="team-person centered-box post-441 ct_team_person type-ct_team_person status-publish has-post-thumbnail hentry"
             >
-              <div className="team-person-image bordered-box">
+              <div className="team-person-image bordered-box c-ourteam-person-info">
                 <a href="#" target="_self">
                   <img
                     width="400"
@@ -64,7 +64,7 @@ const OurTeam = () => {
               id="post-442"
               className="team-person centered-box post-442 ct_team_person type-ct_team_person status-publish has-post-thumbnail hentry"
             >
-              <div className="team-person-image bordered-box">
+              <div className="team-person-image bordered-box c-ourteam-person-info">
                 <a href="#" target="_self">
                   <img
                     width="400"
@@ -72,7 +72,6 @@ const OurTeam = () => {
                     src="https://codex-themes.com/themes/cryption/wp-content/uploads/sites/9/2018/02/2-ct-person.jpg"
                     className="img-responsive wp-post-image"
                     alt="2"
-                    // srcset="https://codex-themes.com/themes/cryption/wp-content/uploads/sites/9/2018/02/2-ct-person.jpg 2x"
                   />
                 </a>
               </div>
@@ -88,7 +87,7 @@ const OurTeam = () => {
               id="post-443"
               className="team-person centered-box post-443 ct_team_person type-ct_team_person status-publish has-post-thumbnail hentry"
             >
-              <div className="team-person-image bordered-box">
+              <div className="team-person-image bordered-box c-ourteam-person-info">
                 <a href="#" target="_self">
                   <img
                     width="400"
@@ -96,7 +95,6 @@ const OurTeam = () => {
                     src="https://codex-themes.com/themes/cryption/wp-content/uploads/sites/9/2018/02/3-ct-person.jpg"
                     className="img-responsive wp-post-image"
                     alt="3"
-                    // srcset="https://codex-themes.com/themes/cryption/wp-content/uploads/sites/9/2018/02/3-ct-person.jpg 2x"
                   />
                 </a>
               </div>
@@ -112,7 +110,7 @@ const OurTeam = () => {
               id="post-444"
               className="team-person centered-box post-444 ct_team_person type-ct_team_person status-publish has-post-thumbnail hentry"
             >
-              <div className="team-person-image bordered-box">
+              <div className="team-person-image bordered-box c-ourteam-person-info">
                 <a href="#" target="_self">
                   <img
                     width="400"
@@ -120,7 +118,6 @@ const OurTeam = () => {
                     src="https://codex-themes.com/themes/cryption/wp-content/uploads/sites/9/2018/02/4-ct-person.jpg"
                     className="img-responsive wp-post-image"
                     alt="4"
-                    // srcset="https://codex-themes.com/themes/cryption/wp-content/uploads/sites/9/2018/02/4-ct-person.jpg 2x"
                   />
                 </a>
               </div>

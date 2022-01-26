@@ -44,7 +44,7 @@ const OurTokens = () => {
         >
           <div className="post-content-wrapper blog-item-default-background centered-box shadow-box">
             <div className="post-image">
-              <div className="post-featured-content">
+              <div className="post-featured-content c-news-media-item">
                 <a href="https://medium.com/@zilionixx_foundation/an-introduction-to-zilionixx-8ddb5ed51535">
                   <picture>
                     <source media="(max-width: 992px)" />
@@ -112,7 +112,7 @@ const OurTokens = () => {
         >
           <div className="post-content-wrapper blog-item-default-background centered-box shadow-box">
             <div className="post-image">
-              <div className="post-featured-content">
+              <div className="post-featured-content c-news-media-item">
                 <a href="https://medium.com/@zilionixx_foundation/the-way-of-zilionixx-a7a9eebe620e">
                   <picture>
                     <source media="(max-width: 992px)" />
@@ -181,7 +181,7 @@ const OurTokens = () => {
         >
           <div className="post-content-wrapper blog-item-default-background centered-box shadow-box">
             <div className="post-image">
-              <div className="post-featured-content">
+              <div className="post-featured-content c-news-media-item">
                 <a href="https://codex-themes.com/themes/cryption/news-page-3-3/">
                   <picture>
                     <source media="(max-width: 992px)" />
