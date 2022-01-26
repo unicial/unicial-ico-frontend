@@ -1,21 +1,67 @@
+/* // */
+.mainTitle {
+  display: flex;
+  font-size: 15px;
+  line-height: 40px;
+  letter-spacing: 5%;
+  color: #00d58b;
+  align-items: center;
+}
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  background-color: #00d58b;
+  margin-right: 12px;
+}
+.questionTitle {
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 70px;
+  vertical-align: top;
+  color: #12222f;
+}
+
+.mainAnswer {
+  font-size: 19px;
+  line-height: 40px;
+  color: #7599a1 !important;
+  font-weight: 500;
+}
+
+.c-introduceContainer {
+  display: flex;
+}
+
+.c-number {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 30px;
+  color: #00d58b;
+  margin-right: 15px;
+}
+/* // */
 .our-sub-title {
-  text-align: center;
+  text-align: left;
   max-width: 1000px;
-  margin: 0 auto;
+  margin: 0 0;
 }
 
 .our-card-content {
   margin-bottom: 16px;
   max-width: 250px;
   font-size: 15px;
-  line-height: 27px;
+  line-height: 30px;
   font-weight: normal;
+  color: #7599a1;
 }
 
 @media (min-width: 990px) {
   .our-background {
-    background-image: url("../public/static/images/ourTokens.png");
+    background-image: url("../public/static/images/ourToken.png");
     background-position: center;
     background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
   }
 }
