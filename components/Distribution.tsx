@@ -131,7 +131,7 @@ const Distribution = () => {
                 <div className="clearboth"></div>
                 <div
                   className="ct-divider divider_responsive_zero"
-                  style={{ marginTop: "30px" }}
+                  style={{ marginTop: "130px" }}
                 ></div>
                 <div className="wpb_text_column wpb_content_element  wpb_animate_when_almost_visible wpb_fadeIn fadeIn wpb_start_animation animated">
                   <div className="wpb_wrapper c-distribution-chart-totalsupply">
@@ -160,7 +160,7 @@ const Distribution = () => {
                   className="ct-divider divider_responsive_zero"
                   style={{ marginTop: "50px" }}
                 ></div>
-                <div
+                {/* <div
                   className="ct-button-container lazy-loading lazy-loading-showed"
                   style={{ visibility: "visible" }}
                 >
@@ -168,7 +168,7 @@ const Distribution = () => {
                     BUY ZNX -25% OFF
                     <i className="fas fa-arrow-right ms-2"></i>
                   </span>
-                </div>
+                </div> */}
                 <div className="clearboth"></div>
                 <div
                   className="ct-divider "

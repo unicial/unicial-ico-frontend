@@ -48,12 +48,22 @@
   color: #aff2e4;
 }
 
-.c-medium-text {
+.c-small-text {
   font-size: 19px;
   line-height: 40px;
   font-weight: 400;
   padding-right: 40px;
   color: #aff2e4;
+}
+
+.c-buytoken-btn-border {
+  padding: 4px;
+  display: block;
+  width: fit-content;
+  height: fit-content;
+  border-radius: 32px;
+  border: 1px solid rgb(4, 221, 138);
+  margin: 40px 0px;
 }
 
 .c-buytoken-btn {
@@ -68,7 +78,6 @@
   width: 255px;
   line-height: 18px;
   font-size: 15px;
-  margin: 40px 0px;
   font-weight: 700;
   justify-content: center;
   align-items: center;

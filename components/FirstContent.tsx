@@ -101,9 +101,11 @@ const Toparea = ({ handleShowAlert }: TopareaProps) => {
               goods & assets according to users interests including metaverse
               and medical tech.
             </div>
-            <span className="c-buytoken-btn" onClick={handleModal}>
-              BUY ZNX -25% OFF
-              <i className="fas fa-arrow-right ms-2"></i>
+            <span className="c-buytoken-btn-border">
+              <span className="c-buytoken-btn" onClick={handleModal}>
+                BUY ZNX -25% OFF
+                <i className="fas fa-arrow-right ms-2"></i>
+              </span>
             </span>
           </div>
           <div className="c-firstcontent-right">
