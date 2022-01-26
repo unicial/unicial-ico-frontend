@@ -101,10 +101,8 @@ const OurTeam = () => {
                 </a>
               </div>
               <div className="team-person-info">
-                <div className="team-person-name title-h4">Joan Lau</div>
-                <div className="team-person-position date-color small-body">
-                  Co-Founder, Marketing
-                </div>
+                <div className="c-ourteam-name">Joan Lau</div>
+                <div className="c-ourteam-role">Co-Founder, Marketing</div>
                 <div className="team-person-content"></div>
               </div>
             </div>
@@ -127,10 +125,8 @@ const OurTeam = () => {
                 </a>
               </div>
               <div className="team-person-info">
-                <div className="team-person-name title-h4">Raymend</div>
-                <div className="team-person-position date-color small-body">
-                  Marketing Manager
-                </div>
+                <div className="c-ourteam-name">Raymend</div>
+                <div className="c-ourteam-role">Marketing Manager</div>
                 <div className="team-person-content"></div>
                 {/* <div className="socials team-person-socials socials-colored-hover">
                   <a

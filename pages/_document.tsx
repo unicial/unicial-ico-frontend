@@ -5,25 +5,6 @@ export default class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          <title>Zilionixx ICO Landing</title>
-          <meta
-            name="description"
-            content="Next generation blockchain, Zilionixx"
-          />
-          <link rel="icon" href="/favicon_.ico" />
-          <link
-            rel="stylesheet"
-            href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-            integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
-            crossOrigin="anonymous"
-          />
-          <link
-            rel="stylesheet"
-            id="ct-google-fonts-css"
-            href="//fonts.googleapis.com/css?family=Montserrat%3A500%2Cregular%2C300%2C700%2C200%7COpen+Sans%3A300%2C700&#038;subset=latin%2Clatin-ext%2Cvietnamese%2Ccyrillic-ext%2Ccyrillic%2Cgreek%2Cgreek-ext&#038;ver=4.9.8"
-            type="text/css"
-            media="all"
-          />
           {/* Global Site Tag (gtag.js) - Google Analytics */}
           <script
             async
