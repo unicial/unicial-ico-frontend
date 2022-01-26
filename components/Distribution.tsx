@@ -1,5 +1,4 @@
 import React from "react";
-import { Row, Col } from "reactstrap";
 import { Doughnut } from "react-chartjs-2";
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
 
@@ -27,6 +26,7 @@ const Distribution = () => {
           "#79d21e",
         ],
         hoverBackgroundColor: ["#00f2a0", "#00ccc3", "#008481", "#0d2035"],
+        borderWidth: 0,
       },
     ],
   };
@@ -57,27 +57,11 @@ const Distribution = () => {
           "#616774",
           "#e8e041",
         ],
+        borderWidth: 0,
       },
     ],
   };
-  const plugins = [
-    {
-      beforeDraw: function (chart: any) {
-        var width = chart.width,
-          height = chart.height,
-          ctx = chart.ctx;
-        ctx.restore();
-        var fontSize = (height / 160).toFixed(2);
-        ctx.font = fontSize + "em sans-serif";
-        ctx.textBaseline = "top";
-        var text = "Foo-bar",
-          textX = Math.round((width - ctx.measureText(text).width) / 2),
-          textY = height / 2;
-        ctx.fillText(text, textX, textY);
-        ctx.save();
-      },
-    },
-  ];
+
   return (
     <div className="c-distribution-container">
       <div
@@ -211,15 +195,13 @@ const Distribution = () => {
                   data-vc-values='[{"value":60,"color":"#00e290","highlight":"#00af70","label":"<b>350 millions<\/b> Token"},{"value":20,"color":"#00bbb3","highlight":"#008882","label":"<b>150 millions<\/b> Token sale"},{"value":10,"color":"#007471","highlight":"#00413f","label":"<b>10 millions<\/b> Hard Cap"},{"value":10,"color":"#0d2035","highlight":"#03070c","label":"<b>$0.04<\/b> - Coin price"}]'
                 >
                   <div className="wpb_wrapper">
-                    <div className="vc_chart-with-legend">
-                      <div className="c-chart-container">
-                        <Doughnut
-                          data={dataDoughnut}
-                          options={{
-                            responsive: true,
-                          }}
-                        />
-                      </div>
+                    <div className="c-chart-container">
+                      <Doughnut
+                        data={dataDoughnut}
+                        options={{
+                          responsive: true,
+                        }}
+                      />
                     </div>
                     <ul className="vc_chart-legend">
                       <li>
@@ -283,13 +265,11 @@ const Distribution = () => {
                   data-vc-values='[{"value":75,"color":"#00e290","highlight":"#00af70","label":"<b>45%<\/b> Distributed to Community"},{"value":13,"color":"#00bbb3","highlight":"#008882","label":"<b>25%<\/b> Reserved Funding"},{"value":12,"color":"#007471","highlight":"#00413f","label":"<b>9%<\/b> Founders and Team"},{"value":10,"color":"#0d2035","highlight":"#03070c","label":"<b>3%<\/b> Advisors"},{"value":5,"color":"#e8e041","highlight":"#dbd21b","label":"<b>2%<\/b> \u201cBounty\u201d campaign"}]'
                 >
                   <div className="wpb_wrapper">
-                    <div className="vc_chart-with-legend">
-                      <div className="c-chart-container">
-                        <Doughnut
-                          data={dataDoughnut_per}
-                          options={{ responsive: true }}
-                        />
-                      </div>
+                    <div className="c-chart-container">
+                      <Doughnut
+                        data={dataDoughnut_per}
+                        options={{ responsive: true }}
+                      />
                     </div>
                     <ul className="vc_chart-legend">
                       <li>
