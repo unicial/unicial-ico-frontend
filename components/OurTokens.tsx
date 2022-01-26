@@ -24,7 +24,7 @@ const OurTokens = () => {
         </div>
       </div>
       <div style={{ marginTop: "40px" }} />
-      <Row className="our-background">
+      <Row className="our-background c-ourtoken-dialog-content">
         <Col className="c-column" xs="12" md="6" lg="4">
           <div
             className="c-introduceContainer"

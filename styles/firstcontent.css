@@ -12,7 +12,7 @@
 }
 
 .c-firstcontent-left {
-  min-width: 500px;
+  max-width: 500px;
 }
 
 .c-firstcontent-right {
@@ -114,7 +114,6 @@
   font-style: normal;
   font-weight: bold;
   font-size: 45px;
-  letter-spacing: 0.05em;
   margin-left: 10px;
 }
 
@@ -125,7 +124,7 @@
 .c-time-desc {
   color: #13ad9d;
   text-align: center;
-  font-size: 17px;
+  font-size: 15px;
 }
 
 .c-time-days {
@@ -136,13 +135,10 @@
 }
 
 .c-time-days .c-time-desc {
-  font-family: Montserrat;
-  font-style: normal;
   font-weight: 500;
   line-height: 22px;
-  letter-spacing: 0.05em;
   color: #12222f;
-  margin-left: 2px;
+  margin-left: 5px;
 }
 
 .c-time-hours {
@@ -150,14 +146,12 @@
   height: 96px;
   background: #f0f4f7;
   color: black;
+  padding-left: 5px;
 }
 
 .c-time-hours .c-time-desc {
-  font-family: Montserrat;
-  font-style: normal;
   font-weight: 500;
   line-height: 22px;
-  letter-spacing: 0.05em;
   color: #00d58b;
   margin-left: 2px;
 }
@@ -261,11 +255,13 @@
     width: 100%;
     display: block;
   }
-  .c-firstcontent-right {
-    min-width: 100%;
-  }
   .c-firstcontent-left {
-    min-width: 100%;
+    max-width: 80%;
+    margin: 0% 5%;
+  }
+  .c-firstcontent-right {
+    min-width: 80%;
+    margin: 0% 5%;
   }
 }
 
@@ -300,5 +296,20 @@
   }
   .c-time-desc {
     font-size: 12px;
+  }
+}
+
+@media (max-width: 500px) {
+  .c-container-content {
+    width: 100%;
+    display: block;
+  }
+  .c-firstcontent-left {
+    max-width: 100%;
+    margin: 0px;
+  }
+  .c-firstcontent-right {
+    min-width: 100%;
+    margin: 0px;
   }
 }

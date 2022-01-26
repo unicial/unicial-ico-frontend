@@ -110,10 +110,7 @@ const OurTokens = () => {
           id="post-1300"
           className="col-lg-4 col-md-4 col-sm-6 col-xs-6 inline-column post-1300 post type-post status-publish format-standard has-post-thumbnail hentry category-ico-cryptocurrency category-investment category-marketing tag-bitcoin tag-blockchain tag-cryptocurrency tag-ethereum tag-ico tag-investment tag-marketing item-animations-inited start-animation"
         >
-          <div
-            className="post-content-wrapper blog-item-default-background centered-box shadow-box"
-            style={{ height: "611px" }}
-          >
+          <div className="post-content-wrapper blog-item-default-background centered-box shadow-box">
             <div className="post-image">
               <div className="post-featured-content">
                 <a href="https://medium.com/@zilionixx_foundation/the-way-of-zilionixx-a7a9eebe620e">
@@ -182,10 +179,7 @@ const OurTokens = () => {
           id="post-1303"
           className="col-lg-4 col-md-4 col-sm-6 col-xs-6 inline-column post-1303 post type-post status-publish format-standard has-post-thumbnail hentry category-ico-cryptocurrency category-investment category-marketing tag-bitcoin tag-blockchain tag-cryptocurrency tag-ethereum tag-ico tag-investment tag-marketing item-animations-inited start-animation"
         >
-          <div
-            className="post-content-wrapper blog-item-default-background centered-box shadow-box"
-            style={{ height: "611px" }}
-          >
+          <div className="post-content-wrapper blog-item-default-background centered-box shadow-box">
             <div className="post-image">
               <div className="post-featured-content">
                 <a href="https://codex-themes.com/themes/cryption/news-page-3-3/">

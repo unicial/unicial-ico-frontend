@@ -9,15 +9,16 @@ const Toparea = () => {
           <div className="toparea-content">
             <div className="toparea-info">
               <span className="top-item top-item-first">
-                <i className="fal fa-map-marker-alt" />
+                <img src="/static/svg/location.svg" alt="location" />
+                {/* <i className="fal fa-map-marker-alt" /> */}
                 140 paya lebar road, Singapore
               </span>
               <span className="top-item">
-                <i className="fas fa-headphones"></i>
+                <img src="/static/svg/headphones.svg" alt="phone" />
                 +65 6702 3011
               </span>
               <span className="top-item">
-                <i className="far fa-envelope"></i>
+                <img src="/static/svg/email.svg" alt="email" />
                 <a className="link-item" href="mailto:tsimafei@zilionixx.com">
                   tsimafei@zilionixx.com
                 </a>

@@ -1,6 +1,7 @@
 .c-chart-container {
   width: 280px;
   height: 280px;
+  position: relative;
 }
 .vc_chart-with-legend {
 }
@@ -80,6 +81,32 @@
 }
 .c-distribution-dark {
   color: #12222f;
+}
+.c-chart-inner-circle {
+  width: 85px;
+  height: 85px;
+  opacity: 0.1;
+  border: 15px solid #7599a2;
+  box-sizing: border-box;
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  left: 35%;
+  top: 35%;
+}
+.c-chart-inner-rectangle-fund {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  top: 50%;
+  left: 30%;
+}
+.c-chart-inner-rectangle-znx {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  top: 30%;
+  left: 50%;
 }
 
 @media (max-width: 768px) {

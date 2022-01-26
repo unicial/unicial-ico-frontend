@@ -29,3 +29,9 @@
   right: 30%;
   top: 10%;
 }
+
+@media (max-width: 500px) {
+  .c-news-title-large {
+    font-size: 40px;
+  }
+}

@@ -21,6 +21,12 @@
   font-size: 16px;
   text-align: center;
 }
+.top-item img {
+  color: #18d685;
+  margin-right: 0.55em;
+  text-align: center;
+  margin-top: -4px;
+}
 .top-item .link-item {
   font-size: 13px;
 }

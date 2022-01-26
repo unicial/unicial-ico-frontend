@@ -1,5 +1,5 @@
 /** @type {import('next').NextConfig} */
-const API_URL = "http://192.168.112.108:9090";
+const API_URL = "https://api.dongletrade.com";
 
 module.exports = {
   reactStrictMode: true,

@@ -55,6 +55,10 @@
   font-weight: normal;
   color: #7599a1;
 }
+.c-ourtoken-dialog-content:before,
+.c-ourtoken-dialog-content:after {
+  display: none !important;
+}
 
 @media (min-width: 990px) {
   .our-background {

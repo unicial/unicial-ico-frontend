@@ -18,14 +18,21 @@ const Distribution = () => {
         label: "# of Votes",
         data: [25, 30, 10, 16, 14, 5],
         backgroundColor: [
-          "#3a6efa",
-          "#e75c22",
-          "#8c6bff",
-          "#f6c120",
-          "#6fb1f1",
-          "#79d21e",
+          "#218B54",
+          "#00D58B",
+          "#AFF2E4",
+          "#78F0D6",
+          "#40E1D1",
+          "#00C5CD",
         ],
-        hoverBackgroundColor: ["#00f2a0", "#00ccc3", "#008481", "#0d2035"],
+        hoverBackgroundColor: [
+          "#218B54",
+          "#00D58B",
+          "#AFF2E4",
+          "#78F0D6",
+          "#40E1D1",
+          "#00C5CD",
+        ],
         borderWidth: 0,
       },
     ],
@@ -43,19 +50,20 @@ const Distribution = () => {
       {
         data: [45, 30, 15, 5, 3, 2],
         backgroundColor: [
-          "#3a6efa",
-          "#e75c22",
-          "#8c6bff",
-          "#f6c120",
-          "#6fb1f1",
-          "#79d21e",
+          "#218B54",
+          "#00D58B",
+          "#AFF2E4",
+          "#78F0D6",
+          "#40E1D1",
+          "#00C5CD",
         ],
         hoverBackgroundColor: [
-          "#00e290",
-          "#5AD3D1",
-          "#FFC870",
-          "#616774",
-          "#e8e041",
+          "#218B54",
+          "#00D58B",
+          "#AFF2E4",
+          "#78F0D6",
+          "#40E1D1",
+          "#00C5CD",
         ],
         borderWidth: 0,
       },
@@ -153,7 +161,7 @@ const Distribution = () => {
                   style={{ marginTop: "50px" }}
                 ></div>
                 <div
-                  className="ct-button-container ct-button-position-left lazy-loading lazy-loading-showed"
+                  className="ct-button-container lazy-loading lazy-loading-showed"
                   style={{ visibility: "visible" }}
                 >
                   <span className="c-buytoken-btn">
@@ -182,7 +190,7 @@ const Distribution = () => {
                 <div className="clearboth"></div>
                 <div
                   className="ct-divider divider_chart"
-                  style={{ marginTop: "100px" }}
+                  style={{ marginTop: "50px" }}
                 ></div>
                 <div
                   className="vc_chart vc_round-chart wpb_content_element"
@@ -202,30 +210,40 @@ const Distribution = () => {
                           responsive: true,
                         }}
                       />
+                      <span className="c-chart-inner-circle"></span>
+                      <img
+                        className="c-chart-inner-rectangle-fund"
+                        src="/static/svg/rectangle.svg"
+                        alt="rectangle"
+                      />
                     </div>
+                    <div
+                      className="ct-divider divider_chart"
+                      style={{ marginTop: "50px" }}
+                    ></div>
                     <ul className="vc_chart-legend">
                       <li>
-                        <span style={{ backgroundColor: "#3a6efa" }}></span>
+                        <span style={{ backgroundColor: "#218B54" }}></span>
                         <b>25%</b> Zilionixx Infra
                       </li>
                       <li>
-                        <span style={{ backgroundColor: "#e75c22" }}></span>
+                        <span style={{ backgroundColor: "#00D58B" }}></span>
                         <b>30%</b> Unicial Project Dev
                       </li>
                       <li>
-                        <span style={{ backgroundColor: "#8c6bff" }}></span>
+                        <span style={{ backgroundColor: "#AFF2E4" }}></span>
                         <b>10%</b> Dongle Trade Dev
                       </li>
                       <li>
-                        <span style={{ backgroundColor: "#f6c120" }}></span>
+                        <span style={{ backgroundColor: "#78F0D6" }}></span>
                         <b>16%</b> Defi & NFT
                       </li>
                       <li>
-                        <span style={{ backgroundColor: "#6fb1f1" }}></span>
+                        <span style={{ backgroundColor: "#40E1D1" }}></span>
                         <b>14%</b> DAO Community Dev
                       </li>
                       <li>
-                        <span style={{ backgroundColor: "#79d21e" }}></span>
+                        <span style={{ backgroundColor: "#00C5CD" }}></span>
                         <b>5%</b> Bonus reserved
                       </li>
                     </ul>
@@ -252,7 +270,7 @@ const Distribution = () => {
                 <div className="clearboth"></div>
                 <div
                   className="ct-divider divider_chart"
-                  style={{ marginTop: "100px" }}
+                  style={{ marginTop: "50px" }}
                 ></div>
                 <div
                   className="vc_chart vc_round-chart wpb_content_element"
@@ -270,30 +288,40 @@ const Distribution = () => {
                         data={dataDoughnut_per}
                         options={{ responsive: true }}
                       />
+                      <span className="c-chart-inner-circle"></span>
+                      <img
+                        className="c-chart-inner-rectangle-znx"
+                        src="/static/svg/rectangle.svg"
+                        alt="rectangle"
+                      />
                     </div>
+                    <div
+                      className="ct-divider divider_chart"
+                      style={{ marginTop: "50px" }}
+                    ></div>
                     <ul className="vc_chart-legend">
                       <li>
-                        <span style={{ backgroundColor: "#3a6efa" }}></span>
+                        <span style={{ backgroundColor: "#218B54" }}></span>
                         <b>45%</b> Distributed to Community
                       </li>
                       <li>
-                        <span style={{ backgroundColor: "#e75c22" }}></span>
+                        <span style={{ backgroundColor: "#00D58B" }}></span>
                         <b>30%</b> Reserved Funding
                       </li>
                       <li>
-                        <span style={{ backgroundColor: "#8c6bff" }}></span>
+                        <span style={{ backgroundColor: "#AFF2E4" }}></span>
                         <b>15%</b> Founders and Team
                       </li>
                       <li>
-                        <span style={{ backgroundColor: "#f6c120" }}></span>
+                        <span style={{ backgroundColor: "#78F0D6" }}></span>
                         <b>5%</b> Marketing
                       </li>
                       <li>
-                        <span style={{ backgroundColor: "#6fb1f1" }}></span>
+                        <span style={{ backgroundColor: "#40E1D1" }}></span>
                         <b>3%</b> Advisors
                       </li>
                       <li>
-                        <span style={{ backgroundColor: "#79d21e" }}></span>
+                        <span style={{ backgroundColor: "#00C5CD" }}></span>
                         <b>2%</b> “Bounty” campaign
                       </li>
                     </ul>
