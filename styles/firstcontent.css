@@ -278,6 +278,9 @@
   .c-buytoken-btn {
     width: 100%;
   }
+  .c-buytoken-btn-border {
+    width: 100%;
+  }
 }
 
 @media (max-width: 768px) {
