@@ -39,10 +39,14 @@ const Header = () => {
   });
 
   const handleScroll = () => {
+    var header: any = document.getElementsByClassName("c-nav-header");
+
     if (window.scrollY > 90) {
       setScrolltotop(true);
+      header[0].style.borderBottom = "none";
       window.innerWidth <= 1212 ? setSticky(false) : setSticky(true);
     } else if (window.scrollY < 90) {
+      header[0].style.borderBottom = "1px solid rgba(117, 153, 162, 0.3)";
       setSticky(false);
       setScrolltotop(false);
     }
