@@ -3,10 +3,10 @@ import { Navbar, NavbarBrand, Nav, NavItem, NavLink } from "reactstrap";
 import { scroller } from "react-scroll";
 
 interface Props {
-  sticky: boolean;
+  scrolltotop: boolean;
 }
 
-function ScrollTop({ sticky }: Props) {
+function ScrollTop({ scrolltotop }: Props) {
   const handleClick = (event: React.MouseEvent<HTMLDivElement>) => {
     const anchor = (
       (event.target as HTMLDivElement).ownerDocument || document
@@ -18,7 +18,7 @@ function ScrollTop({ sticky }: Props) {
   };
 
   return (
-    <div className={sticky ? "c-scroll-top" : "c-scroll-top-disable"}>
+    <div className={scrolltotop ? "c-scroll-top" : "c-scroll-top-disable"}>
       <span onClick={handleClick} role="presentation">
         <i className="fas fa-chevron-up c-scroll-top-icon"></i>
       </span>
@@ -29,6 +29,7 @@ function ScrollTop({ sticky }: Props) {
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [sticky, setSticky] = useState(false);
+  const [scrolltotop, setScrolltotop] = useState(false);
   const [nosticky, setNosticky] = useState(0);
   const toggle = () => setIsOpen(!isOpen);
 
@@ -39,9 +40,11 @@ const Header = () => {
 
   const handleScroll = () => {
     if (window.scrollY > 90) {
+      setScrolltotop(true);
       window.innerWidth <= 1212 ? setSticky(false) : setSticky(true);
     } else if (window.scrollY < 90) {
       setSticky(false);
+      setScrolltotop(false);
     }
   };
 
@@ -52,6 +55,7 @@ const Header = () => {
       setNosticky(1);
     } else {
       setNosticky(0);
+      setIsOpen(false);
     }
   };
 
@@ -163,7 +167,7 @@ const Header = () => {
         </Nav>
       )}
       <div id="back-to-top-anchor" />
-      <ScrollTop sticky={sticky} />
+      <ScrollTop scrolltotop={scrolltotop} />
     </div>
   );
 };
