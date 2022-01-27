@@ -173,15 +173,11 @@ const Distribution = ({ handleShowAlert }: DistributionProps) => {
                 </div>
                 <div className="clearboth"></div>
                 <div
-                  className="ct-divider divider_responsive_zero"
-                  style={{ marginTop: "80px" }}
-                ></div>
-                <div
                   className="ct-button-container lazy-loading lazy-loading-showed"
-                  style={{ visibility: "visible" }}
+                  style={{ visibility: "visible", marginTop: "80px" }}
                 >
                   <span
-                    className="c-buytoken-btn"
+                    className="c-distribution-buytoken-btn"
                     onClick={() => handleModal()}
                   >
                     BUY ZNX -25% OFF

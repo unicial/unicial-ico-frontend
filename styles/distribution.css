@@ -108,6 +108,23 @@
   top: 30%;
   left: 50%;
 }
+.c-distribution-buytoken-btn {
+  display: flex;
+  border-radius: 32px;
+  background: linear-gradient(to left, rgb(4, 221, 138), rgb(18, 178, 165));
+  color: rgb(255, 255, 255);
+  opacity: 1;
+  left: 0px;
+  text-decoration: none;
+  height: 48px;
+  width: 255px;
+  line-height: 18px;
+  font-size: 15px;
+  font-weight: 700;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
 
 @media (max-width: 768px) {
   .c-distribution-history {
