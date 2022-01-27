@@ -79,7 +79,6 @@ const Home = () => {
           integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
           crossOrigin="anonymous"
         />
-
         <link
           rel="stylesheet"
           id="ct-google-fonts-css"
@@ -87,14 +86,6 @@ const Home = () => {
           type="text/css"
           media="all"
         />
-
-        {/* <link
-          rel="stylesheet"
-          id="vc_tta_style-group-css"
-          href="https://codex-themes.com/themes/cryption/wp-content/plugins/bwp-minify/min/?f=themes/wp-content/plugins/js_composer/assets/css/js_composer_tta.min.css,themes/wp-content/plugins/js_composer/assets/lib/bower/animate-css/animate.min.css,themes/wp-content/themes/cryption/css/ct-countdown.css,themes/wp-content/themes/cryption/css/icons-material.css,themes/wp-content/plugins/yikes-inc-easy-mailchimp-extender/public/css/yikes-inc-easy-mailchimp-extender-public.min.css,themes/wp-content/themes/cryption/css/odometer-theme-default.css,themes/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css,themes/wp-content/themes/cryption/css/wp-mediaelement.css,themes/wp-content/themes/cryption/css/ct-blog.css,themes/wp-content/themes/cryption/css/ct-additional-blog.css,themes/wp-content/themes/cryption/css/ct-itemsAnimations.css"
-          type="text/css"
-          media="all"
-        /> */}
       </Head>
       <Banner
         isOpen={isOpen}
