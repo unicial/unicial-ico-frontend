@@ -99,6 +99,7 @@ const Footer = () => {
                     target="_blank"
                     className="c-footer-contact-mail"
                     href="mailto:tsimafei@zilionixx.com"
+                    rel="noreferrer"
                   >
                     tsimafei@zilionixx.com
                   </a>
@@ -109,7 +110,11 @@ const Footer = () => {
                   <img src="/static/svg/world.svg" alt="world" />
                   <span className="c-footer-contact-stick"></span>
                   <span className="c-footer-contact-title">Website:&nbsp;</span>
-                  <a target="_blank" href="https://zilionixx.com">
+                  <a
+                    target="_blank"
+                    href="https://zilionixx.com"
+                    rel="noreferrer"
+                  >
                     zilionixx.com
                   </a>
                 </span>
@@ -121,21 +126,33 @@ const Footer = () => {
             <div>
               <div className="mt-1">
                 <span className="c-footer-link">
-                  <a target="_blank" href="https://znxscan.com">
+                  <a
+                    target="_blank"
+                    href="https://znxscan.com"
+                    rel="noreferrer"
+                  >
                     Block Explorer
                   </a>
                 </span>
               </div>
               <div className="mt-1">
                 <span className="c-footer-link">
-                  <a target="_blank" href="https://dongletrade.com">
+                  <a
+                    target="_blank"
+                    href="https://dongletrade.com"
+                    rel="noreferrer"
+                  >
                     Dongle Trade
                   </a>
                 </span>
               </div>
               <div className="mt-1">
                 <span className="c-footer-link">
-                  <a target="_blank" href="https://zilionixx.com">
+                  <a
+                    target="_blank"
+                    href="https://zilionixx.com"
+                    rel="noreferrer"
+                  >
                     Zilionixx
                   </a>
                 </span>
@@ -145,6 +162,7 @@ const Footer = () => {
                   <a
                     target="_blank"
                     href="https://medium.com/@zilionixx_foundation"
+                    rel="noreferrer"
                   >
                     Medium News
                   </a>

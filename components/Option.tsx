@@ -1,5 +1,5 @@
 import React from "react";
-import { Row, Col } from "reactstrap";
+import Link from "next/link";
 
 const Option = () => {
   return (
@@ -22,12 +22,12 @@ const Option = () => {
             </div>
           </div>
 
-          <a href="/">
+          <Link href="/">
             <p className="card-link">
               Open Whitepaper (Pdf)
               <img src="/static/svg/arrow.svg" />
             </p>
-          </a>
+          </Link>
         </div>
         <div className="c-option-card-container">
           <div className="c-upPart">
@@ -46,12 +46,12 @@ const Option = () => {
             </div>
           </div>
 
-          <a href="/">
+          <Link href="/">
             <p className="card-link">
               Buy ZNX -25% OFF
               <img src="/static/svg/arrow.svg" />
             </p>
-          </a>
+          </Link>
         </div>
         <div className="c-option-card-container c-option-mr-large">
           <div className="c-upPart">
@@ -69,7 +69,7 @@ const Option = () => {
             </div>
           </div>
 
-          <a href="https://t.me/zilionixx">
+          <a href="https://t.me/zilionixx" rel="noreferrer">
             <p className="card-link">
               Join ZNX Telegram
               <img src="/static/svg/arrow.svg" />

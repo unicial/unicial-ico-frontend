@@ -81,6 +81,7 @@ const ConnectWithUs = () => {
                       className="c-contactus-social-item"
                       href="https://twitter.com/zilionixx"
                       target="_blank"
+                      rel="noreferrer"
                     >
                       <i
                         className="fab fa-twitter"
@@ -91,6 +92,7 @@ const ConnectWithUs = () => {
                       className="c-contactus-social-item"
                       href="https://www.facebook.com/groups/4354141514692375/"
                       target="_blank"
+                      rel="noreferrer"
                     >
                       <i
                         className="fab fa-facebook-f"
@@ -101,6 +103,7 @@ const ConnectWithUs = () => {
                       className="c-contactus-social-item"
                       href="https://www.youtube.com/channel/UCvM8xLpdbdyNFVXf5-NmnOA"
                       target="_blank"
+                      rel="noreferrer"
                     >
                       <i
                         className="fab fa-youtube"
@@ -111,6 +114,7 @@ const ConnectWithUs = () => {
                       className="c-contactus-social-item"
                       href="https://t.me/zilionixx"
                       target="_blank"
+                      rel="noreferrer"
                     >
                       <i
                         className="fab fa-telegram-plane"
@@ -121,6 +125,7 @@ const ConnectWithUs = () => {
                       className="c-contactus-social-item"
                       href="#"
                       target="_blank"
+                      rel="noreferrer"
                     >
                       <i
                         className="fab fa-slack-hash"
