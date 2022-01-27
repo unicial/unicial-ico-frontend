@@ -83,10 +83,7 @@ const ConnectWithUs = () => {
                       target="_blank"
                       rel="noreferrer"
                     >
-                      <i
-                        className="fab fa-twitter"
-                        style={{ fontSize: "23px" }}
-                      ></i>
+                      <i className="fab fa-twitter"></i>
                     </a>
                     <a
                       className="c-contactus-social-item"
@@ -94,43 +91,49 @@ const ConnectWithUs = () => {
                       target="_blank"
                       rel="noreferrer"
                     >
-                      <i
-                        className="fab fa-facebook-f"
-                        style={{ fontSize: "23px" }}
-                      ></i>
+                      <i className="fab fa-facebook-f"></i>
                     </a>
+
+                    <a
+                      className="c-contactus-social-item"
+                      href="https://www.linkedin.com/company/zilionixx"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <i className="fab fa-linkedin-in"></i>
+                    </a>
+                    <a
+                      className="c-contactus-social-item"
+                      href="https://www.instagram.com/zilionixx"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <i className="fab fa-instagram"></i>
+                    </a>
+
                     <a
                       className="c-contactus-social-item"
                       href="https://www.youtube.com/channel/UCvM8xLpdbdyNFVXf5-NmnOA"
                       target="_blank"
                       rel="noreferrer"
                     >
-                      <i
-                        className="fab fa-youtube"
-                        style={{ fontSize: "23px" }}
-                      ></i>
+                      <i className="fab fa-youtube"></i>
                     </a>
                     <a
                       className="c-contactus-social-item"
-                      href="https://t.me/zilionixx"
+                      href="https://t.me/zilionixxcommunity"
                       target="_blank"
                       rel="noreferrer"
                     >
-                      <i
-                        className="fab fa-telegram-plane"
-                        style={{ fontSize: "40px" }}
-                      ></i>
+                      <i className="fab fa-telegram-plane"></i>
                     </a>
                     <a
                       className="c-contactus-social-item"
-                      href="#"
+                      href="https://join.slack.com/t/zilionixxcommunity/shared_invite/zt-12gnvg54z-YRfxn2QEPfHU7YoqTNUZCw"
                       target="_blank"
                       rel="noreferrer"
                     >
-                      <i
-                        className="fab fa-slack-hash"
-                        style={{ fontSize: "40px" }}
-                      ></i>
+                      <i className="fab fa-slack-hash"></i>
                     </a>
                   </div>
 
