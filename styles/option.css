@@ -84,6 +84,7 @@
   border: 1px solid #0acc95;
   font-weight: 700;
   transition: all 0.3s;
+  cursor: pointer;
 }
 
 .card-link:hover {

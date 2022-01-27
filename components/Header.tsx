@@ -59,15 +59,15 @@ const Header = () => {
     }
   };
 
-  const ref = useRef();
-  useEffect(() => {
-    const handleClickOutside = (event: any) => {
-      if (ref.current === event.target) {
-        setIsOpen(false);
-      }
-    };
-    document.addEventListener("mousedown", handleClickOutside);
-  }, [ref]);
+  // const elementRef = React.useRef<HTMLDivElement>();
+  // useEffect(() => {
+  //   const handleClickOutside = (event: any) => {
+  //     if (elementRef.current !== event.target) {
+  //       setIsOpen(false);
+  //     }
+  //   };
+  //   document.addEventListener("mousedown", handleClickOutside);
+  // }, [elementRef]);
 
   useEffect(() => {
     handleResize();
@@ -140,7 +140,7 @@ const Header = () => {
         </div>
       </Navbar>
       {isOpen && (
-        <Nav className="c-navbar-res" navbar forwardref={ref}>
+        <Nav className="c-navbar-res" navbar>
           <NavItem>
             <NavLink onClick={() => scrollToSection("About ZNX")}>
               About ZNX

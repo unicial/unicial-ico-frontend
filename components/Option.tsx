@@ -1,7 +1,11 @@
 import React from "react";
 import Link from "next/link";
 
-const Option = () => {
+interface OptionProps {
+  handleShowModal: () => void;
+}
+
+const Option = ({ handleShowModal }: OptionProps) => {
   return (
     <div className="option-container">
       <div className="c-container c-option-content">
@@ -46,12 +50,12 @@ const Option = () => {
             </div>
           </div>
 
-          <Link href="/">
+          <span onClick={handleShowModal}>
             <p className="card-link">
               Buy ZNX -25% OFF
               <img src="/static/svg/arrow.svg" />
             </p>
-          </Link>
+          </span>
         </div>
         <div className="c-option-card-container c-option-mr-large">
           <div className="c-upPart">
@@ -69,7 +73,7 @@ const Option = () => {
             </div>
           </div>
 
-          <a href="https://t.me/zilionixx" rel="noreferrer">
+          <a href="https://t.me/zilionixxcommunity" rel="noreferrer">
             <p className="card-link">
               Join ZNX Telegram
               <img src="/static/svg/arrow.svg" />
