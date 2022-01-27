@@ -58,10 +58,9 @@ const Header = () => {
   const ref = useRef();
   useEffect(() => {
     const handleClickOutside = (event: any) => {
-      console.log(event.target, ref.current);
-      // if (ref.current === event.target) {
-      //   setIsOpen(false);
-      // }
+      if (ref.current === event.target) {
+        setIsOpen(false);
+      }
     };
     document.addEventListener("mousedown", handleClickOutside);
   }, [ref]);

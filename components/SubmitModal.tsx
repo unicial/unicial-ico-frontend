@@ -73,7 +73,7 @@ const ModalComponent = ({
         handleShowAlert("You have successfully submitted", "success");
         handleClose();
       } catch (e: any) {
-        handleShowAlert(e.response.data.error, "error");
+        handleShowAlert("Your subscription information is incorrect.", "error");
       }
     }
   };
