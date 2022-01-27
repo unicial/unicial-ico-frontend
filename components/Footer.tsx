@@ -54,16 +54,15 @@ const Footer = ({ handleShowAlert }: FooterProps) => {
       setErrorEmail("Please enter your email");
     }
     if (flag) {
-      const response = await axios.post("/api/subscribe", {
-        firstName,
-        lastName,
-        email,
-      });
-      const { error } = response.data;
-      if (error) {
-        handleShowAlert(error, "error");
-      } else {
+      try {
+        const response = await axios.post("/api/subscribe", {
+          firstName,
+          lastName,
+          email,
+        });
         handleShowAlert("You have successfully submitted", "success");
+      } catch (e: any) {
+        handleShowAlert(e.response.data.error, "error");
       }
     }
   };

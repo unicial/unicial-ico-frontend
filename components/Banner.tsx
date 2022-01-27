@@ -4,9 +4,9 @@ import { Button } from "reactstrap";
 interface BannerProps {
   isOpen?: boolean;
   handleClose: () => void;
+  handleShowModal: () => void;
 }
-const Banner = ({ isOpen, handleClose }: BannerProps) => {
-  const handleJoin = () => {};
+const Banner = ({ isOpen, handleClose, handleShowModal }: BannerProps) => {
   const handleCloseBanner = () => {
     localStorage.setItem("banner_status", "disable");
     handleClose();
@@ -34,7 +34,7 @@ const Banner = ({ isOpen, handleClose }: BannerProps) => {
         />
         <Button
           className="c-modal-submit c-banner-join-btn"
-          onClick={handleJoin}
+          onClick={handleShowModal}
         >
           Join now
         </Button>

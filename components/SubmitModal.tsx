@@ -64,18 +64,15 @@ const ModalComponent = ({
       setErrorEmail("Please enter your email");
     }
     if (flag) {
-      const response = await axios.post("/api/subscribe", {
-        firstName,
-        lastName,
-        email,
-      });
-      const { error } = response.data;
-      if (error) {
-        handleClose();
-        handleShowAlert(error, "error");
-      } else {
-        handleClose();
+      try {
+        const response = await axios.post("/api/subscribe", {
+          firstName,
+          lastName,
+          email,
+        });
         handleShowAlert("You have successfully submitted", "success");
+      } catch (e: any) {
+        handleShowAlert(e.response.data.error, "error");
       }
     }
   };

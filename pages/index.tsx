@@ -96,7 +96,11 @@ const Home = () => {
           media="all"
         /> */}
       </Head>
-      <Banner isOpen={isOpen} handleClose={handleClose} />
+      <Banner
+        isOpen={isOpen}
+        handleClose={handleClose}
+        handleShowModal={() => setIsOpenModal(true)}
+      />
       <Toparea />
       <Header />
       <FirstContent handleShowAlert={handleShowAlert} />
