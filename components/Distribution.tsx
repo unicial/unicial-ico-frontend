@@ -1,9 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import { Doughnut } from "react-chartjs-2";
+import BuyTokenModal from "./BuyTokenModal";
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
 
-const Distribution = () => {
+interface DistributionProps {
+  handleShowAlert: (msg: any, severity: any) => void;
+}
+
+const Distribution = ({ handleShowAlert }: DistributionProps) => {
   ChartJS.register(ArcElement, Tooltip);
+
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleModal = () => {
+    setIsOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsOpen(false);
+  };
+
   const dataDoughnut = {
     labels: [
       "Zilionixx Infra",
@@ -131,7 +147,7 @@ const Distribution = () => {
                 <div className="clearboth"></div>
                 <div
                   className="ct-divider divider_responsive_zero"
-                  style={{ marginTop: "130px" }}
+                  style={{ marginTop: "50px" }}
                 ></div>
                 <div className="wpb_text_column wpb_content_element  wpb_animate_when_almost_visible wpb_fadeIn fadeIn wpb_start_animation animated">
                   <div className="wpb_wrapper c-distribution-chart-totalsupply">
@@ -158,17 +174,20 @@ const Distribution = () => {
                 <div className="clearboth"></div>
                 <div
                   className="ct-divider divider_responsive_zero"
-                  style={{ marginTop: "50px" }}
+                  style={{ marginTop: "80px" }}
                 ></div>
-                {/* <div
+                <div
                   className="ct-button-container lazy-loading lazy-loading-showed"
                   style={{ visibility: "visible" }}
                 >
-                  <span className="c-buytoken-btn">
+                  <span
+                    className="c-buytoken-btn"
+                    onClick={() => handleModal()}
+                  >
                     BUY ZNX -25% OFF
                     <i className="fas fa-arrow-right ms-2"></i>
                   </span>
-                </div> */}
+                </div>
                 <div className="clearboth"></div>
                 <div
                   className="ct-divider "
@@ -342,6 +361,11 @@ const Distribution = () => {
           </div>
         </div>
       </div>
+      <BuyTokenModal
+        isOpen={isOpen}
+        handleCloseModal={handleCloseModal}
+        handleShowAlert={handleShowAlert}
+      />
     </div>
   );
 };

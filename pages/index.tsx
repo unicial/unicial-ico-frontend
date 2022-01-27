@@ -102,7 +102,7 @@ const Home = () => {
       />
       <Option handleShowAlert={handleShowAlert} />
       <OurTokens />
-      <Distribution />
+      <Distribution handleShowAlert={handleShowAlert} />
       <Roadmap />
       <OurTeam />
       <FAQs />
