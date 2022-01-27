@@ -65,10 +65,7 @@ const Footer = ({ handleShowAlert }: FooterProps) => {
         handleShowAlert(e.response.data.error, "error");
       }
     } else {
-      handleShowAlert(
-        "Your subscription information is incorrection.",
-        "error"
-      );
+      handleShowAlert("Your information is incorrect.", "error");
     }
   };
   return (
