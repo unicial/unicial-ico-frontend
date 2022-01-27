@@ -193,6 +193,11 @@
 .c-modal-highlight-text {
   color: #00d58b;
   font-weight: 600;
+  position: relative;
+  z-index: 2;
+}
+.c-modal-highlight-text:hover {
+  color: #00d58b;
 }
 .c-modal-small-text {
   font-weight: 500;

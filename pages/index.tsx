@@ -100,7 +100,7 @@ const Home = () => {
         handleClose={handleCloseModal}
         handleShowAlert={handleShowAlert}
       />
-      <Option handleShowModal={() => setIsOpenModal(true)} />
+      <Option handleShowAlert={handleShowAlert} />
       <OurTokens />
       <Distribution />
       <Roadmap />

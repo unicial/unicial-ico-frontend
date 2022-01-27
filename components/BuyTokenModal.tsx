@@ -106,11 +106,13 @@ const BuyTokenModal = ({
     formSetAddr.append("email", email);
     formSetAddr.append("address", address);
     const res_address = await addAddress(formSetAddr);
-    if (!res_address.Success) {
-      flag = false;
-      handleShowAlert("Network Error", "error");
-    } else {
-      setErrorAddress("");
+    if (flag) {
+      if (!res_address.Success) {
+        flag = false;
+        handleShowAlert("Network Error", "error");
+      } else {
+        setErrorAddress("");
+      }
     }
     if (flag) {
       const formGetAddr = new FormData();
@@ -155,6 +157,11 @@ const BuyTokenModal = ({
       }, 1000);
       return () => clearTimeout(timer);
     }
+  };
+
+  const navigateMedium = () => {
+    window.location.href =
+      "https://medium.com/p/connecting-metamask-to-zilionixx-network-7ec14b6a36af?source=email-9a88f1652d75-1642609485258-newsletter.subscribeToProfile-------------------------4df407aa_b6f8_4690_bc4a_3977d271e8cd--------cb5c70c6433d";
   };
 
   let stepFirst = (
@@ -234,7 +241,14 @@ const BuyTokenModal = ({
       </div>
       <div className="c-modal-small-text">
         *Note: To get your ZNX Address, click{" "}
-        <span className="c-modal-highlight-text">HERE</span> for full guide
+        <a
+          className="c-modal-highlight-text"
+          href="https://medium.com/p/connecting-metamask-to-zilionixx-network-7ec14b6a36af?source=email-9a88f1652d75-1642609485258-newsletter.subscribeToProfile-------------------------4df407aa_b6f8_4690_bc4a_3977d271e8cd--------cb5c70c6433d"
+          target={"_blank"}
+        >
+          HERE
+        </a>{" "}
+        for full guide
       </div>
     </>
   );

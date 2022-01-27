@@ -1,11 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
+import BuyTokenModal from "./BuyTokenModal";
 
 interface OptionProps {
-  handleShowModal: () => void;
+  handleShowAlert: (msg: any, severity: any) => void;
 }
 
-const Option = ({ handleShowModal }: OptionProps) => {
+const Option = ({ handleShowAlert }: OptionProps) => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleModal = () => {
+    setIsOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsOpen(false);
+  };
   return (
     <div className="option-container">
       <div className="c-container c-option-content">
@@ -50,7 +60,7 @@ const Option = ({ handleShowModal }: OptionProps) => {
             </div>
           </div>
 
-          <span onClick={handleShowModal}>
+          <span onClick={() => handleModal()}>
             <p className="card-link">
               Buy ZNX -25% OFF
               <img src="/static/svg/arrow.svg" />
@@ -85,6 +95,11 @@ const Option = ({ handleShowModal }: OptionProps) => {
           </a>
         </div>
       </div>
+      <BuyTokenModal
+        isOpen={isOpen}
+        handleCloseModal={handleCloseModal}
+        handleShowAlert={handleShowAlert}
+      />
     </div>
   );
 };
