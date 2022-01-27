@@ -319,9 +319,25 @@
   .c-firstcontent-left {
     max-width: 100%;
     margin: 0px;
+    text-align: center;
+  }
+  .c-firstcontent-left .c-small-text {
+    padding: 0px;
   }
   .c-firstcontent-right {
     min-width: 100%;
     margin: 0px;
+  }
+  .c-time-days {
+    width: 114px;
+    height: 114px;
+    background: #00d58b;
+    color: white;
+  }
+  .c-time-hours {
+    width: 66px;
+    height: 66px;
+    background: #f0f4f7;
+    color: black;
   }
 }

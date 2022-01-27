@@ -9,9 +9,9 @@ const OurTokens = () => {
         <div className="dot"></div>
         Our Zilionixx Coin(ZNX)
       </div>
-      <h1 className="questionTitle" style={{ textAlign: "left" }}>
-        What is Zilionixx Coin
-      </h1>
+      <div className="c-news-title-large">
+        <span>What is Zilionixx Coin</span>
+      </div>
       <div style={{ marginTop: "39px" }} />
       <div style={{ marginBottom: "16px" }}>
         <div className="our-sub-title">

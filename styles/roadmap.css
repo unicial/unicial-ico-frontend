@@ -733,6 +733,9 @@ body
   }
 }
 @media (max-width: 480px) {
+  .c-roadmap-title-large {
+    font-size: 40px;
+  }
   .custom-h1.title-h1 {
     font-size: 40px !important;
     line-height: 50px !important;

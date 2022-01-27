@@ -73,7 +73,11 @@ const Option = ({ handleShowModal }: OptionProps) => {
             </div>
           </div>
 
-          <a href="https://t.me/zilionixxcommunity" rel="noreferrer">
+          <a
+            href="https://t.me/zilionixxcommunity"
+            target={"_blank"}
+            rel="noreferrer"
+          >
             <p className="card-link">
               Join ZNX Telegram
               <img src="/static/svg/arrow.svg" />
