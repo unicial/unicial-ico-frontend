@@ -108,6 +108,9 @@
   top: 30%;
   left: 50%;
 }
+.c-distribution-buytoken-btn-content {
+  margin-top: 80px;
+}
 .c-distribution-buytoken-btn {
   display: flex;
   border-radius: 32px;
@@ -135,5 +138,18 @@
     margin: 40px 0px;
     display: grid;
     justify-content: space-around;
+  }
+}
+
+@media (max-width: 500px) {
+  .c-distribution-buytoken-btn-content {
+    display: flex;
+    justify-content: center;
+  }
+  .c-distribution-price-content {
+    margin: 0px auto;
+  }
+  .c-distribution-chart-totalsupply {
+    text-align: center;
   }
 }

@@ -163,19 +163,13 @@ const Distribution = ({ handleShowAlert }: DistributionProps) => {
                   </div>
                 </div>
                 <div className="clearboth"></div>
-                <div
-                  className="ct-divider divider_responsive_zero"
-                  style={{ marginTop: "50px" }}
-                ></div>
+                <div className="ct-divider" style={{ marginTop: "50px" }}></div>
                 <div className="c-distribution-price-content">
                   <div>1 ZNX</div>
                   <div className="c-distribution-dark">1.18 USDT</div>
                 </div>
                 <div className="clearboth"></div>
-                <div
-                  className="ct-button-container lazy-loading lazy-loading-showed"
-                  style={{ visibility: "visible", marginTop: "80px" }}
-                >
+                <div className="ct-button-container c-distribution-buytoken-btn-content">
                   <span
                     className="c-distribution-buytoken-btn"
                     onClick={() => handleModal()}
