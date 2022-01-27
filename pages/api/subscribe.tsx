@@ -55,8 +55,5 @@ export default async (req: any, res: any) => {
     else return res.status(200).json({ error: "please check your network" });
   } catch (error) {
     return res.status(200).json({ error: "please check your network" });
-    // return res.status(400).json({
-    //   error: `Oops, something went wrong... Send me an email at djsfdavid@gmail.com and I'll manually add you to the list.`,
-    // });
   }
 };

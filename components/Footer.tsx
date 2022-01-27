@@ -1,7 +1,12 @@
 import React, { useState } from "react";
 import { Col, Row, Button } from "reactstrap";
+import axios from "axios";
 
-const Footer = () => {
+interface FooterProps {
+  handleShowAlert: (msg: any, severity: any) => void;
+}
+
+const Footer = ({ handleShowAlert }: FooterProps) => {
   const [firstName, setFirstName] = useState("");
   const [errorFirstName, setErrorFirstName] = useState("");
   const [lastName, setLastName] = useState("");
@@ -21,7 +26,7 @@ const Footer = () => {
     setEmail(str);
   };
 
-  const handleSubmit = () => {
+  const handleSubmit = async () => {
     let flag = true;
     if (firstName) {
       setErrorFirstName("");
@@ -49,6 +54,17 @@ const Footer = () => {
       setErrorEmail("Please enter your email");
     }
     if (flag) {
+      const response = await axios.post("/api/subscribe", {
+        firstName,
+        lastName,
+        email,
+      });
+      const { error } = response.data;
+      if (error) {
+        handleShowAlert(error, "error");
+      } else {
+        handleShowAlert("You have successfully submitted", "success");
+      }
     }
   };
   return (
@@ -198,7 +214,7 @@ const Footer = () => {
                   handleEmail(e.target.value)
                 }
               ></input>
-              <a className="c-footer-subscribe mt-3">
+              <a className="c-footer-subscribe mt-3" onClick={handleSubmit}>
                 SUBSCRIBE <i className="fas fa-arrow-right ms-2"></i>
               </a>
               <span className="c-encrypted-text mt-3">

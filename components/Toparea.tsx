@@ -1,5 +1,4 @@
 import React from "react";
-import Banner from "./Banner";
 
 const Toparea = () => {
   return (
@@ -44,21 +43,27 @@ const Toparea = () => {
                 <i className="fab fa-linkedin-in"></i>
               </a>
               {/* <a className="link-item ps-3" href="#">
-              <i className="fab fa-google-plus-g"></i>
-            </a>
-            <a className="link-item ps-3" href="#">
-              <i className="fab fa-instagram"></i>
-            </a> */}
+                <i className="fab fa-google-plus-g"></i>
+              </a> */}
+              <a
+                className="link-item ps-3"
+                href="https://www.instagram.com/zilionixx"
+              >
+                <i className="fab fa-instagram"></i>
+              </a>
               <a
                 className="link-item ps-3"
                 href="https://www.youtube.com/channel/UCvM8xLpdbdyNFVXf5-NmnOA"
               >
                 <i className="fab fa-youtube"></i>
               </a>
-              <a className="link-item ps-3" href="https://t.me/zilionixx">
+              <a
+                className="link-item ps-3"
+                href="https://t.me/zilionixxcommunity"
+              >
                 <i className="fab fa-telegram-plane"></i>
               </a>
-              <a className="link-item ps-3" href="https://discord.gg/6Yf7n8Qw">
+              <a className="link-item ps-3" href="https://discord.gg/JEPcm4YD">
                 <i className="fab fa-discord"></i>
               </a>
               {/* <a className="link-item ps-3" href="#">

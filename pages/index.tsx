@@ -113,7 +113,7 @@ const Home = () => {
       <FAQs />
       <News />
       <ConnectWithUs />
-      <Footer />
+      <Footer handleShowAlert={handleShowAlert} />
       <Bottomarea />
       <AlertComponent alertData={alertState} handleClose={handleCloseAlert} />
     </React.StrictMode>
