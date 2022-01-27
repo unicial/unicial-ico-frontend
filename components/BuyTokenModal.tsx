@@ -47,15 +47,19 @@ const BuyTokenModal = ({
 
   const handleInit = () => {
     setFirstName("");
+    setErrorFirstName("");
     setLastName("");
+    setErrorLastName("");
     setEmail("");
+    setErrorEmail("");
     setAddress("");
+    setErrorAddress("");
     setStepId(stepIndex.first);
   };
 
   const handleClose = () => {
-    handleCloseModal();
     handleInit();
+    handleCloseModal();
   };
 
   const handleFirstNext = async () => {
@@ -159,11 +163,6 @@ const BuyTokenModal = ({
     }
   };
 
-  const navigateMedium = () => {
-    window.location.href =
-      "https://medium.com/p/connecting-metamask-to-zilionixx-network-7ec14b6a36af?source=email-9a88f1652d75-1642609485258-newsletter.subscribeToProfile-------------------------4df407aa_b6f8_4690_bc4a_3977d271e8cd--------cb5c70c6433d";
-  };
-
   let stepFirst = (
     <>
       <div className="c-modal-content">
@@ -243,7 +242,7 @@ const BuyTokenModal = ({
         *Note: To get your ZNX Address, click{" "}
         <a
           className="c-modal-highlight-text"
-          href="https://medium.com/p/connecting-metamask-to-zilionixx-network-7ec14b6a36af?source=email-9a88f1652d75-1642609485258-newsletter.subscribeToProfile-------------------------4df407aa_b6f8_4690_bc4a_3977d271e8cd--------cb5c70c6433d"
+          href="https://medium.com/@zilionixx_foundation/connecting-metamask-to-zilionixx-network-7ec14b6a36af"
           target={"_blank"}
         >
           HERE
