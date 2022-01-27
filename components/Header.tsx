@@ -54,16 +54,14 @@ const Header = () => {
       setNosticky(0);
     }
   };
-  const toggleModal = () => {
-    setIsOpen(false);
-  };
 
   const ref = useRef();
   useEffect(() => {
     const handleClickOutside = (event: any) => {
-      if (ref.current !== event.target) {
-        setIsOpen(false);
-      }
+      console.log(event.target, ref.current);
+      // if (ref.current === event.target) {
+      //   setIsOpen(false);
+      // }
     };
     document.addEventListener("mousedown", handleClickOutside);
   }, [ref]);

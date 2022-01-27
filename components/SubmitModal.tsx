@@ -71,6 +71,7 @@ const ModalComponent = ({
           email,
         });
         handleShowAlert("You have successfully submitted", "success");
+        handleClose();
       } catch (e: any) {
         handleShowAlert(e.response.data.error, "error");
       }
