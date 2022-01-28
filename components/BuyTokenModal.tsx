@@ -244,6 +244,7 @@ const BuyTokenModal = ({
           className="c-modal-highlight-text"
           href="https://medium.com/@zilionixx_foundation/connecting-metamask-to-zilionixx-network-7ec14b6a36af"
           target={"_blank"}
+          rel="noreferrer"
         >
           HERE
         </a>{" "}
