@@ -63,16 +63,6 @@ const Header = () => {
     }
   };
 
-  // const elementRef = React.useRef<HTMLDivElement>();
-  // useEffect(() => {
-  //   const handleClickOutside = (event: any) => {
-  //     if (elementRef.current !== event.target) {
-  //       setIsOpen(false);
-  //     }
-  //   };
-  //   document.addEventListener("mousedown", handleClickOutside);
-  // }, [elementRef]);
-
   useEffect(() => {
     handleResize();
     handleScroll();
@@ -84,6 +74,7 @@ const Header = () => {
       smooth: "easeInOutQuart",
     });
   };
+
   return (
     <div className={`header${sticky ? " sticky" : ""}`}>
       <Navbar light expand="md" className="py-0">

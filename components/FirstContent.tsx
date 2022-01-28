@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import { Col, Progress, Row } from "reactstrap";
+import { Progress } from "reactstrap";
 import BuyTokenModal from "./BuyTokenModal";
 import { getLeftTime } from "../api";
 

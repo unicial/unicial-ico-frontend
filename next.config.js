@@ -6,5 +6,6 @@ module.exports = {
   reactStrictMode: true,
   env: {
     ApiUrl: `${API_URL}/api/v1`,
+    expiretime: 86400,
   },
 };

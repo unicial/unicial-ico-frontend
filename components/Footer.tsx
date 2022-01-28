@@ -68,6 +68,7 @@ const Footer = ({ handleShowAlert }: FooterProps) => {
       handleShowAlert("Your information is incorrect.", "error");
     }
   };
+
   return (
     <div className="c-footer">
       <div className="c-container">

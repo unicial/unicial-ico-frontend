@@ -16,6 +16,7 @@ const Option = ({ handleShowAlert }: OptionProps) => {
   const handleCloseModal = () => {
     setIsOpen(false);
   };
+
   return (
     <div className="option-container">
       <div className="c-container c-option-content">

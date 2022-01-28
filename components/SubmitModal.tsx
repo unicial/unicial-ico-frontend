@@ -77,6 +77,7 @@ const ModalComponent = ({
       }
     }
   };
+
   return (
     <div>
       <Modal isOpen={isOpen} size="md" centered>

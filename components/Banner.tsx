@@ -19,7 +19,8 @@ const Banner = ({
   const [cookies, setCookie] = useCookies(["Banner"]);
 
   const handleCloseBanner = () => {
-    let expiresAt: any = moment(86400 * 1000 + new Date().getTime());
+    const expiretime: any = process.env.expiretime;
+    let expiresAt: any = moment(expiretime * 1000 + new Date().getTime());
     setCookie(
       "Banner",
       {

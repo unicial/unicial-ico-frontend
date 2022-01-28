@@ -8,6 +8,7 @@ interface AlertComponentProps {
 
 const AlertComponent = ({ alertData, handleClose }: AlertComponentProps) => {
   const { isOpen, msg, severity } = alertData;
+
   useEffect(() => {
     if (isOpen) {
       setTimeout(() => {
@@ -15,6 +16,7 @@ const AlertComponent = ({ alertData, handleClose }: AlertComponentProps) => {
       }, 5000);
     }
   }, [isOpen]);
+
   return (
     <div className={"c-alert-root"}>
       <Alert isOpen={isOpen} color="primary" fade className="c-alert-content">

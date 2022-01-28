@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Doughnut } from "react-chartjs-2";
 import BuyTokenModal from "./BuyTokenModal";
-import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
+import { Chart as ChartJS, ArcElement, Tooltip } from "chart.js";
 
 interface DistributionProps {
   handleShowAlert: (msg: any, severity: any) => void;
@@ -53,6 +53,7 @@ const Distribution = ({ handleShowAlert }: DistributionProps) => {
       },
     ],
   };
+
   const dataDoughnut_per = {
     labels: [
       "Distributed to Community",
