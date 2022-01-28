@@ -18,7 +18,7 @@ import Banner from "../components/Banner";
 import AlertComponent from "../components/Alert";
 
 const Home = () => {
-  const [isOpen, setIsOpen] = useState<boolean>();
+  const [isOpenBanner, setIsOpenBanner] = useState<boolean>();
   const [isOpenModal, setIsOpenModal] = useState<boolean>();
   const [alertState, setAlertState] = useState({
     isOpen: false,
@@ -26,8 +26,14 @@ const Home = () => {
     severity: "",
   });
 
-  const handleClose = () => {
-    setIsOpen(false);
+  const handleCloseBanner = () => {
+    setIsOpenBanner(false);
+    setIsOpenModal(false);
+  };
+
+  const handleShowBanner = () => {
+    setIsOpenBanner(true);
+    setIsOpenModal(true);
   };
 
   const handleCloseModal = () => {
@@ -49,20 +55,6 @@ const Home = () => {
       severity: severity,
     });
   };
-
-  useEffect(() => {
-    let bannerStatus;
-    if (typeof window !== "undefined") {
-      bannerStatus = localStorage.getItem("banner_status");
-    }
-    if (bannerStatus === "disable") {
-      setIsOpen(false);
-      setIsOpenModal(false);
-    } else {
-      setIsOpen(true);
-      setIsOpenModal(true);
-    }
-  }, []);
 
   return (
     <React.StrictMode>
@@ -88,8 +80,9 @@ const Home = () => {
         />
       </Head>
       <Banner
-        isOpen={isOpen}
-        handleClose={handleClose}
+        isOpen={isOpenBanner}
+        handleBannerClose={handleCloseBanner}
+        handleBannerShow={handleShowBanner}
         handleShowModal={() => setIsOpenModal(true)}
       />
       <Toparea />

@@ -1,16 +1,43 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Button } from "reactstrap";
+import moment from "moment";
+import { useCookies } from "react-cookie";
 
 interface BannerProps {
   isOpen?: boolean;
-  handleClose: () => void;
+  handleBannerClose: () => void;
+  handleBannerShow: () => void;
   handleShowModal: () => void;
 }
-const Banner = ({ isOpen, handleClose, handleShowModal }: BannerProps) => {
+
+const Banner = ({
+  isOpen,
+  handleBannerClose,
+  handleBannerShow,
+  handleShowModal,
+}: BannerProps) => {
+  const [cookies, setCookie] = useCookies(["Banner"]);
+
   const handleCloseBanner = () => {
-    localStorage.setItem("banner_status", "disable");
-    handleClose();
+    let expiresAt: any = moment(86400 * 1000 + new Date().getTime());
+    setCookie(
+      "Banner",
+      {
+        closeBanner: true,
+      },
+      { path: "/", expires: expiresAt._d, secure: true }
+    );
+    handleBannerClose();
   };
+
+  useEffect(() => {
+    if (cookies.Banner) {
+      handleBannerClose();
+    } else {
+      handleShowModal();
+      handleBannerShow();
+    }
+  }, [cookies]);
 
   return (
     <div className={isOpen ? "c-banner-root" : "c-banner-disable"}>
