@@ -122,3 +122,16 @@
 .c-footer-contact-mail {
   width: 10px;
 }
+
+.c-footer-logo {
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.c-footer-logo img {
+  width: 40px;
+  height: 40px;
+  margin-right: 15px;
+}

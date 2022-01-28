@@ -74,7 +74,10 @@ const Footer = ({ handleShowAlert }: FooterProps) => {
       <div className="c-container">
         <Row>
           <Col lg={3} md={6} sm={12} className="py-3">
-            <img src="/static/images/logo_large.png"></img>
+            <div className="c-footer-logo">
+              <img src="/static/svg/logo.svg"></img>
+              <span>Zilionixx</span>
+            </div>
             <span className="d-block my-4">
               Zilionixx crowdsale landing page. Zilionixx crowdsale will be
               start on 1th Febrary.
