@@ -128,7 +128,7 @@ const Footer = ({ handleShowAlert }: FooterProps) => {
               </div>
               <div className="mt-1">
                 <span className="c-bottom-item">
-                  <img src="/static/svg/World.svg" alt="world" />
+                  <img src="/static/svg/world.svg" alt="world" />
                   <span className="c-footer-contact-stick"></span>
                   <span className="c-footer-contact-title">Website:&nbsp;</span>
                   <a
