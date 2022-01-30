@@ -56,7 +56,7 @@ const Banner = ({
           <span className="c-banner-text">Register for Free on Crowdsale.</span>
         </div>
         <img
-          src="/static/svg/vector.svg"
+          src="/static/svg/Vector.svg"
           alt="vector"
           className="c-banner-vector"
         />
