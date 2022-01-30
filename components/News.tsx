@@ -86,7 +86,7 @@ const OurTokens = () => {
               <div className="post-title">
                 <h5 className="entry-title">
                   <a
-                    href="https://codex-themes.com/themes/cryption/news-page-3-1/"
+                    href="https://medium.com/@zilionixx_foundation/an-introduction-to-zilionixx-8ddb5ed51535"
                     rel="bookmark"
                   >
                     An introduction to Zilionixx
@@ -154,7 +154,7 @@ const OurTokens = () => {
               <div className="post-title">
                 <h5 className="entry-title">
                   <a
-                    href="https://codex-themes.com/themes/cryption/news-page-3-2/"
+                    href="https://medium.com/@zilionixx_foundation/the-way-of-zilionixx-a7a9eebe620e"
                     rel="bookmark"
                   >
                     The way of Zilionixx
@@ -181,7 +181,7 @@ const OurTokens = () => {
           <div className="post-content-wrapper blog-item-default-background centered-box shadow-box">
             <div className="post-image">
               <div className="post-featured-content c-news-media-item">
-                <a href="https://codex-themes.com/themes/cryption/news-page-3-3/">
+                <a href="https://medium.com/@zilionixx_foundation/connecting-metamask-to-zilionixx-network-7ec14b6a36af">
                   <picture>
                     <source media="(max-width: 992px)" />
                     <source media="(max-width: 1100px)" />
@@ -223,7 +223,7 @@ const OurTokens = () => {
               <div className="post-title">
                 <h5 className="entry-title">
                   <a
-                    href="https://codex-themes.com/themes/cryption/news-page-3-3/"
+                    href="https://medium.com/@zilionixx_foundation/connecting-metamask-to-zilionixx-network-7ec14b6a36af"
                     rel="bookmark"
                   >
                     Connecting MetaMask to Zilionixx Network
