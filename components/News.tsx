@@ -44,7 +44,10 @@ const OurTokens = () => {
           <div className="post-content-wrapper blog-item-default-background centered-box shadow-box">
             <div className="post-image">
               <div className="post-featured-content c-news-media-item">
-                <a href="https://medium.com/@zilionixx_foundation/an-introduction-to-zilionixx-8ddb5ed51535">
+                <a
+                  href="https://medium.com/@zilionixx_foundation/an-introduction-to-zilionixx-8ddb5ed51535"
+                  target={"_blank"}
+                >
                   <picture>
                     <source media="(max-width: 992px)" />
                     <source media="(max-width: 1100px)" />
@@ -88,6 +91,7 @@ const OurTokens = () => {
                   <a
                     href="https://medium.com/@zilionixx_foundation/an-introduction-to-zilionixx-8ddb5ed51535"
                     rel="bookmark"
+                    target={"_blank"}
                   >
                     An introduction to Zilionixx
                   </a>
@@ -112,7 +116,10 @@ const OurTokens = () => {
           <div className="post-content-wrapper blog-item-default-background centered-box shadow-box">
             <div className="post-image">
               <div className="post-featured-content c-news-media-item">
-                <a href="https://medium.com/@zilionixx_foundation/the-way-of-zilionixx-a7a9eebe620e">
+                <a
+                  href="https://medium.com/@zilionixx_foundation/the-way-of-zilionixx-a7a9eebe620e"
+                  target={"_blank"}
+                >
                   <picture>
                     <source media="(max-width: 992px)" />
                     <source media="(max-width: 1100px)" />
@@ -155,6 +162,7 @@ const OurTokens = () => {
                 <h5 className="entry-title">
                   <a
                     href="https://medium.com/@zilionixx_foundation/the-way-of-zilionixx-a7a9eebe620e"
+                    target={"_blank"}
                     rel="bookmark"
                   >
                     The way of Zilionixx
@@ -181,7 +189,10 @@ const OurTokens = () => {
           <div className="post-content-wrapper blog-item-default-background centered-box shadow-box">
             <div className="post-image">
               <div className="post-featured-content c-news-media-item">
-                <a href="https://medium.com/@zilionixx_foundation/connecting-metamask-to-zilionixx-network-7ec14b6a36af">
+                <a
+                  href="https://medium.com/@zilionixx_foundation/connecting-metamask-to-zilionixx-network-7ec14b6a36af"
+                  target={"_blank"}
+                >
                   <picture>
                     <source media="(max-width: 992px)" />
                     <source media="(max-width: 1100px)" />
@@ -225,6 +236,7 @@ const OurTokens = () => {
                   <a
                     href="https://medium.com/@zilionixx_foundation/connecting-metamask-to-zilionixx-network-7ec14b6a36af"
                     rel="bookmark"
+                    target={"_blank"}
                   >
                     Connecting MetaMask to Zilionixx Network
                   </a>
