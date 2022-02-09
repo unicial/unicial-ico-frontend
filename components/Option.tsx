@@ -1,20 +1,37 @@
 import React, { useState } from "react";
 import Link from "next/link";
-import BuyTokenModal from "./BuyTokenModal";
+import { stageName, price } from "../common/constant";
+import { getCurrentStage, getBuyPermission } from "../store/ICOinfo/selectors";
+import { useAppSelector, useAppDispatch } from "../store/hooks";
+import { showBuyModal } from "../store/buymodal";
+import { showAlert } from "../store/alert";
 
-interface OptionProps {
-  handleShowAlert: (msg: any, severity: any) => void;
-}
-
-const Option = ({ handleShowAlert }: OptionProps) => {
-  const [isOpen, setIsOpen] = useState(false);
-
+const Option = () => {
+  const dispatch = useAppDispatch();
+  const currentStage = useAppSelector(getCurrentStage);
+  const buyPermission = useAppSelector(getBuyPermission);
   const handleModal = () => {
-    setIsOpen(true);
-  };
-
-  const handleCloseModal = () => {
-    setIsOpen(false);
+    if (buyPermission) dispatch(showBuyModal(true));
+    else {
+      if (
+        currentStage === stageName.preStage ||
+        currentStage === stageName.closeStage
+      ) {
+        dispatch(
+          showAlert({
+            message: "Zilionixx crowdsale stage is not yet",
+            severity: false,
+          })
+        );
+      } else {
+        dispatch(
+          showAlert({
+            message: "Left time is done",
+            severity: false,
+          })
+        );
+      }
+    }
   };
 
   return (
@@ -56,7 +73,12 @@ const Option = ({ handleShowAlert }: OptionProps) => {
 
             <div className="c-option-letterPart">
               <p className="c-option-text-title">1 ZNX price</p>
-              <p className="c-option-text-content">1.18 USDT</p>
+              <p className="c-option-text-content">
+                {currentStage === stageName.secondStage
+                  ? price.secondStage
+                  : price.firstStage}
+                &nbsp; USDT
+              </p>
               <img className="c-pig" src="/static/svg/pig.svg" />
             </div>
           </div>
@@ -96,11 +118,6 @@ const Option = ({ handleShowAlert }: OptionProps) => {
           </a>
         </div>
       </div>
-      <BuyTokenModal
-        isOpen={isOpen}
-        handleCloseModal={handleCloseModal}
-        handleShowAlert={handleShowAlert}
-      />
     </div>
   );
 };

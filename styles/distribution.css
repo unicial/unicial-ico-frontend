@@ -129,6 +129,10 @@
   cursor: pointer;
 }
 
+.c-distribution-buytoken-btn:hover {
+  background: linear-gradient(to right, rgb(4, 221, 138), rgb(18, 178, 165));
+}
+
 @media (max-width: 768px) {
   .c-distribution-history {
     width: 100%;

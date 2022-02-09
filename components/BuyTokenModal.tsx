@@ -3,18 +3,14 @@ import { Modal, ModalBody, Button, Input, FormFeedback } from "reactstrap";
 import { stepIndex } from "../common/constant";
 import { addUser, addAddress, getAddress } from "../api";
 import copy from "copy-text-to-clipboard";
+import { useAppDispatch, useAppSelector } from "../store/hooks";
+import { getBuyModalStatus } from "../store/buymodal/selectors";
+import { showBuyModal } from "../store/buymodal";
+import { showAlert } from "../store/alert";
 
-interface BuyTokenModalProps {
-  isOpen: boolean;
-  handleCloseModal: () => void;
-  handleShowAlert: (msg: any, severity: any) => void;
-}
-
-const BuyTokenModal = ({
-  isOpen,
-  handleCloseModal,
-  handleShowAlert,
-}: BuyTokenModalProps) => {
+const BuyTokenModal = () => {
+  const dispatch = useAppDispatch();
+  const modalShow = useAppSelector(getBuyModalStatus);
   const [firstName, setFirstName] = useState("");
   const [errorFirstName, setErrorFirstName] = useState("");
   const [lastName, setLastName] = useState("");
@@ -59,7 +55,7 @@ const BuyTokenModal = ({
 
   const handleClose = () => {
     handleInit();
-    handleCloseModal();
+    dispatch(showBuyModal(false));
   };
 
   const handleFirstNext = async () => {
@@ -96,7 +92,14 @@ const BuyTokenModal = ({
       form.append("lastname", lastName);
       const res = await addUser(form);
       if (res.Success) setStepId(stepIndex.second);
-      else handleShowAlert("Network Error", "error");
+      else {
+        dispatch(
+          showAlert({
+            message: "Network Error",
+            severity: false,
+          })
+        );
+      }
     }
   };
 
@@ -113,7 +116,12 @@ const BuyTokenModal = ({
     if (flag) {
       if (!res_address.Success) {
         flag = false;
-        handleShowAlert("Network Error", "error");
+        dispatch(
+          showAlert({
+            message: "Network Error",
+            severity: false,
+          })
+        );
       } else {
         setErrorAddress("");
       }
@@ -125,7 +133,12 @@ const BuyTokenModal = ({
       const { Success, Data } = res_getaddr;
       if (!Success) {
         flag = false;
-        handleShowAlert("Network Error", "error");
+        dispatch(
+          showAlert({
+            message: "Network Error",
+            severity: false,
+          })
+        );
       } else {
         Data.Wallet.forEach((item: any) => {
           if (item.ChainName === "ETH") {
@@ -141,7 +154,7 @@ const BuyTokenModal = ({
 
   const handleThirdNext = () => {
     handleInit();
-    handleCloseModal();
+    dispatch(showBuyModal(false));
   };
 
   const handleCopyAddress = (coin: string) => {
@@ -306,7 +319,7 @@ const BuyTokenModal = ({
   );
   return (
     <div>
-      <Modal isOpen={isOpen} size="md" centered>
+      <Modal isOpen={modalShow} size="md" centered>
         <ModalBody className="c-modal-body">
           <span className="c-modal-close-btn" onClick={handleClose}>
             <i className="fas fa-times"></i>

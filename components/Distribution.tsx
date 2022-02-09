@@ -1,23 +1,43 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Doughnut } from "react-chartjs-2";
-import BuyTokenModal from "./BuyTokenModal";
 import { Chart as ChartJS, ArcElement, Tooltip } from "chart.js";
+import { dateToTime } from "../common/utile";
+import { useAppDispatch, useAppSelector } from "../store/hooks";
+import { getCurrentStage, getBuyPermission } from "../store/ICOinfo/selectors";
+import { setCurrentStage } from "../store/ICOinfo";
+import { stageName, price } from "../common/constant";
+import { showBuyModal } from "../store/buymodal";
+import { showAlert } from "../store/alert";
 
-interface DistributionProps {
-  handleShowAlert: (msg: any, severity: any) => void;
-}
-
-const Distribution = ({ handleShowAlert }: DistributionProps) => {
+const Distribution = () => {
   ChartJS.register(ArcElement, Tooltip);
 
-  const [isOpen, setIsOpen] = useState(false);
+  const dispatch = useAppDispatch();
+  const currentStage = useAppSelector(getCurrentStage);
+  const buyPermission = useAppSelector(getBuyPermission);
 
   const handleModal = () => {
-    setIsOpen(true);
-  };
-
-  const handleCloseModal = () => {
-    setIsOpen(false);
+    if (buyPermission) dispatch(showBuyModal(true));
+    else {
+      if (
+        currentStage === stageName.preStage ||
+        currentStage === stageName.closeStage
+      ) {
+        dispatch(
+          showAlert({
+            message: "Zilionixx crowdsale stage is not yet",
+            severity: false,
+          })
+        );
+      } else {
+        dispatch(
+          showAlert({
+            message: "Left time is done",
+            severity: false,
+          })
+        );
+      }
+    }
   };
 
   const dataDoughnut = {
@@ -87,6 +107,29 @@ const Distribution = ({ handleShowAlert }: DistributionProps) => {
     ],
   };
 
+  useEffect(() => {
+    const currentTimes = dateToTime("current");
+    const firstStageTimes = dateToTime("2022-02-14");
+    const secondStageTimes = dateToTime("2022-03-1");
+    const lastStageTimes = dateToTime("2022-03-15");
+
+    if (currentTimes < firstStageTimes) {
+      dispatch(setCurrentStage(stageName.preStage));
+    } else if (
+      currentTimes >= firstStageTimes &&
+      currentTimes < secondStageTimes
+    ) {
+      dispatch(setCurrentStage(stageName.firstStage));
+    } else if (
+      currentTimes >= secondStageTimes &&
+      currentTimes < lastStageTimes
+    ) {
+      dispatch(setCurrentStage(stageName.secondStage));
+    } else {
+      dispatch(setCurrentStage(stageName.closeStage));
+    }
+  }, []);
+
   return (
     <div className="c-distribution-container">
       <div
@@ -104,32 +147,32 @@ const Distribution = ({ handleShowAlert }: DistributionProps) => {
             <div className="c-distribution-history">
               <i className="fas fa-circle c-news-title-dot c-distribution-dot-icon"></i>
               <div className="c-distribution-history-text">
-                <div>Feb 1th ~ Feb 10th</div>
+                <div>Feb 14th ~ Feb 28th</div>
                 <div>
                   <span className="c-distribution-coin-text">1 ZNX</span>
-                  <span> = 1.2 USDT, 1.5 milion ZNX </span>
+                  <span> = {price.firstStage} USDT, 1.5 milion ZNX </span>
                 </div>
               </div>
             </div>
             <div className="c-distribution-history">
               <i className="fas fa-circle c-news-title-dot c-distribution-dot-icon"></i>
               <div className="c-distribution-history-text">
-                <div>Feb 11th ~ Feb 20th</div>
+                <div>Mar 1th ~ Mar 14th</div>
                 <div>
                   <span className="c-distribution-coin-text">1 ZNX</span>
-                  <span> = 1.23 USDT, 1.5 milion ZNX </span>
+                  <span> = {price.secondStage} USDT, 1.5 milion ZNX </span>
                 </div>
               </div>
             </div>
             <div className="c-distribution-history">
-              <i className="fas fa-circle c-news-title-dot c-distribution-dot-icon"></i>
+              {/* <i className="fas fa-circle c-news-title-dot c-distribution-dot-icon"></i>
               <div className="c-distribution-history-text">
                 <div>Feb 21th ~ Feb 28th</div>
                 <div>
                   <span className="c-distribution-coin-text">1 ZNX</span>
                   <span> = 1.25 USDT, 1.5 milion ZNX </span>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
@@ -167,7 +210,12 @@ const Distribution = ({ handleShowAlert }: DistributionProps) => {
                 <div className="ct-divider" style={{ marginTop: "50px" }}></div>
                 <div className="c-distribution-price-content">
                   <div>1 ZNX</div>
-                  <div className="c-distribution-dark">1.18 USDT</div>
+                  <div className="c-distribution-dark">
+                    {currentStage === stageName.secondStage
+                      ? price.secondStage
+                      : price.firstStage}
+                    USDT
+                  </div>
                 </div>
                 <div className="clearboth"></div>
                 <div className="ct-button-container c-distribution-buytoken-btn-content">
@@ -352,11 +400,6 @@ const Distribution = ({ handleShowAlert }: DistributionProps) => {
           </div>
         </div>
       </div>
-      <BuyTokenModal
-        isOpen={isOpen}
-        handleCloseModal={handleCloseModal}
-        handleShowAlert={handleShowAlert}
-      />
     </div>
   );
 };

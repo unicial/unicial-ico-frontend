@@ -1,24 +1,26 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Progress } from "reactstrap";
-import BuyTokenModal from "./BuyTokenModal";
 import { getLeftTime } from "../api";
+import { stageName } from "../common/constant";
+import { getCurrentStage, getBuyPermission } from "../store/ICOinfo/selectors";
+import { useAppDispatch, useAppSelector } from "../store/hooks";
+import { showAlert } from "../store/alert";
+import { setBuyPermission } from "../store/ICOinfo";
+import { showBuyModal } from "../store/buymodal";
 
-interface TopareaProps {
-  handleShowAlert: (msg: any, severity: any) => void;
-}
-
-const Toparea = ({ handleShowAlert }: TopareaProps) => {
+const Toparea = () => {
   const [percent, setPercent] = useState(0);
   const interval: any = useRef(0);
-  const [isOpen, setIsOpen] = useState(false);
-  const [buyTokenStatus, setBuyTokenStatus] = useState(true);
   const [endTime, setEndTime] = useState(0);
+  const currentStage = useAppSelector(getCurrentStage);
+  const buyPermission = useAppSelector(getBuyPermission);
 
+  const dispatch = useAppDispatch();
   const calculateTimeLeft = () => {
     let res_difference = endTime - new Date().getTime() / 1000;
     let timeLeft = {};
 
-    if (buyTokenStatus) {
+    if (buyPermission) {
       if (res_difference > 0) {
         timeLeft = {
           days: Math.floor(res_difference / (60 * 60 * 24)),
@@ -33,7 +35,7 @@ const Toparea = ({ handleShowAlert }: TopareaProps) => {
           minutes: 0,
           seconds: 0,
         };
-        setBuyTokenStatus(false);
+        dispatch(setBuyPermission(false));
       }
     } else {
       timeLeft = {
@@ -49,17 +51,32 @@ const Toparea = ({ handleShowAlert }: TopareaProps) => {
   const [timeLeft, setTimeLeft] = useState<any>(calculateTimeLeft());
 
   const handleModal = () => {
-    if (buyTokenStatus) setIsOpen(true);
-    else handleShowAlert("Left time is done", "error");
-  };
-
-  const handleCloseModal = () => {
-    setIsOpen(false);
+    if (buyPermission) dispatch(showBuyModal(true));
+    else {
+      if (
+        currentStage === stageName.preStage ||
+        currentStage === stageName.closeStage
+      ) {
+        dispatch(
+          showAlert({
+            message: "Zilionixx crowdsale stage is not yet",
+            severity: false,
+          })
+        );
+      } else {
+        dispatch(
+          showAlert({
+            message: "Left time is done",
+            severity: false,
+          })
+        );
+      }
+    }
   };
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      if (buyTokenStatus) {
+      if (buyPermission) {
         return setTimeLeft(calculateTimeLeft());
       }
     }, 1000);
@@ -76,16 +93,29 @@ const Toparea = ({ handleShowAlert }: TopareaProps) => {
         return val + 1;
       });
     }, 20);
-    getLeftTime().then((res: any) => {
-      const { EndTime, Success } = res;
-      if (Success) {
-        setEndTime(EndTime);
-        setBuyTokenStatus(true);
-      } else {
-        setBuyTokenStatus(false);
-      }
-    });
-  }, []);
+    if (
+      currentStage === stageName.preStage ||
+      currentStage === stageName.closeStage
+    ) {
+      dispatch(setBuyPermission(false));
+      setTimeLeft({
+        days: 0,
+        hours: 0,
+        minutes: 0,
+        seconds: 0,
+      });
+    } else {
+      getLeftTime().then((res: any) => {
+        const { EndTime, Success } = res;
+        if (Success) {
+          setEndTime(EndTime);
+          dispatch(setBuyPermission(true));
+        } else {
+          dispatch(setBuyPermission(false));
+        }
+      });
+    }
+  }, [currentStage]);
 
   return (
     <div className="first-content" id="About ZNX">
@@ -172,11 +202,6 @@ const Toparea = ({ handleShowAlert }: TopareaProps) => {
           </div>
         </div>
       </div>
-      <BuyTokenModal
-        isOpen={isOpen}
-        handleCloseModal={handleCloseModal}
-        handleShowAlert={handleShowAlert}
-      />
     </div>
   );
 };

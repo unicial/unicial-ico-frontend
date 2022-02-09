@@ -1,24 +1,22 @@
 import React, { useState } from "react";
 import { Modal, ModalBody, Button, Input, FormFeedback } from "reactstrap";
 import axios from "axios";
+import { showAlert } from "../store/alert";
+import { useAppDispatch } from "../store/hooks";
 
 interface ModalComponentProps {
   isOpen?: boolean;
   handleClose: () => void;
-  handleShowAlert: (msg: any, severity: any) => void;
 }
 
-const ModalComponent = ({
-  isOpen,
-  handleClose,
-  handleShowAlert,
-}: ModalComponentProps) => {
+const ModalComponent = ({ isOpen, handleClose }: ModalComponentProps) => {
   const [firstName, setFirstName] = useState("");
   const [errorFirstName, setErrorFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [errorLastName, setErrorLastName] = useState("");
   const [email, setEmail] = useState("");
   const [errorEmail, setErrorEmail] = useState("");
+  const dispatch = useAppDispatch();
 
   const handleFirstName = (str: string) => {
     setFirstName(str);
@@ -70,10 +68,20 @@ const ModalComponent = ({
           lastName,
           email,
         });
-        handleShowAlert("You have successfully submitted", "success");
+        dispatch(
+          showAlert({
+            message: "You have successfully submitted.",
+            severity: true,
+          })
+        );
         handleClose();
       } catch (e: any) {
-        handleShowAlert(e.response.data.error, "error");
+        dispatch(
+          showAlert({
+            message: e.response.data.error,
+            severity: false,
+          })
+        );
       }
     }
   };

@@ -20,9 +20,15 @@ import "../styles/banner.css";
 import "../styles/alert.css";
 import "../styles/contactus.css";
 import "../styles/news.css";
+import { store } from "../store/store";
+import { Provider } from "react-redux";
 
 function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />;
+  return (
+    <Provider store={store}>
+      <Component {...pageProps} />
+    </Provider>
+  );
 }
 
 MyApp.getInitialProps = async (context: AppContext) => {

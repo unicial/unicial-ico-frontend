@@ -15,16 +15,12 @@ import ConnectWithUs from "../components/ConnectWithUs";
 import Distribution from "../components/Distribution";
 import ModalComponent from "../components/SubmitModal";
 import Banner from "../components/Banner";
-import AlertComponent from "../components/Alert";
+import Alert from "../components/Alert";
+import BuyTokenModal from "../components/BuyTokenModal";
 
 const Home = () => {
   const [isOpenBanner, setIsOpenBanner] = useState<boolean>();
   const [isOpenModal, setIsOpenModal] = useState<boolean>();
-  const [alertState, setAlertState] = useState({
-    isOpen: false,
-    msg: "",
-    severity: "",
-  });
 
   const handleCloseBanner = () => {
     setIsOpenBanner(false);
@@ -38,22 +34,6 @@ const Home = () => {
 
   const handleCloseModal = () => {
     setIsOpenModal(false);
-  };
-
-  const handleCloseAlert = () => {
-    setAlertState({
-      isOpen: false,
-      msg: "",
-      severity: "",
-    });
-  };
-
-  const handleShowAlert = (msg: string, severity: string) => {
-    setAlertState({
-      isOpen: true,
-      msg: msg,
-      severity: severity,
-    });
   };
 
   return (
@@ -87,23 +67,20 @@ const Home = () => {
       />
       <Toparea />
       <Header />
-      <FirstContent handleShowAlert={handleShowAlert} />
-      <ModalComponent
-        isOpen={isOpenModal}
-        handleClose={handleCloseModal}
-        handleShowAlert={handleShowAlert}
-      />
-      <Option handleShowAlert={handleShowAlert} />
+      <FirstContent />
+      <ModalComponent isOpen={isOpenModal} handleClose={handleCloseModal} />
+      <Option />
       <OurTokens />
-      <Distribution handleShowAlert={handleShowAlert} />
+      <Distribution />
       <Roadmap />
       <OurTeam />
       <FAQs />
       <News />
       <ConnectWithUs />
-      <Footer handleShowAlert={handleShowAlert} />
+      <Footer />
       <Bottomarea />
-      <AlertComponent alertData={alertState} handleClose={handleCloseAlert} />
+      <Alert />
+      <BuyTokenModal />
     </React.StrictMode>
   );
 };
