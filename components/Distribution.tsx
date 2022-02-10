@@ -110,7 +110,7 @@ const Distribution = () => {
 
   useEffect(() => {
     const currentTimes = dateToTime("current");
-    const firstStageTimes = dateToTime("2022-02-8");
+    const firstStageTimes = dateToTime("2022-02-14");
     const secondStageTimes = dateToTime("2022-03-1");
     const lastStageTimes = dateToTime("2022-03-15");
 

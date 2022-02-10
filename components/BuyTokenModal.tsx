@@ -93,10 +93,9 @@ const BuyTokenModal = () => {
       const res = await addUser(form);
       if (res.Success) setStepId(stepIndex.second);
       else {
-        console.log(res);
         dispatch(
           showAlert({
-            message: "Network Error",
+            message: res.Error.Msg,
             severity: false,
           })
         );
