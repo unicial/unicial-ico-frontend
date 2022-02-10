@@ -158,7 +158,7 @@ const Distribution = () => {
             <div className="c-distribution-history">
               <i className="fas fa-circle c-news-title-dot c-distribution-dot-icon"></i>
               <div className="c-distribution-history-text">
-                <div>Mar 1th ~ Mar 14th</div>
+                <div>Mar 1st ~ Mar 14th</div>
                 <div>
                   <span className="c-distribution-coin-text">1 ZNX</span>
                   <span> = {price.secondStage} USDT, 1.5 milion ZNX </span>
