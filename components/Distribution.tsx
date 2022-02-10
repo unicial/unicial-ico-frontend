@@ -110,9 +110,9 @@ const Distribution = () => {
 
   useEffect(() => {
     const currentTimes = dateToTime("current");
-    const firstStageTimes = dateToTime("2022-02-14");
-    const secondStageTimes = dateToTime("2022-03-1");
-    const lastStageTimes = dateToTime("2022-03-15");
+    const firstStageTimes = dateToTime(`${process.env.firstStage}`);
+    const secondStageTimes = dateToTime(`${process.env.secondStage}`);
+    const lastStageTimes = dateToTime(`${process.env.lastStage}`);
 
     if (currentTimes < firstStageTimes) {
       dispatch(setCurrentStage(stageName.preStage));
