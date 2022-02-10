@@ -15,7 +15,8 @@ const Option = () => {
     else {
       if (
         currentStage === stageName.preStage ||
-        currentStage === stageName.closeStage
+        currentStage === stageName.closeStage ||
+        currentStage === ""
       ) {
         dispatch(
           showAlert({

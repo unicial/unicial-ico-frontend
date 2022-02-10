@@ -55,7 +55,8 @@ const Toparea = () => {
     else {
       if (
         currentStage === stageName.preStage ||
-        currentStage === stageName.closeStage
+        currentStage === stageName.closeStage ||
+        currentStage === ""
       ) {
         dispatch(
           showAlert({
@@ -95,7 +96,8 @@ const Toparea = () => {
     }, 20);
     if (
       currentStage === stageName.preStage ||
-      currentStage === stageName.closeStage
+      currentStage === stageName.closeStage ||
+      currentStage === ""
     ) {
       dispatch(setBuyPermission(false));
       setTimeLeft({
@@ -112,10 +114,16 @@ const Toparea = () => {
           dispatch(setBuyPermission(true));
         } else {
           dispatch(setBuyPermission(false));
+          dispatch(
+            showAlert({
+              message: "Network is Error",
+              severity: false,
+            })
+          );
         }
       });
     }
-  }, [currentStage]);
+  }, [currentStage, buyPermission]);
 
   return (
     <div className="first-content" id="About ZNX">

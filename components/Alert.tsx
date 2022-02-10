@@ -12,7 +12,7 @@ const AlertComponent = () => {
   const [message, setMessage] = useState("");
 
   const handleClose = () => {
-    dispatch(showAlert({ message: "", severity: true }));
+    dispatch(showAlert({ message: "", severity: severity }));
   };
 
   useEffect(() => {
