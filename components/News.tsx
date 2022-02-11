@@ -47,6 +47,7 @@ const OurTokens = () => {
                 <a
                   href="https://medium.com/@zilionixx_foundation/an-introduction-to-zilionixx-8ddb5ed51535"
                   target={"_blank"}
+                  rel="noreferrer"
                 >
                   <picture>
                     <source media="(max-width: 992px)" />
@@ -90,7 +91,7 @@ const OurTokens = () => {
                 <h5 className="entry-title">
                   <a
                     href="https://medium.com/@zilionixx_foundation/an-introduction-to-zilionixx-8ddb5ed51535"
-                    rel="bookmark"
+                    rel="noreferrer"
                     target={"_blank"}
                   >
                     An introduction to Zilionixx
@@ -119,6 +120,7 @@ const OurTokens = () => {
                 <a
                   href="https://medium.com/@zilionixx_foundation/the-way-of-zilionixx-a7a9eebe620e"
                   target={"_blank"}
+                  rel="noreferrer"
                 >
                   <picture>
                     <source media="(max-width: 992px)" />
@@ -163,7 +165,7 @@ const OurTokens = () => {
                   <a
                     href="https://medium.com/@zilionixx_foundation/the-way-of-zilionixx-a7a9eebe620e"
                     target={"_blank"}
-                    rel="bookmark"
+                    rel="noreferrer"
                   >
                     The way of Zilionixx
                   </a>
@@ -192,6 +194,7 @@ const OurTokens = () => {
                 <a
                   href="https://medium.com/@zilionixx_foundation/connecting-metamask-to-zilionixx-network-7ec14b6a36af"
                   target={"_blank"}
+                  rel="noreferrer"
                 >
                   <picture>
                     <source media="(max-width: 992px)" />
@@ -235,7 +238,7 @@ const OurTokens = () => {
                 <h5 className="entry-title">
                   <a
                     href="https://medium.com/@zilionixx_foundation/connecting-metamask-to-zilionixx-network-7ec14b6a36af"
-                    rel="bookmark"
+                    rel="noreferrer"
                     target={"_blank"}
                   >
                     Connecting MetaMask to Zilionixx Network
