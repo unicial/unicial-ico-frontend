@@ -26,7 +26,7 @@ const Distribution = () => {
       ) {
         dispatch(
           showAlert({
-            message: "Zilionixx crowdsale stage is not yet",
+            message: "Zilionixx crowdsale will be start from 14th Febrary",
             severity: false,
           })
         );
