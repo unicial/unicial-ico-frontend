@@ -19,14 +19,17 @@ const Distribution = () => {
   const handleModal = () => {
     if (buyPermission) dispatch(showBuyModal(true));
     else {
-      if (
-        currentStage === stageName.preStage ||
-        currentStage === stageName.closeStage ||
-        currentStage === ""
-      ) {
+      if (currentStage === stageName.preStage || currentStage === "") {
         dispatch(
           showAlert({
             message: "Zilionixx crowdsale will be start from 14th Febrary",
+            severity: false,
+          })
+        );
+      } else if (currentStage === stageName.closeStage) {
+        dispatch(
+          showAlert({
+            message: "Zilionixx crowdsale ended on Febrary 14th",
             severity: false,
           })
         );
