@@ -45,10 +45,12 @@ const AlertComponent = () => {
           {severity === "success" && (
             <img src="/static/svg/alert_ellipse1.svg" alt="ellipse" />
           )}
-          {severity === "error" ||
-            (severity === "warning" && (
-              <img src="/static/svg/alert_ellipse2.svg" alt="ellipse" />
-            ))}
+          {severity === "error" && (
+            <img src="/static/svg/alert_ellipse2.svg" alt="ellipse" />
+          )}
+          {severity === "warning" && (
+            <img src="/static/svg/alert_ellipse2.svg" alt="ellipse" />
+          )}
         </span>
         {severity === "success" && (
           <span className="c-alert-success-title">Success!</span>
