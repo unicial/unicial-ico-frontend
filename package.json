@@ -5,7 +5,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "serve": "serve -s -n -l 3000 build"
   },
   "dependencies": {
     "@mailchimp/mailchimp_marketing": "^3.0.73",
