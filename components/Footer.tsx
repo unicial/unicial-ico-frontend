@@ -62,14 +62,14 @@ const Footer = () => {
         dispatch(
           showAlert({
             message: "You have successfully submitted.",
-            severity: true,
+            severity: "success",
           })
         );
       } catch (e: any) {
         dispatch(
           showAlert({
             message: e.response.data.error,
-            severity: false,
+            severity: "error",
           })
         );
       }
@@ -77,7 +77,7 @@ const Footer = () => {
       dispatch(
         showAlert({
           message: "Your information is incorrect.",
-          severity: false,
+          severity: "error",
         })
       );
     }

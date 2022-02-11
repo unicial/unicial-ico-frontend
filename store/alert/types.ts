@@ -1,6 +1,6 @@
 interface alertState {
   message: string;
-  severity: boolean;
+  severity: string;
 }
 
 export type { alertState };

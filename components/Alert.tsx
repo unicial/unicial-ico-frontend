@@ -42,15 +42,23 @@ const AlertComponent = () => {
           className="c-alert-texture"
         />
         <span>
-          {severity && (
+          {severity === "success" && (
             <img src="/static/svg/alert_ellipse1.svg" alt="ellipse" />
           )}
-          {!severity && (
-            <img src="/static/svg/alert_ellipse2.svg" alt="ellipse" />
-          )}
+          {severity === "error" ||
+            (severity === "warning" && (
+              <img src="/static/svg/alert_ellipse2.svg" alt="ellipse" />
+            ))}
         </span>
-        {severity && <span className="c-alert-success-title">Success!</span>}
-        {!severity && <span className="c-alert-error-title">Error!</span>}
+        {severity === "success" && (
+          <span className="c-alert-success-title">Success!</span>
+        )}
+        {severity === "error" && (
+          <span className="c-alert-error-title">Error!</span>
+        )}
+        {severity === "warning" && (
+          <span className="c-alert-error-title">Warning!</span>
+        )}
         <span className="c-alert-text">{message}</span>
         <span className="c-alert-close" onClick={() => handleClose()}>
           <i className="fas fa-times"></i>

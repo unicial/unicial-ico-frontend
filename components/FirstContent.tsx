@@ -57,21 +57,21 @@ const Toparea = () => {
         dispatch(
           showAlert({
             message: "Zilionixx crowdsale will be start from 14th Febrary",
-            severity: false,
+            severity: "warning",
           })
         );
       } else if (currentStage === stageName.closeStage) {
         dispatch(
           showAlert({
             message: "Zilionixx crowdsale ended on Febrary 14th",
-            severity: false,
+            severity: "warning",
           })
         );
       } else {
         dispatch(
           showAlert({
             message: "Left time is done",
-            severity: false,
+            severity: "warning",
           })
         );
       }
@@ -120,7 +120,7 @@ const Toparea = () => {
           dispatch(
             showAlert({
               message: "Network is Error",
-              severity: false,
+              severity: "error",
             })
           );
         }

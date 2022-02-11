@@ -8,7 +8,7 @@ const PREFIX = "alert";
 
 const initialState: alertState = {
   message: "",
-  severity: false,
+  severity: "",
 };
 
 export const alertReducer = createSlice({

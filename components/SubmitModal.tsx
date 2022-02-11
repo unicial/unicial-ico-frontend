@@ -71,7 +71,7 @@ const ModalComponent = ({ isOpen, handleClose }: ModalComponentProps) => {
         dispatch(
           showAlert({
             message: "You have successfully submitted.",
-            severity: true,
+            severity: "success",
           })
         );
         handleClose();
@@ -79,7 +79,7 @@ const ModalComponent = ({ isOpen, handleClose }: ModalComponentProps) => {
         dispatch(
           showAlert({
             message: e.response.data.error,
-            severity: false,
+            severity: "error",
           })
         );
       }

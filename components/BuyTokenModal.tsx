@@ -96,7 +96,7 @@ const BuyTokenModal = () => {
         dispatch(
           showAlert({
             message: res.Error.Msg,
-            severity: false,
+            severity: "error",
           })
         );
       }
@@ -119,7 +119,7 @@ const BuyTokenModal = () => {
         dispatch(
           showAlert({
             message: "Network Error",
-            severity: false,
+            severity: "error",
           })
         );
       } else {
@@ -136,7 +136,7 @@ const BuyTokenModal = () => {
         dispatch(
           showAlert({
             message: "Network Error",
-            severity: false,
+            severity: "error",
           })
         );
       } else {
