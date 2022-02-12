@@ -89,7 +89,7 @@ const Option = () => {
 
           <span onClick={() => handleModal()}>
             <p className="card-link">
-              Buy ZNX -25% OFF
+              Buy ZNX
               <img src="/static/svg/arrow.svg" />
             </p>
           </span>

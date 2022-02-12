@@ -144,7 +144,7 @@ const Toparea = () => {
             </div>
             <span className="c-buytoken-btn-border">
               <span className="c-buytoken-btn" onClick={handleModal}>
-                BUY ZNX -25% OFF
+                BUY ZNX
                 <i className="fas fa-arrow-right ms-2"></i>
               </span>
             </span>
