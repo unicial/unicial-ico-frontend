@@ -94,7 +94,18 @@ const ModalComponent = ({ isOpen, handleClose }: ModalComponentProps) => {
             <i className="fas fa-times"></i>
           </span>
           <div className="c-modal-header">
-            Join The Revolution of Blockchain
+            Register To Get Your Free Access on Zilionixx
+          </div>
+          <div className="video-responsive">
+            <iframe
+              width="560"
+              height="315"
+              src={`https://www.youtube.com/embed/oxnLTjyuqK0`}
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              title="YouTube video player"
+            />
           </div>
           <div className="c-modal-content">
             Sign Up to Get Updates of the #Zilionixx Crowdsale Discounts
