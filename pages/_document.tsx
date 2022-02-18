@@ -22,6 +22,33 @@ export default class MyDocument extends Document {
           `,
             }}
           />
+
+          {/* Global site tag (gtag.js) - Google Ads: 10854850139 */}
+          <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=AW-10854850139"
+          ></script>
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'AW-10854850139');
+          `,
+            }}
+          />
+
+          {/* Event snippet for Sign-up (1) conversion page */}
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+            gtag('event', 'conversion', {
+              'send_to': 'AW-10854850139/GREgCJ-0vaIDENu8_7co',
+            });
+          `,
+            }}
+          />
         </Head>
         <body>
           <Main />
