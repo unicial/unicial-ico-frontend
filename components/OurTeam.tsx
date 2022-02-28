@@ -92,7 +92,7 @@ const OurTeam = () => {
                   <img
                     width="400"
                     height="400"
-                    src="/static/images/JoanLau.jpg"
+                    src="/static/images/JoanLau.png"
                     className="img-responsive wp-post-image"
                     alt="3"
                   />
