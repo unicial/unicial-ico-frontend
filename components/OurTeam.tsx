@@ -45,7 +45,7 @@ const OurTeam = () => {
                   <img
                     width="400"
                     height="400"
-                    src="/static/images/member.jpg"
+                    src="/static/images/JoeLuo.jpg"
                     className="img-responsive wp-post-image"
                     alt="1"
                     // srcset="https://codex-themes.com/themes/cryption/wp-content/uploads/sites/9/2018/02/1-ct-person.jpg 2x"
@@ -68,7 +68,7 @@ const OurTeam = () => {
                 <a href="#" target="_self">
                   <img
                     width="400"
-                    src="/static/images/member.jpg"
+                    src="/static/images/tsimafei.png"
                     height="400"
                     className="img-responsive wp-post-image"
                     alt="2"
@@ -92,7 +92,7 @@ const OurTeam = () => {
                   <img
                     width="400"
                     height="400"
-                    src="/static/images/member.jpg"
+                    src="/static/images/JoanLau.jpg"
                     className="img-responsive wp-post-image"
                     alt="3"
                   />
@@ -115,7 +115,7 @@ const OurTeam = () => {
                   <img
                     width="400"
                     height="400"
-                    src="/static/images/member.jpg"
+                    src="/static/images/reymond.jpg"
                     className="img-responsive wp-post-image"
                     alt="4"
                   />

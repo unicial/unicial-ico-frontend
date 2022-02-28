@@ -7,6 +7,7 @@ import { useAppDispatch, useAppSelector } from "../store/hooks";
 import { getBuyModalStatus } from "../store/buymodal/selectors";
 import { showBuyModal } from "../store/buymodal";
 import { showAlert } from "../store/alert";
+import { ethers } from "ethers";
 
 const BuyTokenModal = () => {
   const dispatch = useAppDispatch();
@@ -108,6 +109,13 @@ const BuyTokenModal = () => {
     if (!address) {
       flag = false;
       setErrorAddress("Please enter your Address");
+    } else {
+      try {
+        ethers.utils.getAddress(address);
+      } catch (error) {
+        flag = false;
+        setErrorAddress("Please check your address");
+      }
     }
     const formSetAddr = new FormData();
     formSetAddr.append("email", email);

@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Link from "next/link";
 import { stageName, price } from "../common/constant";
 import { getCurrentStage, getBuyPermission } from "../store/ICOinfo/selectors";
 import { useAppSelector, useAppDispatch } from "../store/hooks";
@@ -58,12 +57,16 @@ const Option = () => {
             </div>
           </div>
 
-          <Link href="/">
+          <a
+            href="/static/zilionixx-whitepaper.pdf"
+            target="_blank"
+            rel="noreferrer"
+          >
             <p className="card-link">
               Open Whitepaper (Pdf)
               <img src="/static/svg/arrow.svg" />
             </p>
-          </Link>
+          </a>
         </div>
         <div className="c-option-card-container">
           <div className="c-upPart">
