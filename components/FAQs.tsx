@@ -56,7 +56,7 @@ const FAQs = () => {
               <ScrollAnimation
                 animateIn='fadeIn'
                 animateOut='fadeOut'
-                duration={0.5}
+                duration={2}
                 delay={0}
                 animateOnce={true}>
                 <div className="c-roadmap-title-large">
@@ -78,7 +78,7 @@ const FAQs = () => {
               <ScrollAnimation
                 animateIn='fadeInLeft'
                 animateOut='fadeOutLeft'
-                duration={0.5}
+                duration={2}
                 delay={0}
                 animateOnce={true}>
                 <div className="accordion" id="accordionExample">

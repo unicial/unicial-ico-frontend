@@ -25,9 +25,9 @@ const OurTeam = () => {
         </div>
         <div className="wpb_text_column wpb_content_element  wpb_animate_when_almost_visible wpb_fadeIn fadeIn wpb_start_animation animated">
           <ScrollAnimation
-            animateIn='bounceIn'
-            animateOut='bounceOut'
-            duration={1}
+            animateIn='fadeIn'
+            animateOut='fadeOut'
+            duration={2}
             delay={0}
             animateOnce={true}> 
             <div className="wpb_wrapper">
@@ -47,7 +47,7 @@ const OurTeam = () => {
             <ScrollAnimation
               animateIn='fadeInLeft'
               animateOut='fadeOutLeft'
-              duration={1}
+              duration={2}
               delay={0}
               animateOnce={true}>
               <div
@@ -78,7 +78,7 @@ const OurTeam = () => {
             <ScrollAnimation
               animateIn='fadeInLeft'
               animateOut='fadeOutLeft'
-              duration={1}
+              duration={2}
               delay={0}
               animateOnce={true}>
               <div
@@ -108,7 +108,7 @@ const OurTeam = () => {
             <ScrollAnimation
               animateIn='fadeInRight'
               animateOut='fadeOutRight'
-              duration={1}
+              duration={2}
               delay={0}
               animateOnce={true}>
               <div
@@ -138,7 +138,7 @@ const OurTeam = () => {
             <ScrollAnimation
               animateIn='fadeInRight'
               animateOut='fadeInRight'
-              duration={1}
+              duration={2}
               delay={0}
               animateOnce={true}>
               <div

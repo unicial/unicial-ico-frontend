@@ -25,7 +25,7 @@ const OurTokens = () => {
       <ScrollAnimation
         animateIn='fadeIn'
         animateOut='fadeOut'
-        duration={0.5}
+        duration={2}
         delay={0}
         animateOnce={true}>
         <div className="wpb_text_column wpb_content_element ">
@@ -53,7 +53,7 @@ const OurTokens = () => {
             <ScrollAnimation
               animateIn='fadeInLeft'
               animateOut='fadeOutLeft'
-              duration={0.5}
+              duration={2}
               delay={0}
               animateOnce={true}>
               <div className="post-image">
@@ -133,7 +133,7 @@ const OurTokens = () => {
             <ScrollAnimation
               animateIn='fadeIn'
               animateOut='fadeOut'
-              duration={1}
+              duration={2}
               delay={0}
               animateOnce={true}>
               <div className="post-image">
@@ -214,7 +214,7 @@ const OurTokens = () => {
             <ScrollAnimation
               animateIn='fadeInRight'
               animateOut='fadeOutRight'
-              duration={0.5}
+              duration={2}
               delay={0}
               animateOnce={true}>
               <div className="post-image">

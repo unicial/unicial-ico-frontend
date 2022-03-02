@@ -7,9 +7,9 @@ const OurTokens = () => {
     <div className="c-container" id="Our Tokens">
       <div style={{ marginTop: "140px" }} />
       <ScrollAnimation
-              animateIn='tada'
-              animateOut=''
-              duration={1}
+              animateIn='fadeIn'
+              animateOut='fadeOut'
+              duration={2}
               delay={0}
               animateOnce={true}>
         <div className="mainTitle" style={{ textAlign: "left" }}>
@@ -37,7 +37,7 @@ const OurTokens = () => {
         <ScrollAnimation
               animateIn='fadeInLeft'
               animateOut='fadeInRight'
-              duration={1}
+              duration={2}
               delay={0}
               animateOnce={true}>
             <div
@@ -60,7 +60,7 @@ const OurTokens = () => {
           <ScrollAnimation
               animateIn='fadeInLeft'
               animateOut='fadeOutLeft'
-              duration={1}
+              duration={2}
               delay={0}
               animateOnce={true}>
             <div
@@ -91,7 +91,7 @@ const OurTokens = () => {
            <ScrollAnimation
               animateIn='fadeInRight'
               animateOut='fadeOutRight'
-              duration={1}
+              duration={2}
               delay={0}
               animateOnce={true}>
             <div
@@ -114,7 +114,7 @@ const OurTokens = () => {
           <ScrollAnimation
               animateIn='fadeInRight'
               animateOut='fadeOutRight'
-              duration={1}
+              duration={2}
               delay={0}
               animateOnce={true}>
             <div

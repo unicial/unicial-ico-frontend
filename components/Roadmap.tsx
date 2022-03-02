@@ -24,7 +24,7 @@ const Option = () => {
               <ScrollAnimation
                 animateIn='fadeIn'
                 animateOut='fadeOut'
-                duration={0.5}
+                duration={2}
                 delay={0}
                 animateOnce={true}>
                 <div className="c-roadmap-title-large">
@@ -40,7 +40,7 @@ const Option = () => {
                 <ScrollAnimation
                   animateIn='fadeInDown'
                   animateOut='fadeOutDown'
-                  duration={1}
+                  duration={2}
                   delay={0}
                   animateOnce={true}>
                   <div className="wpb_wrapper">
@@ -268,8 +268,8 @@ const Option = () => {
                 <ScrollAnimation
                   animateIn='fadeInUp'
                   animateOut='fadeOutUp'
-                  duration={1}
-                  delay={0.5}
+                  duration={2}
+                  delay={2}
                   animateOnce={true}>            
                   <div className="wpb_wrapper">
                     <div className="quickfinder quickfinder-style-vertical-3 quickfinder-style-vertical quickfinder-icon-position-top quickfinder-alignment-right quickfinder-title-bold">
@@ -490,8 +490,8 @@ const Option = () => {
                 <ScrollAnimation
                   animateIn='fadeInDown'
                   animateOut='fadeOutDown'
-                  duration={1}
-                  delay={0.5}
+                  duration={2}
+                  delay={2}
                   animateOnce={true}>
                   <div className="wpb_wrapper">
                     <div className="quickfinder quickfinder-style-vertical-3 quickfinder-style-vertical quickfinder-icon-position-top quickfinder-alignment-right quickfinder-title-bold">
@@ -731,8 +731,8 @@ const Option = () => {
                 <ScrollAnimation
                   animateIn='fadeInUp'
                   animateOut='fadeOutUp'
-                  duration={1}
-                  delay={0.5}
+                  duration={2}
+                  delay={2}
                   animateOnce={true}>
                   <div className="wpb_wrapper">
                     <div className="quickfinder quickfinder-style-vertical-3 quickfinder-style-vertical quickfinder-icon-position-top quickfinder-alignment-right quickfinder-title-bold">

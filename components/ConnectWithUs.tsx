@@ -45,7 +45,7 @@ const ConnectWithUs = () => {
                     <ScrollAnimation
                       animateIn='fadeIn'
                       animateOut='fadeOut'
-                      duration={0.5}
+                      duration={2}
                       delay={0}
                       animateOnce={true}>
                       <div className="wpb_wrapper">
@@ -64,9 +64,9 @@ const ConnectWithUs = () => {
                   <div className="ct-divider "></div>
                   <div className="wpb_text_column wpb_content_element ">
                     <ScrollAnimation
-                      animateIn='fadeInLeft'
-                      animateOut='fadeOutLeft'
-                      duration={0.5}
+                      animateIn='fadeInUp'
+                      animateOut='fadeOutUp'
+                      duration={2}
                       delay={0}
                       animateOnce={true}>
                       <div className="wpb_wrapper">
@@ -91,9 +91,9 @@ const ConnectWithUs = () => {
                     style={{ marginTop: "20px" }}
                   ></div>
                   <ScrollAnimation
-                    animateIn='fadeInRight'
-                    animateOut='fadeOutRight'
-                    duration={0.5}
+                    animateIn='fadeInUp'
+                    animateOut='fadeOutUp'
+                    duration={2}
                     delay={0}
                     animateOnce={true}>
                     <div className="c-contactus-social-items socials socials-list socials-colored-hover socials-rounded socials-alignment-center">

@@ -44,7 +44,7 @@ const Option = () => {
       <ScrollAnimation
               animateIn='fadeInLeft'
               animateOut='fadeOutLeft'
-              duration={0.5}
+              duration={2}
               delay={0}
               animateOnce={true}>
           <div className="c-option-card-container">
@@ -79,7 +79,7 @@ const Option = () => {
         <ScrollAnimation
               animateIn='fadeIn'
               animateOut='fadeOut'
-              duration={1}
+              duration={2}
               delay={0}
               animateOnce={true}>
           <div className="c-option-card-container">
@@ -115,7 +115,7 @@ const Option = () => {
         <ScrollAnimation
               animateIn='fadeInRight'
               animateOut='fadeOutRight'
-              duration={0.5}
+              duration={2}
               delay={0}
               animateOnce={true}>
           <div className="c-option-card-container c-option-mr-large">

@@ -137,7 +137,7 @@ const Toparea = () => {
             <ScrollAnimation
               animateIn='fadeIn'
               animateOut='fadeOut'
-              duration={0.5}
+              duration={2}
               delay={0}
               animateOnce={true}>
               <div>
@@ -148,7 +148,7 @@ const Toparea = () => {
             <ScrollAnimation
               animateIn='fadeInLeft'
               animateOut='fadeOutLeft'
-              duration={0.5}
+              duration={2}
               delay={0}
               animateOnce={true}>
               <div className="c-small-text my-5">
@@ -169,7 +169,7 @@ const Toparea = () => {
             <ScrollAnimation
               animateIn='bounceInDown'
               animateOut='bounceOutDown'
-              duration={1}
+              duration={2}
               delay={0}
               animateOnce={true}>
               <div className="c-countdown mt-4">
@@ -208,7 +208,7 @@ const Toparea = () => {
             <ScrollAnimation
               animateIn='fadeInRight'
               animateOut='fadeOutRight'
-              duration={0.5}
+              duration={2}
               delay={0}
               animateOnce={true}>
               <div className="c-medium-text my-5">

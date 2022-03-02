@@ -146,9 +146,9 @@ const Distribution = () => {
       >
         <div>
           <ScrollAnimation
-                animateIn='bounceIn'
-                animateOut='bounceOut'
-                duration={1}
+                animateIn='fadeIn'
+                animateOut='fadeOut'
+                duration={2}
                 delay={0}
                 animateOnce={true}>
             <div className="c-distribution-title">
@@ -192,9 +192,9 @@ const Distribution = () => {
           <div className="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-4 vc_col-md-12">
             <div className="vc_column-inner" style={{ paddingLeft: "0px" }}>
               <ScrollAnimation
-                animateIn='rotateInDownLeft'
-                animateOut='rotateOutDownLeft'
-                duration={0.5}
+                animateIn='fadeInLeft'
+                animateOut='fadeOutLeft'
+                duration={2}
                 delay={0}
                 animateOnce={true}>
                 <div className="wpb_wrapper">                
@@ -257,9 +257,9 @@ const Distribution = () => {
           <div className="donut wpb_column vc_column_container vc_col-sm-6 vc_col-lg-4 vc_col-md-6">
             <div className="vc_column-inner">
               <ScrollAnimation
-                animateIn='fadeInDown'
-                animateOut='fadeOutDown'
-                duration={1}
+                animateIn='fadeIn'
+                animateOut='fadeOut'
+                duration={2}
                 delay={0}
                 animateOnce={true}>
                 <div className="wpb_wrapper">
@@ -344,9 +344,9 @@ const Distribution = () => {
           <div className="donut wpb_column vc_column_container vc_col-sm-6 vc_col-lg-4 vc_col-md-6">
             <div className="vc_column-inner" style={{ paddingRight: "0px" }}>
               <ScrollAnimation
-                animateIn='rotateInDownRight'
-                animateOut='rotateOutDownRight'
-                duration={0.5}
+                animateIn='fadeInRight'
+                animateOut='fadeOutRight'
+                duration={2}
                 delay={0}
                 animateOnce={true}>
                 <div className="wpb_wrapper">
