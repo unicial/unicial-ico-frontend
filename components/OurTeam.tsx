@@ -25,11 +25,12 @@ const OurTeam = () => {
         </div>
         <div className="wpb_text_column wpb_content_element  wpb_animate_when_almost_visible wpb_fadeIn fadeIn wpb_start_animation animated">
           <ScrollAnimation
-            animateIn='fadeIn'
-            animateOut='fadeOut'
+            animateIn="fadeIn"
+            animateOut="fadeOut"
             duration={2}
             delay={0}
-            animateOnce={true}> 
+            animateOnce={true}
+          >
             <div className="wpb_wrapper">
               <div className="c-news-title-large">
                 <span>Meet a Crew of Professionals</span>
@@ -45,24 +46,28 @@ const OurTeam = () => {
         <div className="ct-team row inline-row ct-team-style-1">
           <div className="col-lg-3 col-sm-6 col-xs-12 inline-column">
             <ScrollAnimation
-              animateIn='fadeInLeft'
-              animateOut='fadeOutLeft'
+              animateIn="fadeInLeft"
+              animateOut="fadeOutLeft"
               duration={2}
               delay={0}
-              animateOnce={true}>
+              animateOnce={true}
+            >
               <div
                 id="post-441"
                 className="team-person centered-box post-441 ct_team_person type-ct_team_person status-publish has-post-thumbnail hentry"
               >
                 <div className="team-person-image bordered-box c-ourteam-person-info">
-                  <a href="#" target="_self">
+                  <a
+                    href="https://www.facebook.com/groups/4354141514692375/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <img
                       width="400"
                       height="400"
                       src="/static/images/JoeLuo.jpg"
                       className="img-responsive wp-post-image"
                       alt="1"
-                      // srcset="https://codex-themes.com/themes/cryption/wp-content/uploads/sites/9/2018/02/1-ct-person.jpg 2x"
                     />
                   </a>
                 </div>
@@ -76,17 +81,22 @@ const OurTeam = () => {
           </div>
           <div className="col-lg-3 col-sm-6 col-xs-12 inline-column">
             <ScrollAnimation
-              animateIn='fadeInLeft'
-              animateOut='fadeOutLeft'
+              animateIn="fadeInLeft"
+              animateOut="fadeOutLeft"
               duration={2}
               delay={0}
-              animateOnce={true}>
+              animateOnce={true}
+            >
               <div
                 id="post-442"
                 className="team-person centered-box post-442 ct_team_person type-ct_team_person status-publish has-post-thumbnail hentry"
               >
                 <div className="team-person-image bordered-box c-ourteam-person-info">
-                  <a href="#" target="_self">
+                  <a
+                    href="https://www.facebook.com/groups/4354141514692375/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <img
                       width="400"
                       src="/static/images/tsimafei.png"
@@ -106,17 +116,22 @@ const OurTeam = () => {
           </div>
           <div className="col-lg-3 col-sm-6 col-xs-12 inline-column">
             <ScrollAnimation
-              animateIn='fadeInRight'
-              animateOut='fadeOutRight'
+              animateIn="fadeInRight"
+              animateOut="fadeOutRight"
               duration={2}
               delay={0}
-              animateOnce={true}>
+              animateOnce={true}
+            >
               <div
                 id="post-443"
                 className="team-person centered-box post-443 ct_team_person type-ct_team_person status-publish has-post-thumbnail hentry"
               >
                 <div className="team-person-image bordered-box c-ourteam-person-info">
-                  <a href="#" target="_self">
+                  <a
+                    href="https://www.facebook.com/groups/4354141514692375/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <img
                       width="400"
                       height="400"
@@ -136,17 +151,22 @@ const OurTeam = () => {
           </div>
           <div className="col-lg-3 col-sm-6 col-xs-12 inline-column">
             <ScrollAnimation
-              animateIn='fadeInRight'
-              animateOut='fadeInRight'
+              animateIn="fadeInRight"
+              animateOut="fadeInRight"
               duration={2}
               delay={0}
-              animateOnce={true}>
+              animateOnce={true}
+            >
               <div
                 id="post-444"
                 className="team-person centered-box post-444 ct_team_person type-ct_team_person status-publish has-post-thumbnail hentry"
               >
                 <div className="team-person-image bordered-box c-ourteam-person-info">
-                  <a href="#" target="_self">
+                  <a
+                    href="https://www.facebook.com/groups/4354141514692375/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <img
                       width="400"
                       height="400"
@@ -160,32 +180,6 @@ const OurTeam = () => {
                   <div className="c-ourteam-name">Raymend</div>
                   <div className="c-ourteam-role">Marketing Manager</div>
                   <div className="team-person-content"></div>
-                  {/* <div className="socials team-person-socials socials-colored-hover">
-                    <a
-                      title="Facebook"
-                      target="_blank"
-                      href="#"
-                      className="socials-item"
-                    >
-                      <i className="socials-item-icon social-item-rounded facebook"></i>
-                    </a>
-                    <a
-                      title="LinkedIn"
-                      target="_blank"
-                      href="#"
-                      className="socials-item"
-                    >
-                      <i className="socials-item-icon social-item-rounded linkedin"></i>
-                    </a>
-                    <a
-                      title="Skype"
-                      target="_blank"
-                      href="#"
-                      className="socials-item"
-                    >
-                      <i className="socials-item-icon social-item-rounded skype"></i>
-                    </a>
-                  </div> */}
                 </div>
               </div>
             </ScrollAnimation>
