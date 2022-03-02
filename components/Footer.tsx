@@ -92,7 +92,7 @@ const Footer = () => {
             <ScrollAnimation
               animateIn='fadeInLeft'
               animateOut='fadeOutLeft'
-              duration={0.5}
+              duration={2}
               delay={0}
               animateOnce={true}>
               <div className="c-footer-logo">
@@ -112,7 +112,7 @@ const Footer = () => {
             <ScrollAnimation
               animateIn='fadeInLeft'
               animateOut='fadeOutLeft'
-              duration={0.5}
+              duration={2}
               delay={0}
               animateOnce={true}>
               <span className="c-footer-title">Contacts</span>
@@ -175,7 +175,7 @@ const Footer = () => {
             <ScrollAnimation
               animateIn='fadeInRight'
               animateOut='fadeOutRight'
-              duration={0.5}
+              duration={2}
               delay={0}
               animateOnce={true}>
               <span className="c-footer-title">Links</span>
@@ -231,7 +231,7 @@ const Footer = () => {
             <ScrollAnimation
               animateIn='fadeInRight'
               animateOut='fadeOutRight'
-              duration={0.5}
+              duration={2}
               delay={0}
               animateOnce={true}>
               <span className="c-footer-title">Newsletter</span>
