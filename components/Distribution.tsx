@@ -191,74 +191,68 @@ const Distribution = () => {
         <div className="c-distribution-chart-container">
           <div className="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-4 vc_col-md-12">
             <div className="vc_column-inner" style={{ paddingLeft: "0px" }}>
-              <ScrollAnimation
-                animateIn='fadeInLeft'
-                animateOut='fadeOutLeft'
-                duration={2}
-                delay={0}
-                animateOnce={true}>
-                <div className="wpb_wrapper">                
-                  <div className="wpb_text_column wpb_content_element  wpb_animate_when_almost_visible wpb_fadeIn fadeIn wpb_start_animation animated">
-                    <div className="wpb_wrapper c-distribution-chart-desc">
-                      <p>
-                        In order to make ZNX distribution process more efficient,
-                        the ZNX price will now be linked to USDT:
-                      </p>
-                    </div>
+              
+              <div className="wpb_wrapper">                
+                <div className="wpb_text_column wpb_content_element  wpb_animate_when_almost_visible wpb_fadeIn fadeIn wpb_start_animation animated">
+                  <div className="wpb_wrapper c-distribution-chart-desc">
+                    <p>
+                      In order to make ZNX distribution process more efficient,
+                      the ZNX price will now be linked to USDT:
+                    </p>
                   </div>
-                  <div className="clearboth"></div>
-                  <div
-                    className="ct-divider divider_responsive_zero"
-                    style={{ marginTop: "50px" }}
-                  ></div>
-                  <div className="wpb_text_column wpb_content_element  wpb_animate_when_almost_visible wpb_fadeIn fadeIn wpb_start_animation animated">
-                    <div className="wpb_wrapper c-distribution-chart-totalsupply">
-                      <span style={{ position: "relative" }}>
-                        ZNX Total Supply{" "}
-                        <span className="fw-bold">88,888,888</span>
-                        <img
-                          src="/static/svg/distribution_vector.svg"
-                          alt="vector"
-                          className="c-distribution-chart-vector"
-                        ></img>
-                      </span>
-                    </div>
-                  </div>
-                  <div className="clearboth"></div>
-                  <div className="ct-divider" style={{ marginTop: "50px" }}></div>
-                  <div className="c-distribution-price-content">
-                    <div>1 ZNX</div>
-                    <div className="c-distribution-dark">
-                      {currentStage === stageName.secondStage
-                        ? price.secondStage
-                        : price.firstStage}
-                      USDT
-                    </div>
-                  </div>
-                  <div className="clearboth"></div>
-                  <div className="ct-button-container c-distribution-buytoken-btn-content">
-                    <span
-                      className="c-distribution-buytoken-btn"
-                      onClick={() => handleModal()}
-                    >
-                      BUY ZNX
-                      <i className="fas fa-arrow-right ms-2"></i>
+                </div>
+                <div className="clearboth"></div>
+                <div
+                  className="ct-divider divider_responsive_zero"
+                  style={{ marginTop: "50px" }}
+                ></div>
+                <div className="wpb_text_column wpb_content_element  wpb_animate_when_almost_visible wpb_fadeIn fadeIn wpb_start_animation animated">
+                  <div className="wpb_wrapper c-distribution-chart-totalsupply">
+                    <span style={{ position: "relative" }}>
+                      ZNX Total Supply{" "}
+                      <span className="fw-bold">88,888,888</span>
+                      <img
+                        src="/static/svg/distribution_vector.svg"
+                        alt="vector"
+                        className="c-distribution-chart-vector"
+                      ></img>
                     </span>
                   </div>
-                  <div className="clearboth"></div>
-                  <div
-                    className="ct-divider "
-                    style={{ marginTop: "50px" }}
-                  ></div>
                 </div>
-              </ScrollAnimation>
+                <div className="clearboth"></div>
+                <div className="ct-divider" style={{ marginTop: "50px" }}></div>
+                <div className="c-distribution-price-content">
+                  <div>1 ZNX</div>
+                  <div className="c-distribution-dark">
+                    {currentStage === stageName.secondStage
+                      ? price.secondStage
+                      : price.firstStage}
+                    USDT
+                  </div>
+                </div>
+                <div className="clearboth"></div>
+                <div className="ct-button-container c-distribution-buytoken-btn-content">
+                  <span
+                    className="c-distribution-buytoken-btn"
+                    onClick={() => handleModal()}
+                  >
+                    BUY ZNX
+                    <i className="fas fa-arrow-right ms-2"></i>
+                  </span>
+                </div>
+                <div className="clearboth"></div>
+                <div
+                  className="ct-divider "
+                  style={{ marginTop: "50px" }}
+                ></div>
+              </div>
             </div>
           </div>
           <div className="donut wpb_column vc_column_container vc_col-sm-6 vc_col-lg-4 vc_col-md-6">
             <div className="vc_column-inner">
               <ScrollAnimation
-                animateIn='fadeIn'
-                animateOut='fadeOut'
+                animateIn='fadeInUp'
+                animateOut='fadeOutUp'
                 duration={2}
                 delay={0}
                 animateOnce={true}>
@@ -344,8 +338,8 @@ const Distribution = () => {
           <div className="donut wpb_column vc_column_container vc_col-sm-6 vc_col-lg-4 vc_col-md-6">
             <div className="vc_column-inner" style={{ paddingRight: "0px" }}>
               <ScrollAnimation
-                animateIn='fadeInRight'
-                animateOut='fadeOutRight'
+                animateIn='fadeInUp'
+                animateOut='fadeOutUp'
                 duration={2}
                 delay={0}
                 animateOnce={true}>
