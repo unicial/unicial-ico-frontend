@@ -7,6 +7,7 @@ import { useAppDispatch, useAppSelector } from "../store/hooks";
 import { showAlert } from "../store/alert";
 import { setBuyPermission } from "../store/ICOinfo";
 import { showBuyModal } from "../store/buymodal";
+import ScrollAnimation from "react-animate-on-scroll";
 
 const Toparea = () => {
   const [percent, setPercent] = useState(0);
@@ -133,80 +134,108 @@ const Toparea = () => {
       <div className="c-container">
         <div className="c-container-content">
           <div className="c-firstcontent-left">
-            <div>
-              <p className="c-large-text1">Zilionixx</p>
-              <p className="c-large-text2">Layer1 Blockchain!</p>
-            </div>
-            <div className="c-small-text my-5">
-              A new smart block chain based marketplace for trading digital
-              goods & assets according to users interests including metaverse
-              and medical tech.
-            </div>
-            <span className="c-buytoken-btn-border">
-              <span className="c-buytoken-btn" onClick={handleModal}>
-                BUY ZNX
-                <i className="fas fa-arrow-right ms-2"></i>
+            <ScrollAnimation
+              animateIn='fadeIn'
+              animateOut='fadeOut'
+              duration={0.5}
+              delay={0}
+              animateOnce={true}>
+              <div>
+                <p className="c-large-text1">Zilionixx</p>
+                <p className="c-large-text2">Layer1 Blockchain!</p>
+              </div>
+            </ScrollAnimation>
+            <ScrollAnimation
+              animateIn='fadeInLeft'
+              animateOut='fadeOutLeft'
+              duration={0.5}
+              delay={0}
+              animateOnce={true}>
+              <div className="c-small-text my-5">
+                A new smart block chain based marketplace for trading digital
+                goods & assets according to users interests including metaverse
+                and medical tech.
+              </div>
+              <span className="c-buytoken-btn-border">
+                <span className="c-buytoken-btn" onClick={handleModal}>
+                  BUY ZNX
+                  <i className="fas fa-arrow-right ms-2"></i>
+                </span>
               </span>
-            </span>
+            </ScrollAnimation>
           </div>
           <div className="c-firstcontent-right">
             <div className="c-small-text">ZNX sale ends in:</div>
-            <div className="c-countdown mt-4">
-              <div className="c-countdown-items c-time-days">
-                <div className="c-time-item">
-                  {timeLeft.days < 10 ? "0" + timeLeft.days : timeLeft.days}
-                  <span className="c-time-desc">d</span>
+            <ScrollAnimation
+              animateIn='bounceInDown'
+              animateOut='bounceOutDown'
+              duration={1}
+              delay={0}
+              animateOnce={true}>
+              <div className="c-countdown mt-4">
+                <div className="c-countdown-items c-time-days">
+                  <div className="c-time-item">
+                    {timeLeft.days < 10 ? "0" + timeLeft.days : timeLeft.days}
+                    <span className="c-time-desc">d</span>
+                  </div>
+                </div>
+                <div className="c-countdown-items c-time-hours">
+                  <div className="c-time-item ">
+                    {timeLeft.hours < 10 ? "0" + timeLeft.hours : timeLeft.hours}
+                    <span className="c-time-desc">h</span>
+                  </div>
+                </div>
+                <div className="c-countdown-items c-time-hours">
+                  <div className="c-time-item">
+                    {timeLeft.minutes < 10
+                      ? "0" + timeLeft.minutes
+                      : timeLeft.minutes}
+                    <span className="c-time-desc">m</span>
+                  </div>
+                </div>
+                <div className="c-countdown-items c-time-hours">
+                  <div className="c-time-item">
+                    <span>
+                      {timeLeft.seconds < 10
+                        ? "0" + timeLeft.seconds
+                        : timeLeft.seconds}
+                    </span>
+                    <span className="c-time-desc">s</span>
+                  </div>
                 </div>
               </div>
-              <div className="c-countdown-items c-time-hours">
-                <div className="c-time-item ">
-                  {timeLeft.hours < 10 ? "0" + timeLeft.hours : timeLeft.hours}
-                  <span className="c-time-desc">h</span>
-                </div>
+            </ScrollAnimation>
+            <ScrollAnimation
+              animateIn='fadeInRight'
+              animateOut='fadeOutRight'
+              duration={0.5}
+              delay={0}
+              animateOnce={true}>
+              <div className="c-medium-text my-5">
+                <span className="fw-bold c-price-light">$ 310,500 </span>{" "}
+                contribution received
               </div>
-              <div className="c-countdown-items c-time-hours">
-                <div className="c-time-item">
-                  {timeLeft.minutes < 10
-                    ? "0" + timeLeft.minutes
-                    : timeLeft.minutes}
-                  <span className="c-time-desc">m</span>
+              <div className="mb-5">
+                <div className="c-progress-range">
+                  <span>$0.1m</span>
+                  <span>$4.5m</span>
                 </div>
-              </div>
-              <div className="c-countdown-items c-time-hours">
-                <div className="c-time-item">
-                  <span>
-                    {timeLeft.seconds < 10
-                      ? "0" + timeLeft.seconds
-                      : timeLeft.seconds}
+                <Progress value={percent.toString()} className="c-progress-bar">
+                  <span
+                    className="c-progress-arrow"
+                    style={{ right: `${99 - percent}%` }}
+                  >
+                    <span>{percent.toString()}%</span>
+                    <i className="fas fa-caret-down"></i>
                   </span>
-                  <span className="c-time-desc">s</span>
+                  {/* <span className="c-progress-value">{percent.toString()}%</span> */}
+                </Progress>
+                <div className="c-progress-desc">
+                  <span>Softcap in 1069 days</span>
+                  <span>Hardcap</span>
                 </div>
               </div>
-            </div>
-            <div className="c-medium-text my-5">
-              <span className="fw-bold c-price-light">$ 310,500 </span>{" "}
-              contribution received
-            </div>
-            <div className="mb-5">
-              <div className="c-progress-range">
-                <span>$0.1m</span>
-                <span>$4.5m</span>
-              </div>
-              <Progress value={percent.toString()} className="c-progress-bar">
-                <span
-                  className="c-progress-arrow"
-                  style={{ right: `${99 - percent}%` }}
-                >
-                  <span>{percent.toString()}%</span>
-                  <i className="fas fa-caret-down"></i>
-                </span>
-                {/* <span className="c-progress-value">{percent.toString()}%</span> */}
-              </Progress>
-              <div className="c-progress-desc">
-                <span>Softcap in 1069 days</span>
-                <span>Hardcap</span>
-              </div>
-            </div>
+            </ScrollAnimation>
             <div className="d-flex justify-content-end mt-5">
               <img src="/static/svg/visa_group.svg" alt="visa" />
             </div>

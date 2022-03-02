@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import clsx from "clsx";
 import { Row, Col } from "reactstrap";
+import ScrollAnimation from "react-animate-on-scroll";
 
 const FAQs = () => {
   const faqs = [
@@ -52,58 +53,75 @@ const FAQs = () => {
                   </div>
                 </div>
               </div>
-              <div className="wpb_text_column wpb_content_element ">
-                <div className="wpb_wrapper">
-                  <div className="c-news-title-large">
-                    <span>Frequently Questions</span>
+              <ScrollAnimation
+                animateIn='fadeIn'
+                animateOut='fadeOut'
+                duration={0.5}
+                delay={0}
+                animateOnce={true}>
+                <div className="c-roadmap-title-large">
+                  <span>Our Plan of Zilionixx</span>
+                </div>
+                <div className="wpb_text_column wpb_content_element ">
+                  <div className="wpb_wrapper">
+                    <div className="c-news-title-large">
+                      <span>Frequently Questions</span>
+                    </div>
                   </div>
                 </div>
-              </div>
+              </ScrollAnimation>
               <div className="clearboth"></div>
               <div
                 className="ct-divider divider_responsive"
                 style={{ marginTop: "50px" }}
               ></div>
-              <div className="accordion" id="accordionExample">
-                {faqs.map((faq, key) => (
-                  <div
-                    className="accordion-item c-faq-accordion-item"
-                    key={key}
-                  >
-                    <h2 className="accordion-header" id={`heading${key}`}>
-                      <button
-                        className={clsx("accordion-button", {
-                          collapsed: activeFaqItem !== key,
-                        })}
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target={`#collapse${key}`}
-                        aria-expanded={activeFaqItem === key ? "true" : "false"}
-                        aria-controls={`collapse${key}`}
-                        onClick={() => setActiveFaqItem(key)}
-                      >
-                        {activeFaqItem === key ? (
-                          <i className="fas fa-minus-circle"></i>
-                        ) : (
-                          <i className="fas fa-plus-circle"></i>
-                        )}
-
-                        {faq.title}
-                      </button>
-                    </h2>
+              <ScrollAnimation
+                animateIn='fadeInLeft'
+                animateOut='fadeOutLeft'
+                duration={0.5}
+                delay={0}
+                animateOnce={true}>
+                <div className="accordion" id="accordionExample">
+                  {faqs.map((faq, key) => (
                     <div
-                      id={`collapse${key}`}
-                      className={clsx("accordion-collapse collapse", {
-                        show: activeFaqItem === key,
-                      })}
-                      aria-labelledby={`heading${key}`}
-                      data-bs-parent="#accordionExample"
+                      className="accordion-item c-faq-accordion-item"
+                      key={key}
                     >
-                      <div className="accordion-body">{faq.content}</div>
+                      <h2 className="accordion-header" id={`heading${key}`}>
+                        <button
+                          className={clsx("accordion-button", {
+                            collapsed: activeFaqItem !== key,
+                          })}
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target={`#collapse${key}`}
+                          aria-expanded={activeFaqItem === key ? "true" : "false"}
+                          aria-controls={`collapse${key}`}
+                          onClick={() => setActiveFaqItem(key)}
+                        >
+                          {activeFaqItem === key ? (
+                            <i className="fas fa-minus-circle"></i>
+                          ) : (
+                            <i className="fas fa-plus-circle"></i>
+                          )}
+
+                          {faq.title}
+                        </button>
+                      </h2>
+                      <div
+                        id={`collapse${key}`}
+                        className={clsx("accordion-collapse collapse", {
+                          show: activeFaqItem === key,
+                        })}
+                        aria-labelledby={`heading${key}`}
+                        data-bs-parent="#accordionExample"
+                      >
+                        <div className="accordion-body">{faq.content}</div>
+                      </div>
                     </div>
-                  </div>
-                ))}
-              </div>
+                  ))}
+                </div>
+              </ScrollAnimation>
               <div className="clearboth"></div>
               <div
                 className="ct-divider divider_responsive"

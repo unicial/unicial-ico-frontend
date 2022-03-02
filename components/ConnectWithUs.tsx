@@ -1,4 +1,5 @@
 import React from "react";
+import ScrollAnimation from "react-animate-on-scroll";
 
 const ConnectWithUs = () => {
   return (
@@ -41,100 +42,121 @@ const ConnectWithUs = () => {
                   </div>
 
                   <div className="wpb_text_column wpb_content_element ">
-                    <div className="wpb_wrapper">
-                      <div className="title-h1" style={{ textAlign: "center" }}>
-                        <span
-                          className="paragraph-title"
-                          style={{ color: "#000000" }}
-                        >
-                          Connect with us
-                        </span>
+                    <ScrollAnimation
+                      animateIn='fadeIn'
+                      animateOut='fadeOut'
+                      duration={0.5}
+                      delay={0}
+                      animateOnce={true}>
+                      <div className="wpb_wrapper">
+                        <div className="title-h1" style={{ textAlign: "center" }}>
+                          <span
+                            className="paragraph-title"
+                            style={{ color: "#000000" }}
+                          >
+                            Connect with us
+                          </span>
+                        </div>
                       </div>
-                    </div>
+                    </ScrollAnimation>
                   </div>
                   <div className="clearboth"></div>
                   <div className="ct-divider "></div>
                   <div className="wpb_text_column wpb_content_element ">
-                    <div className="wpb_wrapper">
-                      <p
-                        style={{
-                          textAlign: "center",
-                          maxWidth: "730px",
-                          margin: "auto",
-                        }}
-                      >
-                        <span className="sub-content1">
-                          You can subscribe about Zilionixx blockchain from
-                          below Zilionixx social links. Please join here.
-                        </span>
-                      </p>
-                    </div>
+                    <ScrollAnimation
+                      animateIn='fadeInLeft'
+                      animateOut='fadeOutLeft'
+                      duration={0.5}
+                      delay={0}
+                      animateOnce={true}>
+                      <div className="wpb_wrapper">
+                        <p
+                          style={{
+                            textAlign: "center",
+                            maxWidth: "730px",
+                            margin: "auto",
+                          }}
+                        >
+                          <span className="sub-content1">
+                            You can subscribe about Zilionixx blockchain from
+                            below Zilionixx social links. Please join here.
+                          </span>
+                        </p>
+                      </div>
+                    </ScrollAnimation>
                   </div>
                   <div className="clearboth"></div>
                   <div
                     className="ct-divider "
                     style={{ marginTop: "20px" }}
                   ></div>
-                  <div className="c-contactus-social-items socials socials-list socials-colored-hover socials-rounded socials-alignment-center">
-                    <a
-                      className="c-contactus-social-item"
-                      href="https://twitter.com/zilionixx"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <i className="fab fa-twitter"></i>
-                    </a>
-                    <a
-                      className="c-contactus-social-item"
-                      href="https://www.facebook.com/groups/4354141514692375/"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <i className="fab fa-facebook-f"></i>
-                    </a>
+                  <ScrollAnimation
+                    animateIn='fadeInRight'
+                    animateOut='fadeOutRight'
+                    duration={0.5}
+                    delay={0}
+                    animateOnce={true}>
+                    <div className="c-contactus-social-items socials socials-list socials-colored-hover socials-rounded socials-alignment-center">
+                      <a
+                        className="c-contactus-social-item"
+                        href="https://twitter.com/zilionixx"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        <i className="fab fa-twitter"></i>
+                      </a>
+                      <a
+                        className="c-contactus-social-item"
+                        href="https://www.facebook.com/groups/4354141514692375/"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        <i className="fab fa-facebook-f"></i>
+                      </a>
 
-                    <a
-                      className="c-contactus-social-item"
-                      href="https://www.linkedin.com/company/zilionixx"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <i className="fab fa-linkedin-in"></i>
-                    </a>
-                    <a
-                      className="c-contactus-social-item"
-                      href="https://www.instagram.com/zilionixx"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <i className="fab fa-instagram"></i>
-                    </a>
+                      <a
+                        className="c-contactus-social-item"
+                        href="https://www.linkedin.com/company/zilionixx"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        <i className="fab fa-linkedin-in"></i>
+                      </a>
+                      <a
+                        className="c-contactus-social-item"
+                        href="https://www.instagram.com/zilionixx"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        <i className="fab fa-instagram"></i>
+                      </a>
 
-                    <a
-                      className="c-contactus-social-item"
-                      href="https://www.youtube.com/channel/UCvM8xLpdbdyNFVXf5-NmnOA"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <i className="fab fa-youtube"></i>
-                    </a>
-                    <a
-                      className="c-contactus-social-item"
-                      href="https://t.me/zilionixxcommunity"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <i className="fab fa-telegram-plane"></i>
-                    </a>
-                    <a
-                      className="c-contactus-social-item"
-                      href="https://join.slack.com/t/zilionixxcommunity/shared_invite/zt-12gnvg54z-YRfxn2QEPfHU7YoqTNUZCw"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <i className="fab fa-slack-hash"></i>
-                    </a>
-                  </div>
+                      <a
+                        className="c-contactus-social-item"
+                        href="https://www.youtube.com/channel/UCvM8xLpdbdyNFVXf5-NmnOA"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        <i className="fab fa-youtube"></i>
+                      </a>
+                      <a
+                        className="c-contactus-social-item"
+                        href="https://t.me/zilionixxcommunity"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        <i className="fab fa-telegram-plane"></i>
+                      </a>
+                      <a
+                        className="c-contactus-social-item"
+                        href="https://join.slack.com/t/zilionixxcommunity/shared_invite/zt-12gnvg54z-YRfxn2QEPfHU7YoqTNUZCw"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        <i className="fab fa-slack-hash"></i>
+                      </a>
+                    </div>
+                  </ScrollAnimation>
 
                   <div className="clearboth"></div>
                   <div

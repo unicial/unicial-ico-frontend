@@ -17,6 +17,7 @@ import ModalComponent from "../components/SubmitModal";
 import Banner from "../components/Banner";
 import Alert from "../components/Alert";
 import BuyTokenModal from "../components/BuyTokenModal";
+import ScrollAnimation from "react-animate-on-scroll";
 
 const Home = () => {
   const [isOpenBanner, setIsOpenBanner] = useState<boolean>();

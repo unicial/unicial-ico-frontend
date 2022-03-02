@@ -4,6 +4,7 @@ import { getCurrentStage, getBuyPermission } from "../store/ICOinfo/selectors";
 import { useAppSelector, useAppDispatch } from "../store/hooks";
 import { showBuyModal } from "../store/buymodal";
 import { showAlert } from "../store/alert";
+import ScrollAnimation from "react-animate-on-scroll";
 
 const Option = () => {
   const dispatch = useAppDispatch();
@@ -40,90 +41,111 @@ const Option = () => {
   return (
     <div className="option-container">
       <div className="c-container c-option-content">
-        <div className="c-option-card-container">
-          <div className="c-upPart">
-            <div className="c-footerimgContainer">
-              <img
-                className="option-img"
-                src="/static/svg/book.svg"
-                alt="white-paper-icon"
-              />
+      <ScrollAnimation
+              animateIn='fadeInLeft'
+              animateOut='fadeOutLeft'
+              duration={0.5}
+              delay={0}
+              animateOnce={true}>
+          <div className="c-option-card-container">
+            <div className="c-upPart">
+              <div className="c-footerimgContainer">
+                <img
+                  className="option-img"
+                  src="/static/svg/book.svg"
+                  alt="white-paper-icon"
+                />
+              </div>
+
+              <div className="c-option-letterPart">
+                <p className="c-option-text-title">Read our</p>
+                <p className="c-option-text-content">White Paper</p>
+                <img className="c-pig" src="/static/svg/pig.svg" />
+              </div>
             </div>
 
-            <div className="c-option-letterPart">
-              <p className="c-option-text-title">Read our</p>
-              <p className="c-option-text-content">White Paper</p>
-              <img className="c-pig" src="/static/svg/pig.svg" />
-            </div>
-          </div>
-
-          <a
-            href="/static/zilionixx-whitepaper.pdf"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <p className="card-link">
-              Open Whitepaper (Pdf)
-              <img src="/static/svg/arrow.svg" />
-            </p>
-          </a>
-        </div>
-        <div className="c-option-card-container">
-          <div className="c-upPart">
-            <div className="c-footerimgContainer">
-              <img
-                className="option-img"
-                src="/static/svg/coincheck.svg"
-                alt="exchange-icon"
-              />
-            </div>
-
-            <div className="c-option-letterPart">
-              <p className="c-option-text-title">1 ZNX price</p>
-              <p className="c-option-text-content">
-                {currentStage === stageName.secondStage
-                  ? price.secondStage
-                  : price.firstStage}
-                &nbsp; USDT
+            <a
+              href="/static/zilionixx-whitepaper.pdf"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <p className="card-link">
+                Open Whitepaper (Pdf)
+                <img src="/static/svg/arrow.svg" />
               </p>
-              <img className="c-pig" src="/static/svg/pig.svg" />
-            </div>
+            </a>
           </div>
+        </ScrollAnimation>
+        <ScrollAnimation
+              animateIn='fadeIn'
+              animateOut='fadeOut'
+              duration={1}
+              delay={0}
+              animateOnce={true}>
+          <div className="c-option-card-container">
+            <div className="c-upPart">
+              <div className="c-footerimgContainer">
+                <img
+                  className="option-img"
+                  src="/static/svg/coincheck.svg"
+                  alt="exchange-icon"
+                />
+              </div>
 
-          <span onClick={() => handleModal()}>
-            <p className="card-link">
-              Buy ZNX
-              <img src="/static/svg/arrow.svg" />
-            </p>
-          </span>
-        </div>
-        <div className="c-option-card-container c-option-mr-large">
-          <div className="c-upPart">
-            <div className="c-footerimgContainer">
-              <img
-                className="option-img"
-                src="/static/svg/participants.svg"
-                alt="team-icon"
-              />
+              <div className="c-option-letterPart">
+                <p className="c-option-text-title">1 ZNX price</p>
+                <p className="c-option-text-content">
+                  {currentStage === stageName.secondStage
+                    ? price.secondStage
+                    : price.firstStage}
+                  &nbsp; USDT
+                </p>
+                <img className="c-pig" src="/static/svg/pig.svg" />
+              </div>
             </div>
-            <div className="c-option-letterPart">
-              <p className="c-option-text-title">ICO Participants</p>
-              <p className="c-option-text-content">370,000+</p>
-              <img className="c-pig" src="/static/svg/pig.svg" />
-            </div>
+
+            <span onClick={() => handleModal()}>
+              <p className="card-link">
+                Buy ZNX
+                <img src="/static/svg/arrow.svg" />
+              </p>
+            </span>
           </div>
+        </ScrollAnimation>
+        <ScrollAnimation
+              animateIn='fadeInRight'
+              animateOut='fadeOutRight'
+              duration={0.5}
+              delay={0}
+              animateOnce={true}>
+          <div className="c-option-card-container c-option-mr-large">
+            <div className="c-upPart">
+              <div className="c-footerimgContainer">
+                <img
+                  className="option-img"
+                  src="/static/svg/participants.svg"
+                  alt="team-icon"
+                />
+              </div>
+              <div className="c-option-letterPart">
+                <p className="c-option-text-title">ICO Participants</p>
+                <p className="c-option-text-content">370,000+</p>
+                <img className="c-pig" src="/static/svg/pig.svg" />
+              </div>
+            </div>
 
-          <a
-            href="https://t.me/zilionixxcommunity"
-            target={"_blank"}
-            rel="noreferrer"
-          >
-            <p className="card-link">
-              Join ZNX Telegram
-              <img src="/static/svg/arrow.svg" />
-            </p>
-          </a>
-        </div>
+            <a
+              href="https://t.me/zilionixxcommunity"
+              target={"_blank"}
+              rel="noreferrer"
+            >
+              <p className="card-link">
+                Join ZNX Telegram
+                <img src="/static/svg/arrow.svg" />
+              </p>
+            </a>
+          </div>
+        </ScrollAnimation>
       </div>
     </div>
   );
