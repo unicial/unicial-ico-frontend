@@ -50,7 +50,7 @@ export default async (req: any, res: any) => {
     // const { url, data, headers } = getRequestParams(email, firstName, lastName);
     const API_KEY =
       "0d8edc054a6bd06495937a23b76913f0e0bf3bb430209e2b4094eeaf61a372b50a68b772";
-    const url = `https://zilionixx.api-us1.com/api/3/contacts`;
+    const url = `https://zilionixx.api-us1.com/api/3/contact/sync`;
 
     const data = {
       contact: {
