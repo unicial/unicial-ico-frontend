@@ -60,26 +60,21 @@ export default async (req: any, res: any) => {
         phone: "",
       },
     };
-
     const headers = {
       "Content-Type": "application/json",
       "Api-Token": `${API_KEY}`,
     };
 
     const response: any = await axios.post(url, data, { headers });
-    console.log("=== contact response ===");
-    console.log(response);
 
     const tagUrl = `https://zilionixx.api-us1.com/api/3/contactTags`;
     const tagData = {
       contactTag: {
-        contact: response.contact.id,
+        contact: response.data.contact.id,
         tag: "2",
       },
     };
     const respTag = await axios.post(tagUrl, tagData, { headers });
-    console.log("=== tag response ===");
-    console.log(respTag);
 
     // Success
     return res.status(201).json({ error: null });
