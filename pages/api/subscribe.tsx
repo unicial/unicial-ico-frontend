@@ -47,9 +47,40 @@ export default async (req: any, res: any) => {
   }
 
   try {
-    const { url, data, headers } = getRequestParams(email, firstName, lastName);
+    // const { url, data, headers } = getRequestParams(email, firstName, lastName);
+    const API_KEY =
+      "0d8edc054a6bd06495937a23b76913f0e0bf3bb430209e2b4094eeaf61a372b50a68b772";
+    const url = `https://zilionixx.api-us1.com/api/3/contacts`;
 
-    const response = await axios.post(url, data, { headers });
+    const data = {
+      contact: {
+        email: email,
+        firstName: firstName,
+        lastName: lastName,
+        phone: "",
+      },
+    };
+
+    const headers = {
+      "Content-Type": "application/json",
+      "Api-Token": `${API_KEY}`,
+    };
+
+    const response: any = await axios.post(url, data, { headers });
+    console.log("=== contact response ===");
+    console.log(response);
+
+    const tagUrl = `https://zilionixx.api-us1.com/api/3/contactTags`;
+    const tagData = {
+      contactTag: {
+        contact: response.contact.id,
+        tag: "2",
+      },
+    };
+    const respTag = await axios.post(tagUrl, tagData, { headers });
+    console.log("=== tag response ===");
+    console.log(respTag);
+
     // Success
     return res.status(201).json({ error: null });
   } catch (error) {
