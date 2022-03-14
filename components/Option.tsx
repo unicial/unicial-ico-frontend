@@ -16,14 +16,14 @@ const Option = () => {
       if (currentStage === stageName.preStage || currentStage === "") {
         dispatch(
           showAlert({
-            message: "Zilionixx crowdsale will be start from 14th Febrary",
+            message: "Zilionixx crowdsale will be start from April 14th",
             severity: "warning",
           })
         );
       } else if (currentStage === stageName.closeStage) {
         dispatch(
           showAlert({
-            message: "Zilionixx crowdsale ended on Febrary 14th",
+            message: "Zilionixx crowdsale April 14th",
             severity: "warning",
           })
         );
@@ -41,12 +41,13 @@ const Option = () => {
   return (
     <div className="option-container">
       <div className="c-container c-option-content">
-      <ScrollAnimation
-              animateIn='fadeInLeft'
-              animateOut='fadeOutLeft'
-              duration={2}
-              delay={0}
-              animateOnce={true}>
+        <ScrollAnimation
+          animateIn="fadeInLeft"
+          animateOut="fadeOutLeft"
+          duration={2}
+          delay={0}
+          animateOnce={true}
+        >
           <div className="c-option-card-container">
             <div className="c-upPart">
               <div className="c-footerimgContainer">
@@ -77,11 +78,12 @@ const Option = () => {
           </div>
         </ScrollAnimation>
         <ScrollAnimation
-              animateIn='fadeIn'
-              animateOut='fadeOut'
-              duration={2}
-              delay={0}
-              animateOnce={true}>
+          animateIn="fadeIn"
+          animateOut="fadeOut"
+          duration={2}
+          delay={0}
+          animateOnce={true}
+        >
           <div className="c-option-card-container">
             <div className="c-upPart">
               <div className="c-footerimgContainer">
@@ -113,11 +115,12 @@ const Option = () => {
           </div>
         </ScrollAnimation>
         <ScrollAnimation
-              animateIn='fadeInRight'
-              animateOut='fadeOutRight'
-              duration={2}
-              delay={0}
-              animateOnce={true}>
+          animateIn="fadeInRight"
+          animateOut="fadeOutRight"
+          duration={2}
+          delay={0}
+          animateOnce={true}
+        >
           <div className="c-option-card-container c-option-mr-large">
             <div className="c-upPart">
               <div className="c-footerimgContainer">

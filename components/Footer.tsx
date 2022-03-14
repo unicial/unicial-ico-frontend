@@ -101,7 +101,7 @@ const Footer = () => {
               </div>
               <span className="d-block my-4">
                 Zilionixx crowdsale landing page. Zilionixx crowdsale will be
-                start on 1th Febrary.
+                start on 1st March.
               </span>
               <Button outline className="c-aboutus-btn">
                 About Us

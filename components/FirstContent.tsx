@@ -57,14 +57,14 @@ const Toparea = () => {
       if (currentStage === stageName.preStage || currentStage === "") {
         dispatch(
           showAlert({
-            message: "Zilionixx crowdsale will be start from 14th Febrary",
+            message: "Zilionixx crowdsale will be start from April 14th",
             severity: "warning",
           })
         );
       } else if (currentStage === stageName.closeStage) {
         dispatch(
           showAlert({
-            message: "Zilionixx crowdsale ended on Febrary 14th",
+            message: "Zilionixx crowdsale ended on April 14th",
             severity: "warning",
           })
         );
@@ -135,22 +135,24 @@ const Toparea = () => {
         <div className="c-container-content">
           <div className="c-firstcontent-left">
             <ScrollAnimation
-              animateIn='fadeIn'
-              animateOut='fadeOut'
+              animateIn="fadeIn"
+              animateOut="fadeOut"
               duration={2}
               delay={0}
-              animateOnce={true}>
+              animateOnce={true}
+            >
               <div>
                 <p className="c-large-text1">Zilionixx</p>
                 <p className="c-large-text2">Layer1 Blockchain!</p>
               </div>
             </ScrollAnimation>
             <ScrollAnimation
-              animateIn='fadeInLeft'
-              animateOut='fadeOutLeft'
+              animateIn="fadeInLeft"
+              animateOut="fadeOutLeft"
               duration={2}
               delay={0}
-              animateOnce={true}>
+              animateOnce={true}
+            >
               <div className="c-small-text my-5">
                 A new smart block chain based marketplace for trading digital
                 goods & assets according to users interests including metaverse
@@ -167,11 +169,12 @@ const Toparea = () => {
           <div className="c-firstcontent-right">
             <div className="c-small-text">ZNX sale ends in:</div>
             <ScrollAnimation
-              animateIn='bounceInDown'
-              animateOut='bounceOutDown'
+              animateIn="bounceInDown"
+              animateOut="bounceOutDown"
               duration={2}
               delay={0}
-              animateOnce={true}>
+              animateOnce={true}
+            >
               <div className="c-countdown mt-4">
                 <div className="c-countdown-items c-time-days">
                   <div className="c-time-item">
@@ -181,7 +184,9 @@ const Toparea = () => {
                 </div>
                 <div className="c-countdown-items c-time-hours">
                   <div className="c-time-item ">
-                    {timeLeft.hours < 10 ? "0" + timeLeft.hours : timeLeft.hours}
+                    {timeLeft.hours < 10
+                      ? "0" + timeLeft.hours
+                      : timeLeft.hours}
                     <span className="c-time-desc">h</span>
                   </div>
                 </div>
@@ -206,11 +211,12 @@ const Toparea = () => {
               </div>
             </ScrollAnimation>
             <ScrollAnimation
-              animateIn='fadeInRight'
-              animateOut='fadeOutRight'
+              animateIn="fadeInRight"
+              animateOut="fadeOutRight"
               duration={2}
               delay={0}
-              animateOnce={true}>
+              animateOnce={true}
+            >
               <div className="c-medium-text my-5">
                 <span className="fw-bold c-price-light">$ 310,500 </span>{" "}
                 contribution received

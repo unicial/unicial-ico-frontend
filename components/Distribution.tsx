@@ -23,14 +23,14 @@ const Distribution = () => {
       if (currentStage === stageName.preStage || currentStage === "") {
         dispatch(
           showAlert({
-            message: "Zilionixx crowdsale will be start from 14th Febrary",
+            message: "Zilionixx crowdsale will be start from April 14th",
             severity: "warning",
           })
         );
       } else if (currentStage === stageName.closeStage) {
         dispatch(
           showAlert({
-            message: "Zilionixx crowdsale ended on Febrary 14th",
+            message: "Zilionixx crowdsale ended on April 14th",
             severity: "warning",
           })
         );
@@ -114,6 +114,7 @@ const Distribution = () => {
 
   useEffect(() => {
     const currentTimes = dateToTime("current");
+    console.log(new Date(currentTimes));
     const firstStageTimes = dateToTime(`${process.env.firstStage}`);
     const secondStageTimes = dateToTime(`${process.env.secondStage}`);
     const lastStageTimes = dateToTime(`${process.env.lastStage}`);
