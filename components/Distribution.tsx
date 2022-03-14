@@ -114,7 +114,6 @@ const Distribution = () => {
 
   useEffect(() => {
     const currentTimes = dateToTime("current");
-    console.log(new Date(currentTimes));
     const firstStageTimes = dateToTime(`${process.env.firstStage}`);
     const secondStageTimes = dateToTime(`${process.env.secondStage}`);
     const lastStageTimes = dateToTime(`${process.env.lastStage}`);
