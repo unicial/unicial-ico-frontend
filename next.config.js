@@ -7,9 +7,9 @@ module.exports = {
   env: {
     ApiUrl: `${API_URL}/api/v1`,
     expiretime: 86400,
-    firstStage: "2022-02-14",
-    secondStage: "2022-03-1",
-    lastStage: "2022-03-15",
+    firstStage: "2022-03-1",
+    secondStage: "2022-03-15",
+    lastStage: "2022-04-15",
   },
   staticPageGenerationTimeout: 1000,
 };

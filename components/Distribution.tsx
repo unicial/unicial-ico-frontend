@@ -146,11 +146,12 @@ const Distribution = () => {
       >
         <div>
           <ScrollAnimation
-                animateIn='fadeIn'
-                animateOut='fadeOut'
-                duration={2}
-                delay={0}
-                animateOnce={true}>
+            animateIn="fadeIn"
+            animateOut="fadeOut"
+            duration={2}
+            delay={0}
+            animateOnce={true}
+          >
             <div className="c-distribution-title">
               We would like to proceed with the Zilionixx Crowdsale as follows:
             </div>
@@ -158,7 +159,7 @@ const Distribution = () => {
               <div className="c-distribution-history">
                 <i className="fas fa-circle c-news-title-dot c-distribution-dot-icon"></i>
                 <div className="c-distribution-history-text">
-                  <div>Feb 14th ~ Feb 28th</div>
+                  <div>Mar 1st ~ Mar 14th</div>
                   <div>
                     <span className="c-distribution-coin-text">1 ZNX</span>
                     <span> = {price.firstStage} USDT, 1.5 milion ZNX </span>
@@ -168,7 +169,7 @@ const Distribution = () => {
               <div className="c-distribution-history">
                 <i className="fas fa-circle c-news-title-dot c-distribution-dot-icon"></i>
                 <div className="c-distribution-history-text">
-                  <div>Mar 1st ~ Mar 14th</div>
+                  <div>Mar 15th ~ Apr 14th</div>
                   <div>
                     <span className="c-distribution-coin-text">1 ZNX</span>
                     <span> = {price.secondStage} USDT, 1.5 milion ZNX </span>
@@ -191,8 +192,7 @@ const Distribution = () => {
         <div className="c-distribution-chart-container">
           <div className="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-4 vc_col-md-12">
             <div className="vc_column-inner" style={{ paddingLeft: "0px" }}>
-              
-              <div className="wpb_wrapper">                
+              <div className="wpb_wrapper">
                 <div className="wpb_text_column wpb_content_element  wpb_animate_when_almost_visible wpb_fadeIn fadeIn wpb_start_animation animated">
                   <div className="wpb_wrapper c-distribution-chart-desc">
                     <p>
@@ -251,15 +251,19 @@ const Distribution = () => {
           <div className="donut wpb_column vc_column_container vc_col-sm-6 vc_col-lg-4 vc_col-md-6">
             <div className="vc_column-inner">
               <ScrollAnimation
-                animateIn='fadeInUp'
-                animateOut='fadeOutUp'
+                animateIn="fadeInUp"
+                animateOut="fadeOutUp"
                 duration={2}
                 delay={0}
-                animateOnce={true}>
+                animateOnce={true}
+              >
                 <div className="wpb_wrapper">
                   <div className="wpb_text_column wpb_content_element  wpb_animate_when_almost_visible wpb_fadeIn fadeIn wpb_start_animation animated">
                     <div className="wpb_wrapper">
-                      <div className="title-h3" style={{ textTransform: "none" }}>
+                      <div
+                        className="title-h3"
+                        style={{ textTransform: "none" }}
+                      >
                         Fund distribution
                       </div>
                     </div>
@@ -338,18 +342,22 @@ const Distribution = () => {
           <div className="donut wpb_column vc_column_container vc_col-sm-6 vc_col-lg-4 vc_col-md-6">
             <div className="vc_column-inner" style={{ paddingRight: "0px" }}>
               <ScrollAnimation
-                animateIn='fadeInUp'
-                animateOut='fadeOutUp'
+                animateIn="fadeInUp"
+                animateOut="fadeOutUp"
                 duration={2}
                 delay={0}
-                animateOnce={true}>
+                animateOnce={true}
+              >
                 <div className="wpb_wrapper">
                   <div className="wpb_text_column wpb_content_element  wpb_animate_when_almost_visible wpb_fadeIn fadeIn wpb_start_animation animated">
                     <div className="wpb_wrapper">
-                      <div className="title-h3" style={{ textTransform: "none" }}>
+                      <div
+                        className="title-h3"
+                        style={{ textTransform: "none" }}
+                      >
                         ZNX distribution
                       </div>
-                  </div>
+                    </div>
                   </div>
                   <div className="clearboth"></div>
                   <div
