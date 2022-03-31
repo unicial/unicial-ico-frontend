@@ -24,6 +24,11 @@
   display: flex;
   justify-content: space-between;
 }
+.c-distribution-bonus-container {
+  margin: 0px 0px 40px 0px;
+  display: flex;
+  justify-content: space-between;
+}
 .c-distribution-history {
   display: flex;
 }
@@ -34,6 +39,13 @@
 .c-distribution-history-text {
   font-weight: 500;
   font-size: 15px;
+  line-height: 30px;
+  letter-spacing: 0.05em;
+  color: #12222f;
+}
+.c-distribution-bonus-text {
+  font-weight: 500;
+  font-size: 20px;
   line-height: 30px;
   letter-spacing: 0.05em;
   color: #12222f;
@@ -140,6 +152,11 @@
   }
   .c-distribution-history-container {
     margin: 40px 0px;
+    display: grid;
+    justify-content: space-around;
+  }
+  .c-distribution-bonus-container {
+    margin: 0px 0px 40px 0px;
     display: grid;
     justify-content: space-around;
   }

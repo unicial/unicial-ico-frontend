@@ -116,6 +116,7 @@ const Distribution = () => {
     const currentTimes = dateToTime("current");
     const firstStageTimes = dateToTime(`${process.env.firstStage}`);
     const secondStageTimes = dateToTime(`${process.env.secondStage}`);
+    const thirdStageTimes = dateToTime(`${process.env.thirdStage}`);
     const lastStageTimes = dateToTime(`${process.env.lastStage}`);
 
     if (currentTimes < firstStageTimes) {
@@ -127,9 +128,14 @@ const Distribution = () => {
       dispatch(setCurrentStage(stageName.firstStage));
     } else if (
       currentTimes >= secondStageTimes &&
-      currentTimes < lastStageTimes
+      currentTimes < thirdStageTimes
     ) {
       dispatch(setCurrentStage(stageName.secondStage));
+    } else if (
+      currentTimes >= thirdStageTimes &&
+      currentTimes < lastStageTimes
+    ) {
+      dispatch(setCurrentStage(stageName.thirdStage));
     } else {
       dispatch(setCurrentStage(stageName.closeStage));
     }
@@ -177,19 +183,48 @@ const Distribution = () => {
                 </div>
               </div>
               <div className="c-distribution-history">
-                {/* <i className="fas fa-circle c-news-title-dot c-distribution-dot-icon"></i>
+                <i className="fas fa-circle c-news-title-dot c-distribution-dot-icon"></i>
                 <div className="c-distribution-history-text">
-                  <div>Feb 21th ~ Feb 28th</div>
+                  <div>Apr 15th ~ May 14th</div>
                   <div>
                     <span className="c-distribution-coin-text">1 ZNX</span>
-                    <span> = 1.25 USDT, 1.5 milion ZNX </span>
+                    <span> = {price.thirdStage} USDT, 1.5 milion ZNX </span>
                   </div>
-                </div> */}
+                </div>
               </div>
             </div>
           </ScrollAnimation>
         </div>
         <div className="c-distribution-chart-container">
+          <div className="c-distribution-bonus-container">
+            <div className="c-distribution-history">
+              <i className="fas fa-circle c-news-title-dot c-distribution-dot-icon"></i>
+              <div className="c-distribution-bonus-text">
+                <div>
+                  Investment from $500 <br />
+                  <span className="title-h5">+10% ZNX </span> tokens
+                </div>
+              </div>
+            </div>
+            <div className="c-distribution-history">
+              <i className="fas fa-circle c-news-title-dot c-distribution-dot-icon"></i>
+              <div className="c-distribution-bonus-text">
+                <div>
+                  Investment from $1 000 <br />
+                  <span className="title-h5">+20% ZNX </span> tokens
+                </div>
+              </div>
+            </div>
+            <div className="c-distribution-history">
+              <i className="fas fa-circle c-news-title-dot c-distribution-dot-icon"></i>
+              <div className="c-distribution-bonus-text">
+                <div>
+                  Investment from $5 000 <br />
+                  <span className="title-h5">+25% ZNX </span> tokens
+                </div>
+              </div>
+            </div>
+          </div>
           <div className="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-4 vc_col-md-12">
             <div className="vc_column-inner" style={{ paddingLeft: "0px" }}>
               <div className="wpb_wrapper">
