@@ -9,7 +9,8 @@ module.exports = {
     expiretime: 86400,
     firstStage: "2022-03-1",
     secondStage: "2022-03-15",
-    lastStage: "2022-04-15",
+    thirdStage: "2022-04-15",
+    lastStage: "2022-05-15",
   },
   staticPageGenerationTimeout: 1000,
 };

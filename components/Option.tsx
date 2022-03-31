@@ -16,14 +16,14 @@ const Option = () => {
       if (currentStage === stageName.preStage || currentStage === "") {
         dispatch(
           showAlert({
-            message: "Zilionixx crowdsale will be start from April 14th",
+            message: "Zilionixx crowdsale will be start from March 1st",
             severity: "warning",
           })
         );
       } else if (currentStage === stageName.closeStage) {
         dispatch(
           showAlert({
-            message: "Zilionixx crowdsale April 14th",
+            message: "Zilionixx crowdsale May 14th",
             severity: "warning",
           })
         );
