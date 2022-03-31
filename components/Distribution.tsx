@@ -9,6 +9,7 @@ import { stageName, price } from "../common/constant";
 import { showBuyModal } from "../store/buymodal";
 import { showAlert } from "../store/alert";
 import ScrollAnimation from "react-animate-on-scroll";
+import { formatDate } from "../common/utile";
 
 const Distribution = () => {
   ChartJS.register(ArcElement, Tooltip);
@@ -23,14 +24,18 @@ const Distribution = () => {
       if (currentStage === stageName.preStage || currentStage === "") {
         dispatch(
           showAlert({
-            message: "Zilionixx crowdsale will be start from March 1st",
+            message: `Zilionixx crowdsale will be start from ${formatDate(
+              process.env.firstStage
+            )}`,
             severity: "warning",
           })
         );
       } else if (currentStage === stageName.closeStage) {
         dispatch(
           showAlert({
-            message: "Zilionixx crowdsale ended on May 14th",
+            message: `Zilionixx crowdsale ended on ${formatDate(
+              process.env.lastStage
+            )}`,
             severity: "warning",
           })
         );
@@ -139,6 +144,7 @@ const Distribution = () => {
     } else {
       dispatch(setCurrentStage(stageName.closeStage));
     }
+    formatDate(process.env.firstStage);
   }, []);
 
   return (
@@ -165,7 +171,10 @@ const Distribution = () => {
               <div className="c-distribution-history">
                 <i className="fas fa-circle c-news-title-dot c-distribution-dot-icon"></i>
                 <div className="c-distribution-history-text">
-                  <div>Mar 1st ~ Mar 14th</div>
+                  <div>
+                    {formatDate(process.env.firstStage)} ~{" "}
+                    {formatDate(process.env.secondStage)}
+                  </div>
                   <div>
                     <span className="c-distribution-coin-text">1 ZNX</span>
                     <span> = {price.firstStage} USDT, 1.5 milion ZNX </span>
@@ -175,7 +184,10 @@ const Distribution = () => {
               <div className="c-distribution-history">
                 <i className="fas fa-circle c-news-title-dot c-distribution-dot-icon"></i>
                 <div className="c-distribution-history-text">
-                  <div>Mar 15th ~ Apr 14th</div>
+                  <div>
+                    {formatDate(process.env.secondStage)} ~{" "}
+                    {formatDate(process.env.thirdStage)}
+                  </div>
                   <div>
                     <span className="c-distribution-coin-text">1 ZNX</span>
                     <span> = {price.secondStage} USDT, 1.5 milion ZNX </span>
@@ -185,7 +197,10 @@ const Distribution = () => {
               <div className="c-distribution-history">
                 <i className="fas fa-circle c-news-title-dot c-distribution-dot-icon"></i>
                 <div className="c-distribution-history-text">
-                  <div>Apr 15th ~ May 14th</div>
+                  <div>
+                    {formatDate(process.env.thirdStage)} ~{" "}
+                    {formatDate(process.env.lastStage)}
+                  </div>
                   <div>
                     <span className="c-distribution-coin-text">1 ZNX</span>
                     <span> = {price.thirdStage} USDT, 1.5 milion ZNX </span>

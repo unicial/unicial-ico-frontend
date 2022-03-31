@@ -5,6 +5,7 @@ import { useAppSelector, useAppDispatch } from "../store/hooks";
 import { showBuyModal } from "../store/buymodal";
 import { showAlert } from "../store/alert";
 import ScrollAnimation from "react-animate-on-scroll";
+import { formatDate } from "../common/utile";
 
 const Option = () => {
   const dispatch = useAppDispatch();
@@ -16,14 +17,16 @@ const Option = () => {
       if (currentStage === stageName.preStage || currentStage === "") {
         dispatch(
           showAlert({
-            message: "Zilionixx crowdsale will be start from March 1st",
+            message: `Zilionixx crowdsale will be start from ${formatDate(
+              process.env.firstStage
+            )}`,
             severity: "warning",
           })
         );
       } else if (currentStage === stageName.closeStage) {
         dispatch(
           showAlert({
-            message: "Zilionixx crowdsale May 14th",
+            message: `Zilionixx crowdsale ${formatDate(process.env.lastStage)}`,
             severity: "warning",
           })
         );

@@ -4,6 +4,7 @@ import axios from "axios";
 import { showAlert } from "../store/alert";
 import { useAppDispatch } from "../store/hooks";
 import ScrollAnimation from "react-animate-on-scroll";
+import { formatDate } from "../common/utile";
 
 const Footer = () => {
   const [firstName, setFirstName] = useState("");
@@ -90,18 +91,19 @@ const Footer = () => {
         <Row>
           <Col lg={3} md={6} sm={12} className="py-3">
             <ScrollAnimation
-              animateIn='fadeInLeft'
-              animateOut='fadeOutLeft'
+              animateIn="fadeInLeft"
+              animateOut="fadeOutLeft"
               duration={2}
               delay={0}
-              animateOnce={true}>
+              animateOnce={true}
+            >
               <div className="c-footer-logo">
                 <img src="/static/svg/logo.svg"></img>
                 <span>Zilionixx</span>
               </div>
               <span className="d-block my-4">
                 Zilionixx crowdsale landing page. Zilionixx crowdsale will be
-                start on 1st March.
+                start on {formatDate(process.env.firstStage)}.
               </span>
               <Button outline className="c-aboutus-btn">
                 About Us
@@ -110,11 +112,12 @@ const Footer = () => {
           </Col>
           <Col lg={3} md={6} sm={12} className="py-3">
             <ScrollAnimation
-              animateIn='fadeInLeft'
-              animateOut='fadeOutLeft'
+              animateIn="fadeInLeft"
+              animateOut="fadeOutLeft"
               duration={2}
               delay={0}
-              animateOnce={true}>
+              animateOnce={true}
+            >
               <span className="c-footer-title">Contacts</span>
               <div>
                 <div className="mt-1">
@@ -158,7 +161,9 @@ const Footer = () => {
                   <span className="c-bottom-item">
                     <img src="/static/svg/world.svg" alt="world" />
                     <span className="c-footer-contact-stick"></span>
-                    <span className="c-footer-contact-title">Website:&nbsp;</span>
+                    <span className="c-footer-contact-title">
+                      Website:&nbsp;
+                    </span>
                     <a
                       target="_blank"
                       href="https://zilionixx.com"
@@ -173,11 +178,12 @@ const Footer = () => {
           </Col>
           <Col lg={3} md={6} sm={12} className="py-3">
             <ScrollAnimation
-              animateIn='fadeInRight'
-              animateOut='fadeOutRight'
+              animateIn="fadeInRight"
+              animateOut="fadeOutRight"
               duration={2}
               delay={0}
-              animateOnce={true}>
+              animateOnce={true}
+            >
               <span className="c-footer-title">Links</span>
               <div>
                 <div className="mt-1">
@@ -229,11 +235,12 @@ const Footer = () => {
           </Col>
           <Col lg={3} md={6} sm={12} className="py-3">
             <ScrollAnimation
-              animateIn='fadeInRight'
-              animateOut='fadeOutRight'
+              animateIn="fadeInRight"
+              animateOut="fadeOutRight"
               duration={2}
               delay={0}
-              animateOnce={true}>
+              animateOnce={true}
+            >
               <span className="c-footer-title">Newsletter</span>
               <div>
                 <div className="mt-1">

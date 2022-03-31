@@ -8,6 +8,7 @@ import { showAlert } from "../store/alert";
 import { setBuyPermission } from "../store/ICOinfo";
 import { showBuyModal } from "../store/buymodal";
 import ScrollAnimation from "react-animate-on-scroll";
+import { formatDate } from "../common/utile";
 
 const Toparea = () => {
   const [percent, setPercent] = useState(0);
@@ -57,14 +58,18 @@ const Toparea = () => {
       if (currentStage === stageName.preStage || currentStage === "") {
         dispatch(
           showAlert({
-            message: "Zilionixx crowdsale will be start from March 1st",
+            message: `Zilionixx crowdsale will be start from March 1st ${formatDate(
+              process.env.firstStage
+            )}`,
             severity: "warning",
           })
         );
       } else if (currentStage === stageName.closeStage) {
         dispatch(
           showAlert({
-            message: "Zilionixx crowdsale ended on May 14th",
+            message: `Zilionixx crowdsale ended on ${formatDate(
+              process.env.lastStage
+            )}`,
             severity: "warning",
           })
         );
