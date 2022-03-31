@@ -274,9 +274,11 @@ const Distribution = () => {
                 <div className="c-distribution-price-content">
                   <div>1 ZNX</div>
                   <div className="c-distribution-dark">
-                    {currentStage === stageName.secondStage
+                    {currentStage === stageName.firstStage
+                      ? price.firstStage
+                      : currentStage === stageName.secondStage
                       ? price.secondStage
-                      : price.firstStage}
+                      : price.thirdStage}
                     USDT
                   </div>
                 </div>

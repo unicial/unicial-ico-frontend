@@ -58,7 +58,7 @@ const Toparea = () => {
       if (currentStage === stageName.preStage || currentStage === "") {
         dispatch(
           showAlert({
-            message: `Zilionixx crowdsale will be start from March 1st ${formatDate(
+            message: `Zilionixx crowdsale will be start from ${formatDate(
               process.env.firstStage
             )}`,
             severity: "warning",
