@@ -30,7 +30,7 @@ const Home = () => {
 
   const handleShowBanner = () => {
     setIsOpenBanner(true);
-    setIsOpenModal(true);
+    // setIsOpenModal(true);
   };
 
   const handleCloseModal = () => {

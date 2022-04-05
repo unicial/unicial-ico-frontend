@@ -35,7 +35,7 @@ const Banner = ({
     if (cookies.Banner) {
       handleBannerClose();
     } else {
-      handleShowModal();
+      // handleShowModal();
       handleBannerShow();
     }
   }, [cookies]);
