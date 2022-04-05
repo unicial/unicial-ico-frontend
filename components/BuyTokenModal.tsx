@@ -8,6 +8,86 @@ import { getBuyModalStatus } from "../store/buymodal/selectors";
 import { showBuyModal } from "../store/buymodal";
 import { showAlert } from "../store/alert";
 import { ethers } from "ethers";
+import { formatDate } from "../common/utile";
+import { price } from "../common/constant";
+
+const StagePrice = () => {
+  return (
+    <div className="c-modal-stageprice-root">
+      <div>
+        <div className="c-distribution-history">
+          <i className="fas fa-circle c-news-title-dot c-distribution-dot-icon"></i>
+          <div className="c-modal-stageprice-text">
+            <div>
+              {formatDate(process.env.firstStage)} ~{" "}
+              {formatDate(process.env.secondStage)}
+            </div>
+            <div>
+              <span className="c-distribution-coin-text">1 ZNX</span>
+              <span> = {price.firstStage} USDT, 1.5 milion ZNX </span>
+            </div>
+          </div>
+        </div>
+        <div className="c-distribution-history">
+          <i className="fas fa-circle c-news-title-dot c-distribution-dot-icon"></i>
+          <div className="c-modal-stageprice-text">
+            <div>
+              {formatDate(process.env.secondStage)} ~{" "}
+              {formatDate(process.env.thirdStage)}
+            </div>
+            <div>
+              <span className="c-distribution-coin-text">1 ZNX</span>
+              <span> = {price.secondStage} USDT, 1.5 milion ZNX </span>
+            </div>
+          </div>
+        </div>
+        <div className="c-distribution-history">
+          <i className="fas fa-circle c-news-title-dot c-distribution-dot-icon"></i>
+          <div className="c-modal-stageprice-text">
+            <div>
+              {formatDate(process.env.thirdStage)} ~{" "}
+              {formatDate(process.env.lastStage)}
+            </div>
+            <div>
+              <span className="c-distribution-coin-text">1 ZNX</span>
+              <span> = {price.thirdStage} USDT, 1.5 milion ZNX </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <span className="c-modal-stageprice-stick"></span>
+      <div>
+        <div className="c-distribution-history">
+          <i className="fas fa-circle c-news-title-dot c-distribution-dot-icon"></i>
+          <div className="c-modal-stageprice-text">
+            <div>
+              Investment from $500 <br />
+              <span className="fw-bolder">+10% ZNX </span> tokens
+            </div>
+          </div>
+        </div>
+        <div className="c-distribution-history">
+          <i className="fas fa-circle c-news-title-dot c-distribution-dot-icon"></i>
+          <div className="c-modal-stageprice-text">
+            <div>
+              Investment from $1 000 <br />
+              <span className="fw-bolder">+20% ZNX </span> tokens
+            </div>
+          </div>
+        </div>
+        <div className="c-distribution-history">
+          <i className="fas fa-circle c-news-title-dot c-distribution-dot-icon"></i>
+          <div className="c-modal-stageprice-text">
+            <div>
+              Investment from $5 000 <br />
+              <span className="fw-bolder">+25% ZNX </span> tokens
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
 
 const BuyTokenModal = () => {
   const dispatch = useAppDispatch();
@@ -379,6 +459,7 @@ const BuyTokenModal = () => {
               </div>
             </div>
           </div>
+          <StagePrice />
           {stepId === stepIndex.first
             ? stepFirst
             : stepId === stepIndex.second

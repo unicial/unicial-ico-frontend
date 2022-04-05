@@ -215,14 +215,6 @@
 .c-modal-copyicon i {
   color: #00d58b;
 }
-@media screen and (max-width: 500px) {
-  .c-modal-name {
-    display: block;
-  }
-  .c-m-r-10 {
-    margin-right: 0px;
-  }
-}
 
 .video-responsive {
   overflow: hidden;
@@ -237,4 +229,51 @@
   height: 100%;
   width: 100%;
   position: absolute;
+}
+
+.c-modal-stageprice-root {
+  display: flex;
+  margin: 30px 0px;
+}
+
+.c-modal-stageprice-text {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 25px;
+  letter-spacing: 0.05em;
+  color: #12222f;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.c-modal-stageprice-stick {
+  width: 1px;
+  opacity: 0.3;
+  background: #7599a2;
+  margin: 0px 20px;
+  display: block;
+}
+
+@media screen and (max-width: 500px) {
+  .c-modal-name {
+    display: block;
+  }
+  .c-m-r-10 {
+    margin-right: 0px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .c-modal-stageprice-root {
+    display: flex;
+    flex-direction: column;
+    margin: 30px auto;
+    width: 270px;
+  }
+  .c-modal-stageprice-stick {
+    height: 1px;
+    margin: 10px 0px;
+    width: 100%;
+  }
 }
