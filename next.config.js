@@ -10,7 +10,7 @@ module.exports = {
     firstStage: "2022-03-1",
     secondStage: "2022-03-15",
     thirdStage: "2022-04-15",
-    lastStage: "2022-05-15",
+    lastStage: "2022-12-31",
   },
   staticPageGenerationTimeout: 1000,
 };

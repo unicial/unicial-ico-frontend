@@ -100,9 +100,11 @@ const Option = () => {
               <div className="c-option-letterPart">
                 <p className="c-option-text-title">1 ZNX price</p>
                 <p className="c-option-text-content">
-                  {currentStage === stageName.secondStage
+                  {currentStage === stageName.firstStage
+                    ? price.firstStage
+                    : currentStage === stageName.secondStage
                     ? price.secondStage
-                    : price.firstStage}
+                    : price.thirdStage}
                   &nbsp; USDT
                 </p>
                 <img className="c-pig" src="/static/svg/pig.svg" />
